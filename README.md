@@ -17,31 +17,39 @@ Here the outer loop (evolution) designs the rewards, the inner loop (Q-learning)
 We compare the evolved map with our own hand-made 2x2 baseline (reward vs reward + punishment,
 immediate vs delayed) and with reward schemes from textbooks and benchmark papers.
 
+
 ## Status
 
 - [x] Maze environment, tabular Q-learning agent, baseline reward schemes, experiment runner
-- [ ] Fix the final maze (candidate: Sutton & Barto's 9x6 Dyna Maze with 2-3 traps)
-- [ ] MAP-Elites over reward schemes
-- [ ] Comparison with the baselines, test on new mazes, report
+- [x] Final training maze: Sutton & Barto's 9x6 Dyna Maze with 3 traps (`dyna_9x6_3traps`)
+- [x] Stable N90 metric (moving average over the last 3 tests)
+- [x] MAP-Elites and Differential Evolution over reward schemes (`evolve.py`, `run_evolution.py`)
+- [x] Re-evaluation on fresh seeds and unseen mazes, statistics and plots (`reevaluate.py`, `analyze.py`)
+- [ ] Full experiment: 10 MAP-Elites + 10 DE runs (HPC)
+- [ ] Report
 
 ## Quick start
 
-Python 3.10+. The code uses only the standard library; matplotlib is needed for the plots.
+Python 3.10+. The agent and the evolution use only the standard library; numpy, scipy and
+matplotlib are needed for the statistics and the plots.
 
 ```
 pip install -r requirements.txt
 python run_baselines.py --quick
 ```
 
-`--quick` runs 2 mazes x 12 reward schemes x 3 seeds in a few seconds. More options:
+Full experiment, in this order:
 
 ```
-python run_baselines.py                                   # 6 mazes x 12 schemes x 10 seeds (about a minute)
-python run_baselines.py --mazes dyna_9x6_2traps dyna_9x6_3traps --seeds 30
-python run_baselines.py --random 5 --random-size 9x6 --random-traps 3
-python run_baselines.py --schemes A1_immediate_reward_only B1_immediate_reward_punish sparse_dyna
-python run_baselines.py --help
+python run_evolution.py --algo mapelites --run 0 --budget 200 --quick   # smoke test, ~30 s
+0..9 | ForEach-Object { python run_evolution.py --algo mapelites --run $_ }   # PowerShell
+0..9 | ForEach-Object { python run_evolution.py --algo de --run $_ }
+python plot_archive.py results/evolution/mapelites_run0.json
+python reevaluate.py --runs results/evolution --seeds 30
+python analyze.py
 ```
+
+On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array.
 
 ## Files
 
@@ -51,6 +59,12 @@ python run_baselines.py --help
 | `rewards.py` | `RewardScheme` (goal, trap, wall, step, progress, delay) and `baseline_schemes()` |
 | `qlearning.py` | Tabular Q-learning (`train`) with fixed settings in `DEFAULTS`, and the metrics |
 | `run_baselines.py` | Runs mazes x schemes x seeds in parallel, saves CSVs and plots to `results/` |
+| `evolve.py` | Reward genome (5 genes, goal fixed at +10), fitness, behaviour descriptors, MAP-Elites and Differential Evolution |
+| `run_evolution.py` | One evolutionary run (algorithm + run seed) from the command line, saved to `results/evolution/<algo>_run<N>.json` |
+| `run_all.slurm` | SLURM job array: all 10 MAP-Elites + 10 DE runs in parallel on a cluster |
+| `plot_archive.py` | Heatmap of a MAP-Elites archive (fitness or a gene value per cell) |
+| `reevaluate.py` | Retrains the evolved winners and the baselines on 30 fresh seeds, on the training maze and on unseen mazes |
+| `analyze.py` | Summary tables, Mann-Whitney U tests with Holm correction, Vargha-Delaney A12, boxplots, convergence curves |
 
 ## Mazes
 
@@ -110,7 +124,7 @@ Every 10 episodes the greedy policy is tested 20 times.
 
 | Metric | Meaning |
 | --- | --- |
-| `episodes_to_90`, `steps_to_90` | training episodes / environment steps until 90% test success |
+| `episodes_to_90`, `steps_to_90` | training episodes / environment steps until the **moving average of the last 3 tests** (30 episodes) reaches 90% success (`stable_window` in `DEFAULTS`; 1 = first single test, which is noisy) |
 | `final_success` | test success after training |
 | `trap_falls`, `wall_bumps` | counted during training |
 | `punishment_share` | share of all feedback received that was negative (planned MAP-Elites axis) |
@@ -118,6 +132,52 @@ Every 10 episodes the greedy policy is tested 20 times.
 
 Outputs in `results/`: `summary.csv`, `runs.csv`, `overview.png` (median episodes to 90% for every
 maze and scheme), `curves_<maze>.png`, `mazes.png`.
+Why a moving average: during training the greedy policy oscillates, so a single lucky test could
+reach 90% long before the agent has really learned (e.g. B1 on `dyna_9x6_2traps`, seed 1: 95% at
+episode 80, then 45% for the next 140 episodes). Since this metric is the fitness of the
+evolution, the noisy version would reward luck.
+
+
+## Evolving reward schemes
+
+**Genome.** Five genes, each searched in a normalised [0, 1] range and decoded by `evolve.decode()`:
+
+| Gene | Range |
+| --- | --- |
+| `trap` | -20 ... 0 |
+| `wall` | -5 ... 0 |
+| `step` | -1 ... 0 |
+| `progress` | 0 ... 1 |
+| `delay` | 0 ... 30 steps (integer; 0 = immediate) |
+
+The goal reward is fixed at +10: for tabular Q-learning from all-zero Q-values only the ratios
+between rewards matter, so a free goal gene would be redundant.
+
+**Fitness** (minimised): mean `episodes_to_90` over 5 training seeds (0-4, the same for every
+genome), with a penalty of 1000 (= 2 x 500 episodes) for each seed that never reaches 90%.
+
+**MAP-Elites** (Mouret & Clune 2015): 10x10 archive over punishment share x mean feedback delay,
+both measured during training. 100 random genomes, then batches of 50 Gaussian mutations
+(sigma = 0.1) of random elites.
+
+**Differential Evolution** (Storn & Price 1997): DE/rand/1/bin, population 20, F = 0.5, CR = 0.9.
+
+**Fair comparison.** Same genome, same bounds, same fitness and the same budget of 5000 fitness
+evaluations for both algorithms; 10 independent runs each.
+
+**Re-evaluation.** Picking the best of thousands of noisy 5-seed scores also picks lucky ones, so
+the winner of every run and every baseline is retrained from scratch on 30 fresh seeds
+(1000-1029) on:
+
+| Maze | Role |
+| --- | --- |
+| `dyna_9x6_3traps` | training maze: sample efficiency |
+| `dyna_9x6_2traps` | same layout, different traps |
+| `maze_8x8`, `maze_10x10`, `lava_7x5` | unseen layouts: generalisation |
+
+`analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
+`russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
+
 
 ## First findings
 
@@ -128,6 +188,8 @@ maze and scheme), `curves_<maze>.png`, `mazes.png`.
 - The progress reward uses shaping gamma = 1. With the agent's gamma (0.95) in the potential-based
   formula, standing still far from the goal earned a small reward every step and the agent learned
   to sit still.
+- The first test above 90% is a noisy measure of learning: the greedy policy oscillates, so we
+  use the moving average of the last 3 tests (see Agent and metrics).
 
 ## References
 
@@ -139,3 +201,7 @@ maze and scheme), `curves_<maze>.png`, `mazes.png`.
 - Leike et al. (2017), AI Safety Gridworlds
 - Ng, Harada & Russell (1999), Policy Invariance Under Reward Transformations
 - Arjona-Medina et al. (2019), RUDDER: Return Decomposition for Delayed Rewards
+- Storn & Price (1997), Differential Evolution: A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces
+- Mann & Whitney (1947), On a Test of Whether One of Two Random Variables is Stochastically Larger than the Other
+- Holm (1979), A Simple Sequentially Rejective Multiple Test Procedure
+- Vargha & Delaney (2000), A Critique and Improvement of the CL Common Language Effect Size Statistics of McGraw and Wong

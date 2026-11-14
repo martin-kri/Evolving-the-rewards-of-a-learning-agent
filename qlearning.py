@@ -18,6 +18,7 @@ DEFAULTS = dict(
     eval_every=10,          # test the greedy policy every N episodes ...
     eval_episodes=20,       # ... with this many test episodes
     success_threshold=0.9,  # "learned" = test success rate reaches this
+    stable_window=3,        # ... as a moving average over the last N tests (3 x 10 = 30 episodes); # 1 = first single test above the threshold (noisy)
     shaping_gamma=1.0,      # progress reward = shaping_gamma * Phi(s') - Phi(s).
                             # 1.0 gives +w per step closer, -w per step away, 0 for standing still.
                             # Using the agent's gamma (0.95) pays +w*d*(1-gamma) for standing still
@@ -126,7 +127,9 @@ def train(maze, scheme, seed, **settings):
             rate, _ = evaluate(maze, Q, T, cfg["eval_episodes"], eval_rng)
             curve.append(rate)
             eval_points.append(ep + 1)
-            if first_90_episode is None and rate >= cfg["success_threshold"]:
+            k = cfg["stable_window"]
+            recent = curve[-k:]
+            if first_90_episode is None and len(recent) == k and sum(recent) / k >= cfg["success_threshold"]:
                 first_90_episode, first_90_steps = ep + 1, env_steps
 
     final_rate, final_len = evaluate(maze, Q, T, 100, eval_rng)
