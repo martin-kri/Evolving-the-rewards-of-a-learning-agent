@@ -1,0 +1,41 @@
+maze,candidate,n,median_n90,q1,q3,learned
+dyna_9x6_3traps,DE best,300,110.0,100.0,130.0,1.0
+dyna_9x6_3traps,ME best,300,110.0,100.0,140.0,1.0
+dyna_9x6_3traps,B1_immediate_reward_punish,30,190.0,152.5,227.5,1.0
+dyna_9x6_3traps,russell_norvig_matched,30,230.0,200.0,240.0,1.0
+dyna_9x6_3traps,A1_immediate_reward_only,30,270.0,220.0,1000.0,0.6333333333333333
+dyna_9x6_3traps,sparse_dyna,30,1000.0,1000.0,1000.0,0.1
+dyna_9x6_3traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.06666666666666667
+dyna_9x6_3traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_9x6_2traps,DE best,300,100.0,80.0,130.0,1.0
+dyna_9x6_2traps,ME best,300,100.0,70.0,120.0,1.0
+dyna_9x6_2traps,B1_immediate_reward_punish,30,120.0,72.5,160.0,1.0
+dyna_9x6_2traps,A1_immediate_reward_only,30,170.0,112.5,197.5,0.9666666666666667
+dyna_9x6_2traps,russell_norvig_matched,30,200.0,172.5,217.5,1.0
+dyna_9x6_2traps,sparse_dyna,30,355.0,272.5,870.0,0.7333333333333333
+dyna_9x6_2traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_9x6_2traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+maze_8x8,ME best,300,80.0,70.0,110.0,1.0
+maze_8x8,DE best,300,100.0,80.0,122.5,1.0
+maze_8x8,A1_immediate_reward_only,30,135.0,110.0,170.0,0.9333333333333333
+maze_8x8,B1_immediate_reward_punish,30,160.0,82.5,207.5,1.0
+maze_8x8,russell_norvig_matched,30,275.0,250.0,290.0,1.0
+maze_8x8,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.06666666666666667
+maze_8x8,sparse_dyna,30,1000.0,1000.0,1000.0,0.03333333333333333
+maze_8x8,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,DE best,300,150.0,130.0,180.0,1.0
+maze_10x10,ME best,300,155.0,130.0,192.5,1.0
+maze_10x10,A1_immediate_reward_only,30,155.0,120.0,195.0,1.0
+maze_10x10,B1_immediate_reward_punish,30,250.0,195.0,280.0,1.0
+maze_10x10,russell_norvig_matched,30,445.0,420.0,1000.0,0.6666666666666666
+maze_10x10,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+lava_7x5,DE best,300,80.0,60.0,100.0,1.0
+lava_7x5,ME best,300,80.0,60.0,110.0,1.0
+lava_7x5,B1_immediate_reward_punish,30,120.0,82.5,140.0,1.0
+lava_7x5,russell_norvig_matched,30,140.0,130.0,157.5,1.0
+lava_7x5,A1_immediate_reward_only,30,150.0,122.5,180.0,0.9666666666666667
+lava_7x5,B2_delayed_reward_punish,30,175.0,142.5,210.0,1.0
+lava_7x5,sparse_dyna,30,200.0,150.0,277.5,0.9333333333333333
+lava_7x5,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.03333333333333333

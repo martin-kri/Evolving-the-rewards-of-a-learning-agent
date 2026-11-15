@@ -219,5 +219,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Generated experiment output
-results/
+# Generated experiment output: ignored, except dated snapshots of complete experiments
+results/*
+!results/2026-11-15_laptop/

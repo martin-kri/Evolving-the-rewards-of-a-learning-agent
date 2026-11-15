@@ -64,7 +64,7 @@ On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array
 | `run_all.slurm` | SLURM job array: all 10 MAP-Elites + 10 DE runs in parallel on a cluster |
 | `plot_archive.py` | Heatmap of a MAP-Elites archive (fitness or a gene value per cell) |
 | `reevaluate.py` | Retrains the evolved winners and the baselines on 30 fresh seeds, on the training maze and on unseen mazes |
-| `analyze.py` | Summary tables, Mann-Whitney U tests with Holm correction, Vargha-Delaney A12, boxplots, convergence curves |
+| `analyze.py` | Summary tables, Mann-Whitney U tests with Holm correction (one test per evolved scheme), Vargha-Delaney A12, quality-diversity metrics (cells filled, QD-score), boxplots, convergence curves |
 
 ## Mazes
 
@@ -177,6 +177,29 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 
 `analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
 `russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
+
+**Statistics.** MAP-Elites vs DE is tested with one value per evolutionary run (the winner's mean
+N90 over the fresh seeds). Against the baselines, every evolved winner is tested on its own
+(30 vs 30 fresh seeds): the winners of different runs are different reward schemes, so pooling
+them would overstate the sample size. `stats_summary.csv` counts how many winners are
+significantly faster or slower than each baseline; `stats.csv` holds every test. All p-values are
+Holm-corrected together.
+
+**Quality-diversity.** `qd.csv` compares what each algorithm returns on the 10x10 grid: the
+MAP-Elites archive against DE's final population. It reports cells filled, cells whose elite
+learned on all 5 evaluation seeds, and the QD-score (sum over filled cells of 1000 - fitness).
+
+## Saved results
+
+`results/` is ignored by git, except for dated snapshots of complete experiments:
+
+| Folder | Contents |
+| --- | --- |
+| `results/2026-11-15_laptop/` | 10 MAP-Elites + 10 DE runs (budget 5000), re-evaluation on 30 fresh seeds, analysis |
+
+To redo the analysis of a snapshot: `python analyze.py --dir results/2026-11-15_laptop`.
+To save a new experiment, move `results/evolution`, `results/reevaluation.csv` and
+`results/analysis` into a new dated folder and add it to `.gitignore` like the existing one.
 
 
 ## First findings
