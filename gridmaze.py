@@ -166,6 +166,119 @@ LAYOUTS = {
 }
 
 
+# ---------------------------------------------------------------- scaled copies
+# A bigger copy of a maze with the same layout, to separate the effect of SIZE from the
+# effect of a different LAYOUT in the generalisation test.
+
+def _anchor(r, c, H, W, k):
+    """Cell inside the k x k block of (r, c) at the same relative position in the maze.
+    A corner cell stays in the corner (the goal at the top-right stays at the top-right)."""
+    dr = round(r * (k - 1) / (H - 1)) if H > 1 else 0
+    dc = round(c * (k - 1) / (W - 1)) if W > 1 else 0
+    return k * r + dr, k * c + dc
+
+
+def scale_layout(rows, k, traps="block"):
+    """Integer upscaling: every cell becomes a k x k block, so the maze is k times bigger.
+
+    walls  -> a k x k block of walls (walls and corridors k times thicker)
+    traps  -> traps="block": a k x k block of traps (same share of the corridor blocked)
+              traps="center": a single trap in the middle of the block (k*r + k//2, k*c + k//2)
+    S, G   -> a single cell, at the same relative position (see _anchor); the rest of
+              their block is free
+    Returns the new rows (strings). Paths get about k times longer.
+    """
+    if k < 1 or int(k) != k:
+        raise ValueError("k must be a positive integer")
+    if traps not in ("block", "center"):
+        raise ValueError("traps must be 'block' or 'center'")
+    H, W = len(rows), len(rows[0])
+    grid = [["."] * (W * k) for _ in range(H * k)]
+    for r, row in enumerate(rows):
+        for c, ch in enumerate(row):
+            if ch == "#" or (ch == "T" and traps == "block"):
+                for i in range(k):
+                    for j in range(k):
+                        grid[k * r + i][k * c + j] = ch
+            elif ch == "T":
+                grid[k * r + k // 2][k * c + k // 2] = "T"
+            elif ch in "SG":
+                ar, ac = _anchor(r, c, H, W, k)
+                grid[ar][ac] = ch
+    return ["".join(row) for row in grid]
+
+
+def _line(r0, c0, r1, c1):
+    """Grid cells on the straight line between two cells (Bresenham)."""
+    cells = []
+    dr, dc = abs(r1 - r0), abs(c1 - c0)
+    sr, sc = (1 if r1 > r0 else -1), (1 if c1 > c0 else -1)
+    err = dc - dr
+    r, c = r0, c0
+    while True:
+        cells.append((r, c))
+        if (r, c) == (r1, c1):
+            return cells
+        e2 = 2 * err
+        if e2 > -dr:
+            err -= dr
+            c += sc
+        if e2 < dc:
+            err += dc
+            r += sr
+
+
+def scale_layout_proportional(rows, new_H, new_W):
+    """Proportional coordinates: any target size (also not a multiple of the original).
+
+    A cell (r, c) goes to (round(r*(H'-1)/(H-1)), round(c*(W'-1)/(W-1))).
+    Walls are redrawn as straight lines between the scaled positions of neighbouring wall
+    cells, so a wall stays one cell thick but keeps its length in proportion.
+    Traps, S and G stay single cells. Check the result with Maze(...): if two objects land
+    on the same cell or a wall closes the path, it raises an error.
+    """
+    H, W = len(rows), len(rows[0])
+    def m(r, c):
+        return (round(r * (new_H - 1) / (H - 1)) if H > 1 else 0,
+                round(c * (new_W - 1) / (W - 1)) if W > 1 else 0)
+    grid = [["."] * new_W for _ in range(new_H)]
+    cells = {(r, c): ch for r, row in enumerate(rows) for c, ch in enumerate(row)}
+    for (r, c), ch in cells.items():
+        if ch != "#":
+            continue
+        grid[m(r, c)[0]][m(r, c)[1]] = "#"
+        for nr, nc in ((r + 1, c), (r, c + 1)):          # each wall segment once
+            if cells.get((nr, nc)) == "#":
+                for i, j in _line(*m(r, c), *m(nr, nc)):
+                    grid[i][j] = "#"
+    for (r, c), ch in cells.items():
+        if ch in "TSG":
+            i, j = m(r, c)
+            grid[i][j] = ch
+    return ["".join(row) for row in grid]
+
+
+def check_scaled(original, scaled):
+    """Sanity check of a scaled maze against the original (both Maze objects).
+    Returns a dict; 'ok' is False if a trap was lost or the path did not get longer."""
+    ratio = scaled.shortest_path / original.shortest_path
+    info = dict(name=scaled.name, size=f"{scaled.W}x{scaled.H}",
+                shortest_path=scaled.shortest_path, path_ratio=round(ratio, 2),
+                trap_cells=len(scaled.traps), original_traps=len(original.traps))
+    info["ok"] = len(scaled.traps) >= len(original.traps) and ratio > 1
+    return info
+
+
+# Scaled copies of the training maze (integer upscaling, traps as full blocks).
+# The Maze constructor raises an error if a copy has no safe path from S to G.
+SCALED = {
+    "dyna_18x12_3traps": ("dyna_9x6_3traps", 2),
+    "dyna_27x18_3traps": ("dyna_9x6_3traps", 3),
+}
+for _name, (_base, _k) in SCALED.items():
+    LAYOUTS[_name] = scale_layout(LAYOUTS[_base], _k)
+
+
 def get_maze(name, slip=0.1):
     return Maze(name, LAYOUTS[name], slip=slip)
 

@@ -80,6 +80,14 @@ in a random direction.
 | `dyna_9x6_3traps` | 9x6 | 16 | Dyna Maze + 3 traps (ours) |
 | `maze_8x8` | 8x8 | 14 | ours |
 | `maze_10x10` | 10x10 | 18 | ours |
+| `dyna_18x12_3traps` | 18x12 | 31 | `dyna_9x6_3traps` scaled x2 (every cell a 2x2 block) |
+| `dyna_27x18_3traps` | 27x18 | 45 | `dyna_9x6_3traps` scaled x3 (every cell a 3x3 block) |
+
+The scaled copies keep the layout of the training maze and change only its size, so they separate
+"the maze is bigger" from "the maze is different". `scale_layout(rows, k)` makes them (walls and traps
+become k x k blocks; S and G stay single cells at the same relative position), and
+`scale_layout_proportional(rows, H, W)` scales to any size by mapping coordinates proportionally.
+Bigger mazes need more episodes: re-evaluate them with `--episodes 1500`.
 
 ## Reward schemes
 
@@ -172,6 +180,7 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 | Maze | Role |
 | --- | --- |
 | `dyna_9x6_3traps` | training maze: sample efficiency |
+| `dyna_18x12_3traps`, `dyna_27x18_3traps` | same layout, 2x and 3x bigger: effect of size only |
 | `dyna_9x6_2traps` | same layout, different traps |
 | `maze_8x8`, `maze_10x10`, `lava_7x5` | unseen layouts: generalisation |
 

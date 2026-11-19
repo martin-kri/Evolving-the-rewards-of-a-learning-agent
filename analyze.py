@@ -18,7 +18,7 @@ Reads the outputs of run_evolution.py and reevaluate.py and produces (in <dir>/a
 
 Examples:
     python reevaluate.py --runs results/evolution --seeds 30       # first
-    python analyze.py                                              # main 6 baselines, 5 mazes -> results/analysis/
+    python analyze.py                                              # main 6 baselines, main mazes -> results/analysis/
     python analyze.py --dir results/2026-11-15_laptop              # a saved snapshot of results
     python analyze.py --all                                        # everything -> results/analysis_all/ (supplementary)
     python analyze.py --baselines A1 B1_immediate kenton           # a custom selection
@@ -47,7 +47,8 @@ EVOLVED = ("ME best", "DE best")
 # Main baselines shown in the tables, tests and plots (all of them stay in reevaluation.csv).
 # Short prefixes are fine: "A1" matches "A1_immediate_reward_only".
 MAIN_BASELINES = ["A1", "A2", "B1_immediate", "B2", "sparse_dyna", "russell_norvig_matched"]
-MAIN_MAZES = ["dyna_9x6_3traps", "dyna_9x6_2traps", "maze_8x8", "maze_10x10", "lava_7x5"]  # dyna_9x6: too easy
+MAIN_MAZES = ["dyna_9x6_3traps", "dyna_18x12_3traps", "dyna_27x18_3traps",   # training maze + scaled copies
+              "dyna_9x6_2traps", "maze_8x8", "maze_10x10", "lava_7x5"]       # dyna_9x6: too easy
 
 
 def a12(x, y):
