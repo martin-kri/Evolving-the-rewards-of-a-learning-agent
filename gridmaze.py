@@ -287,6 +287,7 @@ for _name, (_base, _k) in SCALED.items():
 # path), so the traps matter as in the Dyna maze. Stored as text so they never change.
 # train_*:  the training set of multimaze/ (together with dyna_9x6_3traps).
 # unseen_*: never used for training; test mazes for generalisation to new random layouts.
+# valid_*:  never used for training; for choosing between configurations (see below).
 LAYOUTS.update({
     "train_6x6": [            # seed 18, 2 traps, shortest path 12
         "....#G",
@@ -383,6 +384,57 @@ LAYOUTS.update({
         "......#...##",
         "..T.#.....#.",
         "S....#.#....",
+    ],    # valid_*: never used for training; for CHOOSING between configurations (screening/), so the
+    # unseen_* mazes stay untouched until the final comparison.
+    "valid_7x6": [            # seed 319, 2 traps, shortest path 15
+        "......G",
+        "..#...#",
+        "...##T.",
+        "T#....#",
+        "#.#...#",
+        "S......",
+    ],
+    "valid_9x8": [            # seed 333, 4 traps, shortest path 17
+        "........G",
+        ".#..T....",
+        "..##.##..",
+        "..#....#.",
+        "..T.#..#.",
+        "..#..#...",
+        "#.T.#....",
+        "S.#T...##",
+    ],
+    "valid_10x7": [           # seed 301, 4 traps, shortest path 17
+        "....#..#.G",
+        "........T.",
+        "..#.#.....",
+        "..#....#.T",
+        "#..#.#..#.",
+        "....#...#.",
+        "S..T.#T.##",
+    ],
+    "valid_11x10": [          # seed 305, 5 traps, shortest path 21
+        "#.#T......G",
+        ".##........",
+        "....#.T.T..",
+        ".....T.#...",
+        "#.......###",
+        ".#T#.#....#",
+        "..........#",
+        "#..#...#...",
+        "..##..#....",
+        "S##......#.",
+    ],
+    "valid_13x9": [           # seed 310, 6 traps, shortest path 26
+        "##.......#..G",
+        "##..T..#.#...",
+        ".....##..T..#",
+        ".#.#..T.....#",
+        ".....#..#...#",
+        "......T....#T",
+        "..#.T#......#",
+        ".#...#.#....#",
+        "S#...#.......",
     ],
 })
 

@@ -1,0 +1,12 @@
+{
+ "description": "median N90 (500-episode scale) of the 20 single-maze winners, seeds 7000-7004; made by make_reference.py",
+ "reference": {
+  "dyna_9x6_3traps": 105.0,
+  "train_6x6": 120.0,
+  "train_8x6": 110.0,
+  "train_8x8": 140.0,
+  "train_10x8": 240.0,
+  "train_12x8": 235.0,
+  "dyna_18x12_3traps": 82.5
+ }
+}

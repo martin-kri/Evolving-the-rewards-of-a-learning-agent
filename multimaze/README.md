@@ -54,8 +54,7 @@ Five more random mazes are **never used for training** and are test mazes in `re
 - This plain average is what the papers do: Singh et al. (2010) use the expected fitness over the
   distribution of environments, Niekum (2010) the fitness across a distribution of environments,
   Zheng et al. (2020) and Oh et al. (2020) average over lifetimes and tasks, and GERS the average
-  return over its validation environments. Alternatives (each maze relative to a reference such as
-  B1, or the worst maze) are possible later as a `--combine` option.
+  return over its validation environments. Two alternatives are available as `--combine` (below).
 - Behaviour descriptors (punishment share, feedback delay) are averaged over all runs: the
   MAP-Elites map has the same axes as before.
 - The run file also stores the N90 per maze of every evaluated scheme (`per_maze`).
@@ -74,6 +73,33 @@ fitness (a MAP-Elites run: about 21 instead of 17 minutes on the laptop).
   About 2.5x the cost. For later, on the server.
 
 To make a new set, add an entry to `SETS` in `training_sets.py`.
+
+## Options: `--combine` and `--variant`
+
+`--combine` decides how the runs of one evaluation become one fitness:
+
+| Value | Fitness | Why |
+| --- | --- | --- |
+| `mean` (default) | mean N90 over all runs | what the papers do; big mazes weigh more, since their N90 is larger |
+| `relative` | each maze's mean N90 divided by a reference for that maze, averaged, times the mean reference (so it stays on the episode scale; at most 1000) | every maze counts the same, a 10% gain on a small maze is worth as much as on a big one |
+| `worst` | the slowest maze's mean N90 | a scheme is only as good as its worst maze (robustness) |
+
+The reference for `relative` is the median N90 of the 20 single-maze winners on each maze (fresh
+seeds 7000-7004), stored in `reference_n90.json`. `python multimaze/make_reference.py` recomputes
+it (a few minutes); it covers every maze of every set.
+
+`--variant` takes the gene ranges from `variants/variant_defs.py` (e.g. `wide_progress`), as
+`variants/run_variant.py` does for single-maze runs. The ranges are stored in the run file
+(`bounds`), and the worker processes get them too (also on Windows).
+
+The results folder is named after the options that differ from the default:
+`results/multimaze/A`, `A_worst`, `A_wide_progress`, `A_relative_wide_progress`, ... A run with
+other gene ranges must be re-evaluated with `variants/reevaluate_variant.py --dir <folder>`
+(it decodes the winners with the ranges of their runs); `reevaluate.py` alone would use the
+default ranges.
+
+To compare many of these settings cheaply before full runs, see `screening/`, which also uses
+five separate validation mazes (`valid_*`) to choose between them.
 
 ## How to run
 

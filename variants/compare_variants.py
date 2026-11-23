@@ -68,7 +68,7 @@ def describe(folder):
         if not rs:
             continue
         row = dict(folder=os.path.basename(os.path.normpath(folder)),
-                   variant=rs[0].get("variant") or rs[0].get("condition") or "default", algo=cand.split()[0], runs=len(rs),
+                   variant=rs[0].get("condition") or rs[0].get("variant") or "default", algo=cand.split()[0], runs=len(rs),
                    budget="/".join(sorted({str(r["budget"]) for r in rs})),
                    evolution_fitness=round(statistics.median(r["best"]["fitness"] for r in rs), 1))
         for m in mazes:

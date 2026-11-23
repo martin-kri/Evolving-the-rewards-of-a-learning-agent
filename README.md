@@ -65,7 +65,7 @@ On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array
 | `run_all.slurm` | SLURM job array: all 10 MAP-Elites + 10 DE runs in parallel on a cluster |
 | `plot_archive.py` | Heatmap of a MAP-Elites archive (fitness or a gene value per cell) |
 | `reevaluate.py` | Retrains the evolved winners and the baselines on 30 fresh seeds, on the training maze and on unseen mazes |
-| `variants/`, `figures/`, `multimaze/`, `scaling/` | Side experiments and figures, each with its own README |
+| `variants/`, `figures/`, `multimaze/`, `scaling/`, `screening/` | Side experiments and figures, each with its own README |
 | `analyze.py` | Summary tables, Mann-Whitney U tests with Holm correction (one test per evolved scheme), Vargha-Delaney A12, quality-diversity metrics (cells filled, QD-score), boxplots, convergence curves |
 
 ## Mazes
@@ -86,6 +86,7 @@ in a random direction.
 | `dyna_27x18_3traps` | 27x18 | 45 | `dyna_9x6_3traps` scaled x3 (every cell a 3x3 block) |
 | `train_6x6` ... `train_12x8` | 6x6 to 12x8 | 12 to 20 | random mazes, training set of `multimaze/` |
 | `unseen_6x8` ... `unseen_12x10` (5 mazes) | 6x8 to 12x10 | 14 to 23 | random mazes, never used for training (test) |
+| `valid_7x6` ... `valid_13x9` (5 mazes) | 7x6 to 13x9 | 15 to 26 | random mazes, never used for training; only for choosing between configurations (`screening/`) |
 
 The scaled copies keep the layout of the training maze and change only its size, so they separate
 "the maze is bigger" from "the maze is different". `scale_layout(rows, k)` makes them (walls and traps
@@ -196,6 +197,9 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 | `maze_8x8`, `maze_10x10`, `lava_7x5` | unseen layouts: generalisation |
 | `unseen_6x8`, `unseen_7x7`, `unseen_9x7`, `unseen_11x8`, `unseen_12x10` | unseen random layouts (never used for training, also not by `multimaze/`) |
 
+The `valid_*` mazes are not in this list on purpose: they are only for choosing configurations in
+`screening/`, so no result is reported on the mazes a configuration was chosen with.
+
 `analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
 `russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
 
@@ -298,6 +302,11 @@ much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 epis
   random-search runs) on bigger copies of the training maze, with new seeds. One CSV with
   episodes to learn, learned or not, final success and trap falls. Adds a 4x (and maybe 5x) copy
   to `gridmaze.SCALED` (added: 4x and 5x).
+- [x] Screening (`screening/`, see its README): every configuration (training set, `--combine`,
+  gene ranges) gets 3 short runs (budget 2000) for MAP-Elites and DE; the winners are compared on
+  five separate validation mazes (`valid_*`), so the test mazes stay untouched. Full runs only for
+  the one or two best. Needed for it: `--combine mean|relative|worst` and `--variant` in
+  `multimaze/run_multimaze.py`.
 - [ ] 4. `scaling/rule.py`: for every scheme and maze size, the total (discounted) reward of walking
   to the goal vs walking into the nearest trap, and the predicted size limit. Compared with the
   observed size limit from step 3.
@@ -329,8 +338,12 @@ Later:
 ### Open decisions
 
 - Multi-maze training set: chosen for now (see `multimaze/README.md`): the training maze plus five
-  random mazes from 6x6 to 12x8 with 2 to 6 traps, one run each, plain mean of N90. To review:
-  more mazes or seeds, and whether to weight mazes (e.g. relative to a hand-made baseline).
+  random mazes from 6x6 to 12x8 with 2 to 6 traps, one run each, plain mean of N90. Screening
+  compares it with 2 runs per maze (`A2`), the `relative` and `worst` combinations, and a wider
+  progress range; set B (with the 2x maze) later on the server.
+- Screening protocol: chosen for now (see `screening/README.md`, with alternatives and how to
+  switch): 3 runs per algorithm, budget 2000, MAP-Elites and DE, winners re-evaluated on the 5
+  validation mazes with 10 seeds, scored by the mean episodes to 90%, `single` as the reference.
 - Transfer test (step 3): chosen for now (see `scaling/README.md`, with alternatives and how to
   switch): sizes 1x to 4x (5x available), 500 x size training episodes, "learns a size" = at
   least 80% of 10 seeds, size limit = biggest size learned with every smaller size learned too,
