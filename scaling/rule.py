@@ -141,9 +141,12 @@ def size_limit(ok_by_scale):
 
 
 def observed_limits(transfer_csv, threshold):
-    """candidate key -> {scale: share of seeds that learned}"""
+    """candidate key -> {scale: share of seeds that learned}, at the normal drift (uniform 0.1)"""
     by = defaultdict(lambda: defaultdict(list))
+    normal = transfer.drift_label(*transfer.NORMAL_DRIFT)
     for r in csv.DictReader(open(transfer_csv)):
+        if transfer._condition(r) != normal:      # the rule has no drift: compare with the normal one
+            continue
         by[r["candidate"]][int(r["scale"])].append(r["learned"] == "True")
     return {key: {k: sum(v) / len(v) for k, v in sc.items()} for key, sc in by.items()}
 

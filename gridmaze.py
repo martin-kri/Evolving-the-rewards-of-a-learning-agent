@@ -5,7 +5,11 @@ A maze is written as text, one string per row:
     'S' start          'G' goal
 
 Actions: 0 = up, 1 = down, 2 = left, 3 = right.
-With probability `slip` the agent moves in a random direction instead.
+With probability `slip` the agent drifts: the move is replaced by another one. How (`drift`):
+    "uniform"   a random one of the 4 directions (ours, the default; slip 0.1 = 92.5% intended,
+                2.5% to each side, 2.5% back)
+    "sideways"  one of the 2 directions at a right angle (the RL lecture / Russell & Norvig 4x3
+                world: slip 0.2 = 80% intended, 10% to each side)
 Moving into a wall or off the grid leaves the agent where it is (a "wall bump").
 Reaching the goal or stepping into a trap ends the episode.
 """
@@ -13,10 +17,12 @@ from collections import deque
 import random
 
 ACTIONS = ((-1, 0), (1, 0), (0, -1), (0, 1))
+SIDEWAYS = ((2, 3), (2, 3), (0, 1), (0, 1))     # the two directions at a right angle to each action
+DRIFT_STYLES = ("uniform", "sideways")
 
 
 class Maze:
-    def __init__(self, name, rows, slip=0.1):
+    def __init__(self, name, rows, slip=0.1, drift="uniform"):
         self.name = name
         self.rows = list(rows)
         self.H = len(rows)
@@ -24,6 +30,9 @@ class Maze:
         if any(len(r) != self.W for r in rows):
             raise ValueError(f"{name}: all rows must have the same length")
         self.slip = slip
+        if drift not in DRIFT_STYLES:
+            raise ValueError(f"{name}: drift must be one of {DRIFT_STYLES}, not {drift!r}")
+        self.drift = drift
 
         self.walls, self.traps = set(), set()
         start = goal = None
@@ -92,16 +101,45 @@ class Maze:
                     queue.append(n)
         return dist
 
-    def step(self, s, a, rng):
-        """One move. Returns (next_state, bumped, reached_goal, fell_in_trap)."""
-        if rng.random() < self.slip:
-            a = rng.randrange(4)
+    def step(self, s, a, rng, slip=None):
+        """One move. Returns (next_state, bumped, reached_goal, fell_in_trap).
+        slip: drift probability for this move (default: the maze's own, self.slip)."""
+        if rng.random() < (self.slip if slip is None else slip):
+            a = rng.randrange(4) if self.drift == "uniform" else SIDEWAYS[a][rng.randrange(2)]
         ns = self.next_state[s][a]
         return ns, ns == s, ns == self.goal, self.is_trap[ns]
 
+    def move_probabilities(self, slip=None):
+        """probs[a][b]: chance that intended action a becomes the actual move b."""
+        p = self.slip if slip is None else slip
+        probs = [[0.0] * 4 for _ in range(4)]
+        for a in range(4):
+            probs[a][a] += 1 - p
+            others = range(4) if self.drift == "uniform" else SIDEWAYS[a]
+            for b in others:
+                probs[a][b] += p / len(others)
+        return probs
+
+    def best_success(self, time_limit, slip=None):
+        """Highest possible chance of reaching the goal from the start within time_limit steps, for
+        the best policy that knows the maze (with drift). If this is below the success threshold
+        (90%), no reward scheme can make the agent 'learn' this maze at this drift."""
+        probs = self.move_probabilities(slip)
+        v = [0.0] * self.n_states                     # chance of reaching the goal, steps left = 0
+        end = [1.0 if n == self.goal else 0.0 for n in range(self.n_states)]
+        done = [n == self.goal or self.is_trap[n] for n in range(self.n_states)]
+        for _ in range(time_limit):
+            val = [end[n] if done[n] else v[n] for n in range(self.n_states)]
+            new = [max(sum(probs[a][b] * val[self.next_state[s][b]] for b in range(4)) for a in range(4))
+                   for s in range(self.n_states)]
+            if max(abs(x - y) for x, y in zip(new, v)) < 1e-12:   # converged before the time limit
+                return new[self.start]
+            v = new
+        return v[self.start]
+
     def __repr__(self):
         return (f"Maze({self.name}: {self.W}x{self.H}, {len(self.walls)} walls, "
-                f"{len(self.traps)} traps, shortest path {self.shortest_path})")
+                f"{len(self.traps)} traps, shortest path {self.shortest_path}, drift {self.drift} {self.slip})")
 
 
 # ---------------------------------------------------------------- layouts
@@ -439,8 +477,8 @@ LAYOUTS.update({
 })
 
 
-def get_maze(name, slip=0.1):
-    return Maze(name, LAYOUTS[name], slip=slip)
+def get_maze(name, slip=0.1, drift="uniform"):
+    return Maze(name, LAYOUTS[name], slip=slip, drift=drift)
 
 
 def random_maze(rows, cols, wall_density=0.2, n_traps=3, seed=0,

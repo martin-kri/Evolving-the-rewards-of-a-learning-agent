@@ -80,8 +80,8 @@ def train_and_read(maze, scheme, seed):
     _spy = _Spy()
     every = qlearning.DEFAULTS["eval_every"]
 
-    def counting_step(s, a, rng):
-        out = Maze.step(maze, s, a, rng)
+    def counting_step(s, a, rng, *slip):
+        out = Maze.step(maze, s, a, rng, *slip)
         if not _spy.in_test and _spy.tests * every < EARLY_EPISODES:
             _spy.visits[out[0]] += 1
         return out

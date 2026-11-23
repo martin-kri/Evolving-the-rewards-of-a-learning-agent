@@ -182,3 +182,108 @@ All 20 winners, 533 learning elites and 12 hand-made schemes, 1x to 5x:
 
 To do with the full transfer run: the same comparison over all runs and 10 seeds, then decide
 whether method 3 is needed.
+
+# Step 6: drift as a test condition
+
+The agent drifts: with probability `slip` its move is replaced by another one. Until now that was
+always 0.1, in our style. Step 6 tests the saved reward schemes in a world with **more drift**, and
+in the lecture's style, as a second test condition next to size. Together with step 3 this gives a
+"size x drift" picture for every scheme: which sizes it still learns at which drift.
+
+## Drift styles (`gridmaze.py`)
+
+| Style | With probability `slip`, the move becomes ... | `slip` 0.1 | `slip` 0.2 |
+| --- | --- | --- | --- |
+| `uniform` (ours, default) | a random one of the 4 directions | 92.5% intended, 2.5% each side, 2.5% back | 85% intended, 5% each other direction |
+| `sideways` (the lecture, Russell & Norvig 4x3 world) | one of the 2 directions at a right angle | 90% intended, 5% each side | **80% intended, 10% each side** (the lecture's numbers) |
+
+`get_maze(name, slip=0.1, drift="uniform")`. The default is unchanged, and so is every earlier
+result (checked: identical training runs, and the transfer pilot is reproduced exactly).
+
+`qlearning.train(..., train_slip=P)` trains at drift P while the tests (success rate, N90) still
+use the maze's own drift. Default `None`: both the same, as before.
+
+## Can the world still be learned at all?
+
+More drift can make a maze impossible: even a perfect policy then falls into a trap too often.
+`Maze.best_success(time_limit)` computes the best possible chance of reaching the goal in time
+(exact dynamic programming over the drift), so we can tell "the scheme failed" from "nobody can
+pass". For the scaled training maze, with the normal time limit (10 x shortest path):
+
+| Drift | 1x | 2x | 3x | 4x | 5x |
+| --- | --- | --- | --- | --- | --- |
+| uniform 0.1 (normal) | 0.996 | 1.000 | 1.000 | 1.000 | 1.000 |
+| uniform 0.2 | 0.981 | 0.999 | 1.000 | 1.000 | 1.000 |
+| uniform 0.3 | 0.949 | 0.996 | 1.000 | 1.000 | 1.000 |
+| uniform 0.4 | **0.892** | 0.988 | 0.999 | 1.000 | 1.000 |
+| sideways 0.1 to 0.3 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+
+- Up to uniform 0.3, every size can be passed (above 90%), so a failure is the scheme's (or the
+  agent's), not the world's. Uniform 0.4 makes the small maze impossible.
+- Bigger copies are **safer**: their corridors are k cells wide, so the agent can keep a distance
+  from the traps. So with drift the small maze can be harder than the big ones, the opposite of
+  the size effect without drift.
+- With sideways drift a perfect policy loses nothing: it can choose a route where a sideways slip
+  never leads into a trap (the time limit leaves room for detours). The learned policy still has
+  to find that route.
+
+`transfer.py` prints this "best possible success" under every table.
+
+## How to run
+
+```
+python scaling/transfer.py --elites none --drift uniform:0.1 uniform:0.2 uniform:0.3 sideways:0.2 --name drift_winners
+python scaling/transfer.py --drift uniform:0.1 uniform:0.2 uniform:0.3 sideways:0.2 --name drift              # + elites (server)
+python scaling/transfer.py --elites none --train-slip 0.3 --name trained_at_0.3                                 # learn at 0.3, tested at 0.1
+python scaling/transfer.py --summarize results/scaling/drift/transfer.csv --limit biggest                       # other size limit
+```
+
+The same seeds (6000 and up) are used for every drift, so the conditions are compared on the same
+runs. Every drift condition gets its own table, then a "size x drift" table: per group, the median
+size limit at every drift and (in brackets) the share of schemes that learn each size. The CSV
+has the columns `drift`, `slip` and `train_slip`; files from before step 6 are read as uniform 0.1.
+
+Cost: each drift condition costs as much as one transfer run. Winners and hand-made schemes only
+(`--elites none`, 26 schemes) with 4 drifts are about 4,200 training runs, roughly half an hour
+on 2 cores. With the learning elites (about 550 schemes) it is about 20 times that: server.
+
+## Choices (for now), alternatives, and how to change them
+
+1. **Drift levels: uniform 0.1 (reference), 0.2, 0.3, and sideways 0.2 (the lecture).** Why: up to
+   0.3 every size can still be passed (table above); sideways 0.2 is the lecture's world.
+   Alternatives: finer steps (0.15, 0.25), sideways 0.1 / 0.3, uniform 0.4 (impossible at 1x),
+   drift 0 (no slip). Change: the list after `--drift`.
+2. **The agent learns and is tested at the same drift.** Why: the question is whether the reward
+   scheme still teaches the agent in a harder world, like the size question. Alternative:
+   `--train-slip 0.1` with a higher `--drift`: learned in the calm world, judged in the drifting
+   one (robustness of the learned policy). The reverse (`--train-slip 0.3`, tested at 0.1) is the
+   "training drift" idea from the plan (slower but safer).
+3. **"Learns" = at least 80% of the seeds reach 90% success, as without drift.** Why: the same
+   rule everywhere, and up to uniform 0.3 a perfect policy gets at least 95%. Alternative: a
+   threshold relative to the best possible success (e.g. 90% of it), fairer at high drift; small
+   code change (pass `success_threshold` to `train()` per maze).
+4. **Size limit: the biggest size learned with every smaller size learned too (as in step 3).**
+   With drift this can mislead: a scheme that fails 1x but learns 2x (the small maze is the risky
+   one) gets limit 0. So the size x drift table also shows the share that learns each size, and
+   `--limit biggest` uses the biggest size learned at all.
+5. **Same drift style everywhere else.** Evolution, re-evaluation and screening stay at uniform
+   0.1. Evolving the training drift (a gene, with safety as a second objective) is in "Later".
+
+## First check (not a result)
+
+Run 7's two winners and the six main hand-made schemes, 3 seeds, 1x and 2x (median episodes to
+90%; "no" = fewer than 80% of the seeds learned):
+
+| Scheme | uniform 0.1: 1x / 2x | sideways 0.2: 1x / 2x | uniform 0.3: 1x / 2x |
+| --- | --- | --- | --- |
+| ME winner | 120 / 210 | 360 / 240 | no / 520 |
+| DE winner | 140 / 150 | no / 390 | no / no |
+| B1 | 280 / 140 | 280 / 230 | no / 390 |
+| A1 | 260 / 290 | no / 920 | no / no |
+| Russell & Norvig matched | 270 / 670 | 270 / 600 | no / 700 |
+| A2, B2, sparse | no / no | no / no | no / no |
+
+Already visible with 3 seeds: at uniform 0.3 nobody learns the small maze (best possible 0.95),
+but some schemes learn the 2x copy; the two winners react differently to drift (ME better than
+DE); the trap-punishing B1 and Russell & Norvig keep up best. With `--train-slip 0.3` (tested at
+0.1) everything that learned before still learns, more slowly (DE winner 140 -> 220 at 1x).

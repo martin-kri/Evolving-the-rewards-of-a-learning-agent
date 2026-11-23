@@ -18,6 +18,8 @@ Run from the repository folder:
     python scaling/transfer.py --runs 7 --seeds 3 --scales 1 2 3      # quick pilot
     python scaling/transfer.py --dirs results/2026-11-15_laptop results/multimaze/A --name single_vs_multi
     python scaling/transfer.py --summarize results/scaling/transfer/transfer.csv    # tables only
+    python scaling/transfer.py --drift uniform:0.1 uniform:0.2 uniform:0.3 sideways:0.2 --name drift
+                                                                      # step 6: size x drift
 
 Output: results/scaling/<name>/transfer.csv (one row per scheme, maze and seed; written while
 the runs finish, so --resume continues an interrupted job) and summary.csv (one row per scheme:
@@ -32,6 +34,15 @@ Choices (all options):
                              same seeds for every scheme
     --threshold 0.8          a scheme "learns" a size if at least 80% of its seeds reach 90% success
     --elites learning        learning (default), all, or none
+    --drift uniform:0.1      the drift of the test mazes, as style:probability, one or more:
+                             uniform = a random one of the 4 directions (ours), sideways = one of
+                             the 2 directions at a right angle (the lecture: sideways:0.2 = 80/10/10).
+                             The agent learns AND is tested at that drift.
+    --train-slip P           train at drift probability P instead (same style), tested at --drift:
+                             e.g. learn in a calm world, judged in a drifting one
+    --limit monotone         size limit = biggest size learned with every smaller size too;
+                             --limit biggest = biggest size learned at all (with drift, the small
+                             maze can be harder than the big ones: narrow corridors next to traps)
 """
 import argparse
 import csv
@@ -50,8 +61,8 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 import evolve  # noqa: E402
-from gridmaze import get_maze  # noqa: E402
-from qlearning import train  # noqa: E402
+from gridmaze import DRIFT_STYLES, get_maze  # noqa: E402
+from qlearning import DEFAULTS, train  # noqa: E402
 from rewards import baseline_schemes  # noqa: E402
 
 SCALED = {1: "dyna_9x6_3traps", 2: "dyna_18x12_3traps", 3: "dyna_27x18_3traps",
@@ -59,6 +70,7 @@ SCALED = {1: "dyna_9x6_3traps", 2: "dyna_18x12_3traps", 3: "dyna_27x18_3traps",
 SEEDS_START = 6000                    # evolution 0-11, re-evaluation 1000+, figures 2000-5999
 MAIN_BASELINES = ["A1", "A2", "B1_immediate", "B2", "sparse_dyna", "russell_norvig_matched"]
 GENES = ["trap", "wall", "step", "progress", "delay"]
+NORMAL_DRIFT = ("uniform", 0.1)       # the drift of every other experiment
 ALGO_SHORT = {"mapelites": "ME", "de": "DE", "random": "RS"}
 
 
@@ -116,17 +128,33 @@ def candidate_key(c):
 
 # ---------------------------------------------------------------- training
 @functools.lru_cache(maxsize=None)
-def _maze(name):
-    return get_maze(name)
+def _maze(name, slip=NORMAL_DRIFT[1], drift=NORMAL_DRIFT[0]):
+    return get_maze(name, slip=slip, drift=drift)
+
+
+def parse_drift(text):
+    """'sideways:0.2' -> ('sideways', 0.2); a bare number means the uniform (our) style."""
+    style, _, prob = text.rpartition(":")
+    style = style or "uniform"
+    if style not in DRIFT_STYLES:
+        raise argparse.ArgumentTypeError(f"drift style must be one of {DRIFT_STYLES}, not {style!r}")
+    return style, float(prob)
+
+
+def drift_label(drift, slip, train_slip=""):
+    """How a drift condition is named in tables: 'uniform 0.1', 'sideways 0.2 (trained at 0.1)'."""
+    label = f"{drift} {float(slip):g}"
+    return label + (f" (trained at {float(train_slip):g})" if train_slip not in ("", None) else "")
 
 
 def _job(job):
-    key, scale, maze_name, episodes, seed, scheme = job
-    maze = _maze(maze_name)
-    r = train(maze, scheme, seed, episodes=episodes)
+    key, scale, maze_name, episodes, seed, scheme, drift, slip, train_slip = job
+    maze = _maze(maze_name, slip, drift)
+    r = train(maze, scheme, seed, episodes=episodes, train_slip=train_slip)
     n = r["episodes_to_90"]
     return dict(candidate=key, scale=scale, maze=maze_name, episodes=episodes, seed=seed,
-                slip=maze.slip, learned=n is not None, n90=n if n is not None else 2 * episodes,
+                drift=drift, slip=slip, train_slip="" if train_slip is None else train_slip,
+                learned=n is not None, n90=n if n is not None else 2 * episodes,
                 final_success=round(r["final_success"], 3), trap_falls=r["trap_falls"])
 
 
@@ -138,27 +166,36 @@ def cand_fields(c):
 
 
 # ---------------------------------------------------------------- summary
-def summarize(csv_path, threshold, out_dir=None):
+def _condition(r):
+    """Drift condition of a CSV row (files from before step 6 have only 'slip': uniform drift)."""
+    return drift_label(r.get("drift") or "uniform", r.get("slip") or 0.1, r.get("train_slip", ""))
+
+
+def summarize(csv_path, threshold, out_dir=None, limit_rule="monotone"):
     rows = list(csv.DictReader(open(csv_path)))
     if not rows:
         raise SystemExit(f"{csv_path} is empty")
-    by = defaultdict(lambda: defaultdict(list))
-    info = {}
+    by = defaultdict(lambda: defaultdict(list))         # (candidate, condition) -> scale -> runs
+    info, maze_of, cond_info = {}, {}, {}
     for r in rows:
-        by[r["candidate"]][int(r["scale"])].append((r["learned"] == "True", float(r["n90"])))
+        cond = _condition(r)
+        by[(r["candidate"], cond)][int(r["scale"])].append((r["learned"] == "True", float(r["n90"])))
         info[r["candidate"]] = {k: r[k] for k in ("source", "condition", "kind", "algo", "run", "cell",
                                                   "scheme", "train_fitness", *GENES)}
+        maze_of[int(r["scale"])] = r["maze"]
+        cond_info[cond] = (r.get("drift") or "uniform", float(r.get("slip") or 0.1))
     scales = sorted({int(r["scale"]) for r in rows})
+    conds = sorted(cond_info, key=lambda c: (c != drift_label(*NORMAL_DRIFT), cond_info[c], c))
     per = []
-    for key, sc in by.items():
-        row = dict(info[key])
+    for (key, cond), sc in by.items():
+        row = dict(info[key], drift_condition=cond)
         limit, ok_so_far = 0, True
         for k in scales:
             v = sc.get(k, [])
             share = sum(l for l, _ in v) / len(v) if v else float("nan")
             row[f"learned_{k}x"] = round(share, 2) if v else ""
             row[f"n90_{k}x"] = statistics.median(n for _, n in v) if v else ""
-            if v and ok_so_far and share >= threshold:
+            if v and share >= threshold and (ok_so_far or limit_rule == "biggest"):
                 limit = k
             elif v:
                 ok_so_far = False
@@ -179,38 +216,61 @@ def summarize(csv_path, threshold, out_dir=None):
             return ("hand-made", r["scheme"])
         label = r["condition"] if len(sources_of[r["condition"]]) == 1 else f"{r['condition']} ({r['source']})"
         return (label, f"{ALGO_SHORT.get(r['algo'], r['algo'])} {r['kind']}s")
-    groups = defaultdict(list)
-    for r in per:
-        groups[group(r)].append(r)
+
+    def name_of(g):
+        return f"{g[0]}, {g[1]}" if g[0] != "hand-made" else f"hand-made: {g[1]}"
 
     print(f"\nA scheme learns a size if at least {threshold:.0%} of its seeds reach 90% success.")
-    print("Size limit = the biggest size it learns, with every smaller size learned too (0 = not even 1x).\n")
-    head = "".join(f"{f'{k}x':>12s}" for k in scales)
-    print(f"{'group':52s}{'schemes':>8s}{head}{'size limit (median)':>22s}")
-    print(f"{'':52s}{'':>8s}" + "".join(f"{'learn / N90':>12s}" for _ in scales))
-    order = sorted(groups, key=lambda g: (g[0] == "hand-made", g))
-    for g in order:
-        rs = groups[g]
-        cells = []
-        for k in scales:
-            sh = [r[f"learned_{k}x"] for r in rs if r[f"learned_{k}x"] != ""]
-            nn = [r[f"n90_{k}x"] for r in rs if r[f"n90_{k}x"] != ""]
-            if not sh:
-                cells.append(f"{'-':>12s}")
-                continue
-            frac = sum(s >= threshold for s in sh) / len(sh)
-            cells.append(f"{frac:5.0%} /{statistics.median(nn):5.0f}")
-        name = f"{g[0]}, {g[1]}" if g[0] != "hand-made" else f"hand-made: {g[1]}"
-        lim = statistics.median(r["size_limit"] for r in rs)
-        print(f"{name[:52]:52s}{len(rs):8d}" + "".join(f"{c:>12s}" for c in cells) + f"{lim:22.1f}")
+    if limit_rule == "monotone":
+        print("Size limit = the biggest size it learns, with every smaller size learned too (0 = not even 1x).")
+    else:
+        print("Size limit = the biggest size it learns (smaller sizes may fail; 0 = none).")
+    T = lambda k: DEFAULTS["time_limit_factor"] * _maze(maze_of[k]).shortest_path  # noqa: E731
+    limits = defaultdict(dict)                 # group -> condition -> (median size limit, learn shares)
+    for cond in conds:
+        groups = defaultdict(list)
+        for r in per:
+            if r["drift_condition"] == cond:
+                groups[group(r)].append(r)
+        style, slip = cond_info[cond]
+        ceiling = [_maze(maze_of[k], slip, style).best_success(T(k)) for k in scales]
+        print(f"\n--- drift {cond} ---")
+        head = "".join(f"{f'{k}x':>12s}" for k in scales)
+        print(f"{'group':52s}{'schemes':>8s}{head}{'size limit (median)':>22s}")
+        print(f"{'':52s}{'':>8s}" + "".join(f"{'learn / N90':>12s}" for _ in scales))
+        for g in sorted(groups, key=lambda g: (g[0] == "hand-made", g)):
+            rs = groups[g]
+            cells = []
+            for k in scales:
+                sh = [r[f"learned_{k}x"] for r in rs if r[f"learned_{k}x"] != ""]
+                nn = [r[f"n90_{k}x"] for r in rs if r[f"n90_{k}x"] != ""]
+                if not sh:
+                    cells.append(f"{'-':>12s}")
+                    continue
+                frac = sum(s >= threshold for s in sh) / len(sh)
+                cells.append(f"{frac:5.0%} /{statistics.median(nn):5.0f}")
+            lim = statistics.median(r["size_limit"] for r in rs)
+            limits[g][cond] = (lim, " ".join(c.split("/")[0].strip().rstrip("%") for c in cells))
+            print(f"{name_of(g)[:52]:52s}{len(rs):8d}" + "".join(f"{c:>12s}" for c in cells) + f"{lim:22.1f}")
+        print(f"{'best possible success (perfect policy)':60s}" + "".join(f"{c:12.3f}" for c in ceiling))
     print("\nlearn = share of the schemes in the group that learn that size;"
           " N90 = median over the group of each scheme's median episodes to 90% (2 x episodes = never)")
+    print("best possible success = chance that the best policy for this maze and drift reaches the goal in")
+    print("time (gridmaze.best_success); below 90%, no scheme can learn that size.")
+    if len(conds) > 1:
+        w = max(24, 8 + 4 * len(scales))
+        print(f"\nsize x drift: median size limit of each group, and (in brackets) the % of its schemes that"
+              f" learn {', '.join(f'{k}x' for k in scales)}")
+        print(f"{'group':52s}" + "".join(f"{c[:w - 2]:>{w}s}" for c in conds))
+        for g in sorted(limits, key=lambda g: (g[0] == "hand-made", g)):
+            print(f"{name_of(g)[:52]:52s}" + "".join(
+                f"{f'{limits[g][c][0]:.1f} ({limits[g][c][1]})':>{w}s}" if c in limits[g] else f"{'-':>{w}s}"
+                for c in conds))
     if out_dir:
         print(f"saved {os.path.join(out_dir, 'summary.csv')}")
     return per
 
 
-# ---------------------------------------------------------------- main
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--dirs", nargs="+", default=[os.path.join(ROOT, "results", "2026-11-15_laptop")],
@@ -223,6 +283,12 @@ def main():
     p.add_argument("--fixed-episodes", type=int, help="use this many episodes for every size instead")
     p.add_argument("--seeds", type=int, default=10)
     p.add_argument("--threshold", type=float, default=0.8)
+    p.add_argument("--limit", choices=["monotone", "biggest"], default="monotone",
+                   help="size limit: biggest size learned with every smaller one too (default), or biggest learned")
+    p.add_argument("--drift", nargs="+", type=parse_drift, default=[NORMAL_DRIFT], metavar="STYLE:P",
+                   help="drift of the test mazes, e.g. uniform:0.1 (default) uniform:0.3 sideways:0.2")
+    p.add_argument("--train-slip", type=float, default=None,
+                   help="drift probability during training (default: the same as the test drift)")
     p.add_argument("--name", default="transfer", help="output folder results/scaling/<name>")
     p.add_argument("--resume", action="store_true", help="skip the runs already in transfer.csv")
     p.add_argument("--summarize", metavar="CSV", help="only print the tables of an existing transfer.csv")
@@ -230,7 +296,7 @@ def main():
     a = p.parse_args()
 
     if a.summarize:
-        summarize(a.summarize, a.threshold, os.path.dirname(a.summarize))
+        summarize(a.summarize, a.threshold, os.path.dirname(a.summarize), a.limit)
         return
 
     out_dir = os.path.join(ROOT, "results", "scaling", a.name)
@@ -252,26 +318,30 @@ def main():
         for c in here:
             key = candidate_key(c)
             fields[key] = cand_fields(c)
-            jobs += [(key, k, maze_name, episodes, seed, c["scheme"]) for seed in seeds]
+            jobs += [(key, k, maze_name, episodes, seed, c["scheme"], style, slip, a.train_slip)
+                     for style, slip in a.drift for seed in seeds]
 
     done = set()
     if a.resume and os.path.exists(csv_path):
         with open(csv_path) as f:
-            done = {(r["candidate"], int(r["scale"]), int(r["seed"])) for r in csv.DictReader(f)}
-        jobs = [j for j in jobs if (j[0], j[1], j[4]) not in done]
+            done = {(r["candidate"], int(r["scale"]), int(r["seed"]), _condition(r)) for r in csv.DictReader(f)}
+        jobs = [j for j in jobs if (j[0], j[1], j[4], drift_label(j[6], j[7], "" if j[8] is None else j[8]))
+                not in done]
     per_scale = defaultdict(int)
     for j in jobs:
         per_scale[j[1]] += 1
     n_cands = len({j[0] for j in jobs})
     print(f"{len(cands)} evolved schemes from {len(a.dirs)} folder(s) + baselines; {n_cands} schemes to run")
+    print("drift: " + ", ".join(drift_label(st, sl, "" if a.train_slip is None else a.train_slip) for st, sl in a.drift))
     print("training runs per size: " + ", ".join(f"{k}x: {per_scale[k]}" for k in sorted(per_scale))
           + (f"  ({len(done)} already done)" if done else ""))
     if not jobs:
-        summarize(csv_path, a.threshold, out_dir)
+        summarize(csv_path, a.threshold, out_dir, a.limit)
         return
 
     columns = ["candidate", "source", "condition", "kind", "algo", "run", "cell", "scheme", "train_fitness",
-               *GENES, "scale", "maze", "episodes", "seed", "slip", "learned", "n90", "final_success", "trap_falls"]
+               *GENES, "scale", "maze", "episodes", "seed", "drift", "slip", "train_slip", "learned", "n90",
+               "final_success", "trap_falls"]
     new_file = not (a.resume and os.path.exists(csv_path))
     t0, n = time.time(), 0
     with open(csv_path, "w" if new_file else "a", newline="") as f, mp.Pool(a.workers) as pool:
@@ -287,7 +357,7 @@ def main():
                 print(f"[{el:6.0f}s] {n}/{len(jobs)} training runs  (rough estimate: {el / n * (len(jobs) - n) / 60:.0f} min left; bigger sizes come last)",
                       flush=True)
     print(f"saved {csv_path}")
-    summarize(csv_path, a.threshold, out_dir)
+    summarize(csv_path, a.threshold, out_dir, a.limit)
 
 
 if __name__ == "__main__":

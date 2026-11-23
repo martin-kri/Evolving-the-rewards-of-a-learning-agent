@@ -71,8 +71,10 @@ On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array
 ## Mazes
 
 Written as text rows: `.` free, `#` wall, `T` trap, `S` start, `G` goal. Stepping into a trap ends
-the episode; bumping into a wall leaves the agent in place; with 10% probability the agent slips
-in a random direction.
+the episode; bumping into a wall leaves the agent in place; with 10% probability the agent drifts
+(slips): its move is replaced by a random one of the 4 directions. The lecture's sideways style
+(80% intended, 10% to each side) and other drift levels are options (`get_maze(name, slip, drift)`,
+used in step 6, `scaling/README.md`).
 
 | Name | Size | Shortest safe path | Origin |
 | --- | --- | --- | --- |
@@ -315,9 +317,11 @@ much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 epis
 - [ ] 5. Figures: a transfer map (the MAP-Elites map coloured by each scheme's size limit, with the
   predicted failures marked) and a size curve (episodes to learn vs maze size, evolved winners vs
   hand-made baselines).
-- [ ] 6. Drift as a test condition: a drift-style option in `gridmaze.py` ("uniform", ours and the
-  default; "sideways", the lecture's 80% / 10% / 10%), separate training and test drift in
-  `qlearning.train()`, and `--drift` in `transfer.py`.
+- [x] 6. Drift as a test condition (see `scaling/README.md`): a drift style in `gridmaze.py`
+  ("uniform", ours and the default; "sideways", the lecture's 80% / 10% / 10%), separate training
+  and test drift in `qlearning.train()` (`train_slip`), `--drift` and `--train-slip` in
+  `transfer.py`, and `Maze.best_success()` (the best possible success at a drift, to tell a failed
+  scheme from an impossible maze).
 
 Optional:
 
@@ -353,8 +357,10 @@ Later:
 - Trap-vs-goal rule (step 4): chosen for now: the exact best path in the maze without slip
   (method 2 in `scaling/README.md`). To review with the full transfer run: if many failures with
   "goal best" remain, add method 3 (with slip).
-- Drift style for the new experiments: keep ours (a random one of the 4 directions) or switch to
-  the lecture's (80% intended, 10% to each side).
+- Drift (step 6): chosen for now: ours (uniform 0.1) stays the default everywhere; the transfer test
+  adds uniform 0.2 and 0.3 and the lecture's sideways 0.2, learned and tested at the same drift.
+  To review after the first run: the levels, and whether "learns" should be relative to the best
+  possible success (see `scaling/README.md`).
 - Whether evolving the training drift (two objectives) is in scope.
 
 ### Related work (for the report)

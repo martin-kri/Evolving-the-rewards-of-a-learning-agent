@@ -19,6 +19,8 @@ DEFAULTS = dict(
     eval_episodes=20,       # ... with this many test episodes
     success_threshold=0.9,  # "learned" = test success rate reaches this
     stable_window=3,        # ... as a moving average over the last N tests (3 x 10 = 30 episodes); # 1 = first single test above the threshold (noisy)
+    train_slip=None,        # drift probability during TRAINING episodes; None = the maze's own.
+                            # Test episodes (the success rate, N90) always use the maze's own drift.
     shaping_gamma=1.0,      # progress reward = shaping_gamma * Phi(s') - Phi(s).
                             # 1.0 gives +w per step closer, -w per step away, 0 for standing still.
                             # Using the agent's gamma (0.95) pays +w*d*(1-gamma) for standing still
@@ -58,6 +60,7 @@ def train(maze, scheme, seed, **settings):
     n_ep = cfg["episodes"]
     phi = [-scheme.progress * d for d in maze.dist]     # potential for the progress reward
     delay = scheme.delay
+    slip_arg = () if cfg["train_slip"] is None else (cfg["train_slip"],)
 
     Q = [[0.0] * 4 for _ in range(maze.n_states)]
     curve, eval_points = [], []
@@ -74,7 +77,7 @@ def train(maze, scheme, seed, **settings):
         pending = deque()                              # (due_step, value, created_step)
         for t in range(T):
             a = rng.randrange(4) if rng.random() < eps else _greedy(Q[s], rng)
-            ns, bump, goal, trap = maze.step(s, a, rng)
+            ns, bump, goal, trap = maze.step(s, a, rng, *slip_arg)
             env_steps += 1
             done = goal or trap
 
