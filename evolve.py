@@ -1,7 +1,8 @@
 """Evolving reward schemes (this is a LIBRARY: running it directly prints nothing;
-use run_evolution.py): genome, fitness, MAP-Elites and Differential Evolution.
+use run_evolution.py): genome, fitness, MAP-Elites, Differential Evolution, and
+random search as the non-evolutionary baseline.
 
-Both algorithms search the SAME space with the SAME fitness and the SAME budget
+All algorithms search the SAME space with the SAME fitness and the SAME budget
 (number of fitness evaluations), so their results can be compared directly.
 
 Genome (5 genes, each stored normalised in [0, 1]):
@@ -158,3 +159,34 @@ def differential_evolution(evaluate_batch, budget, seed, pop_size=20, F=0.5, CR=
         if log:
             log(f"DE {used}/{budget}  best={best['fitness']:.1f}")
     return best, pop, history
+
+
+# ---------------------------------------------------------------------------
+# Random search (non-evolutionary baseline; Bergstra & Bengio 2012)
+# ---------------------------------------------------------------------------
+def random_search(evaluate_batch, budget, seed, batch=50, log=None):
+    """Evaluate `budget` genomes drawn uniformly at random: no selection, no variation.
+
+    Every evaluation is also put into a map with the same cells and the same insertion
+    rule as MAP-Elites (keep the better scheme per cell). Random search is then
+    "MAP-Elites without evolution": with the same run seed, its first 100 genomes are
+    exactly MAP-Elites' initial random genomes, and the only difference afterwards is
+    that MAP-Elites mutates its elites while random search keeps drawing new genomes.
+    Returns (best evaluation, archive dict cell -> evaluation, history), with history
+    entries (evaluations used, best fitness so far, cells filled) as in map_elites.
+    """
+    rng = random.Random(seed)
+    best, archive, history, used = None, {}, [], 0
+    while used < budget:
+        n = min(batch, budget - used)
+        for ev in evaluate_batch([random_genome(rng) for _ in range(n)]):
+            used += 1
+            if best is None or ev["fitness"] < best["fitness"]:
+                best = ev
+            c = cell_of(ev)
+            if c not in archive or ev["fitness"] < archive[c]["fitness"]:
+                archive[c] = ev
+            history.append((used, best["fitness"], len(archive)))
+        if log:
+            log(f"Random search {used}/{budget}  best={best['fitness']:.1f}  cells={len(archive)}")
+    return best, archive, history

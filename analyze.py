@@ -1,4 +1,4 @@
-"""Compare MAP-Elites, Differential Evolution and the hand-made baselines.
+"""Compare MAP-Elites, Differential Evolution, random search and the hand-made baselines.
 
 Reads the outputs of run_evolution.py and reevaluate.py and produces (in <dir>/analysis/):
 
@@ -6,15 +6,16 @@ Reads the outputs of run_evolution.py and reevaluate.py and produces (in <dir>/a
        per maze and candidate: median episodes to 90% (N90), IQR, share of seeds that learned
   2. stats.csv, stats_summary.csv + printed table
        Mann-Whitney U tests with Holm correction and Vargha-Delaney A12 effect size for
-         ME vs DE                 (unit = one evolutionary run: mean N90 over the fresh seeds)
-         every evolved scheme vs every baseline, one test per scheme (30 vs 30 fresh seeds)
+         ME vs DE, ME vs RS, DE vs RS   (unit = one run: mean N90 over the fresh seeds; only the
+                                        algorithms that have run files)
+         every found scheme vs every baseline, one test per scheme (30 vs 30 fresh seeds)
        The winners of different runs are DIFFERENT reward schemes, so they are tested one by one
        and not pooled; stats_summary.csv counts how many of them are significantly faster / slower.
   3. boxplot_<maze>.png      N90 of every candidate on that maze
-  4. convergence.png         best fitness vs evaluations, ME vs DE (median + IQR)
+  4. convergence.png         best fitness vs evaluations per algorithm (median + IQR)
   5. qd.csv + printed table  quality-diversity of what each algorithm returns, on the MAP-Elites grid:
        cells filled, cells whose elite learned on every evaluation seed, QD-score
-       (MAP-Elites: its archive; DE: its final population placed on the same grid)
+       (MAP-Elites and random search: their archive; DE: its final population placed on the grid)
 
 Examples:
     python reevaluate.py --runs results/evolution --seeds 30       # first
@@ -43,7 +44,12 @@ import matplotlib.pyplot as plt
 import evolve
 
 ALPHA = 0.05
-EVOLVED = ("ME best", "DE best")
+# The search algorithms: (algo in the run files, candidate label in reevaluation.csv, display name).
+# Random search is not evolutionary; it is the baseline that shows what evolution adds.
+ALGOS = [("mapelites", "ME best", "MAP-Elites"), ("de", "DE best", "DE"), ("random", "RS best", "Random search")]
+EVOLVED = tuple(label for _, label, _ in ALGOS)        # every candidate found by a search algorithm
+SHORT = {label: label[:2] for label in EVOLVED}          # "ME", "DE", "RS"
+COLOURS = {"mapelites": "#2a9d8f", "de": "#e9c46a", "random": "#8e7cc3"}
 # Main baselines shown in the tables, tests and plots (all of them stay in reevaluation.csv).
 # Short prefixes are fine: "A1" matches "A1_immediate_reward_only".
 MAIN_BASELINES = ["A1", "A2", "B1_immediate", "B2", "sparse_dyna", "russell_norvig_matched"]
@@ -84,12 +90,13 @@ def mw_p(x, y):
 def qd_metrics(run):
     """Quality-diversity of what one evolutionary run returns, on the MAP-Elites grid.
 
-    MAP-Elites returns its archive. DE returns its final population, which is placed on the same
-    grid here (best individual per cell); run files do not store every genome DE evaluated.
+    MAP-Elites and random search return their archive (best scheme per cell). DE returns its final
+    population, which is placed on the same grid here (best individual per cell); run files do not
+    store every genome DE evaluated.
     QD-score = sum over filled cells of (PENALTY - fitness): an empty cell and a cell whose elite
     never learns both add 0, a faster elite adds more.
     """
-    if run["algo"] == "mapelites":
+    if "archive" in run:
         cells = {tuple(e["cell"]): e for e in run["archive"]}
     else:
         cells = {}
@@ -122,7 +129,7 @@ def load(path, baselines=None, mazes=None):
                 if not keep_baseline(name, baselines):
                     continue
             else:
-                name = r["candidate"]                      # "ME best" / "DE best" (all runs pooled)
+                name = r["candidate"]                      # "ME best" / "DE best" / "RS best" (runs pooled)
                 runs[r["maze"]][name][r["scheme"]].append(n90)
             data[r["maze"]][name].append(n90)
             conv[r["maze"]][name].append(r["converged"] == "True")
@@ -172,20 +179,22 @@ def main():
         w.writerows(summary)
 
     # 2. statistical tests ------------------------------------------------------
-    # ME vs DE: one value per evolutionary run. Evolved vs baseline: one test per evolved scheme.
+    # Algorithm vs algorithm: one value per run. Found scheme vs baseline: one test per scheme.
     tests = []                       # (maze, group, A, B, unit, x, y)
     for maze, cands in data.items():
         baselines = [n for n in cands if n not in EVOLVED]
-        if all(algo in runs[maze] for algo in EVOLVED):
-            me = [np.mean(v) for v in runs[maze]["ME best"].values()]
-            de = [np.mean(v) for v in runs[maze]["DE best"].values()]
-            tests.append((maze, "ME vs DE", "ME best", "DE best", "per run", me, de))
+        present = [label for label in EVOLVED if label in runs[maze]]
+        for i, A in enumerate(present):
+            for B in present[i + 1:]:
+                x = [np.mean(v) for v in runs[maze][A].values()]
+                y = [np.mean(v) for v in runs[maze][B].values()]
+                tests.append((maze, f"{SHORT[A]} vs {SHORT[B]}", A, B, "per run", x, y))
         for algo in EVOLVED:
             for scheme, v in runs[maze][algo].items():
                 for b in baselines:
                     tests.append((maze, algo, scheme, b, "per scheme", v, cands[b]))
     if not tests:
-        print("\n!! No evolved candidates (ME best / DE best) in", a.reeval)
+        print("\n!! No found candidates (ME best / DE best / RS best) in", a.reeval)
         print("!! reevaluate.py found no run files: run run_evolution.py first, then reevaluate.py again.")
         print("!! Only the baseline table above was produced.")
         return
@@ -225,15 +234,15 @@ def main():
         w.writerows(agg)
 
     print(f"\n=== Mann-Whitney U, two-sided, Holm-corrected over all {len(stats)} tests ===")
-    print("  ME vs DE: one value per evolutionary run (mean N90 over the fresh seeds); A12 > 0.5 = ME faster")
-    print("  evolved vs baseline: every evolved scheme tested on its own (fresh seeds vs fresh seeds);")
+    print("  X vs Y: one value per run (mean N90 over the fresh seeds); A12 > 0.5 = X faster")
+    print("  found vs baseline: every found scheme tested on its own (fresh seeds vs fresh seeds);")
     print("  shown: how many schemes are significantly faster / slower than the baseline, and their median A12")
     for maze, cands in data.items():
         print(f"\n  {maze}")
         for s in stats:
             if s["maze"] == maze and s["unit"] == "per run":
                 mark = "*" if s["significant"] else " "
-                print(f"  {mark} ME vs DE (per-run mean N90)     median {s['median_A']:.0f} vs {s['median_B']:.0f}"
+                print(f"  {mark} {s['group']} (per-run mean N90)     median {s['median_A']:.0f} vs {s['median_B']:.0f}"
                       f"  p_holm={s['p_holm']:.3g}  A12={s['A12']:.2f}  (n={s['n_A']}/{s['n_B']} runs)")
         for b in dict.fromkeys(g["baseline"] for g in agg if g["maze"] == maze):
             parts = []
@@ -251,7 +260,8 @@ def main():
         bp = ax.boxplot([cands[n] for n in names], vert=False, widths=0.6, patch_artist=True,
                         medianprops=dict(color="k"))
         for patch, n in zip(bp["boxes"], names):
-            patch.set_facecolor("#2a9d8f" if n == "ME best" else "#e9c46a" if n == "DE best" else "#d9d9d9")
+            algo = next((al for al, label, _ in ALGOS if label == n), None)
+            patch.set_facecolor(COLOURS[algo] if algo else "#d9d9d9")
         ax.set_yticks(range(1, len(names) + 1), names, fontsize=8)
         ax.set_xlabel("episodes to 90% success (lower = better; 1000 = never learned)")
         ax.set_title(f"{maze}: fresh seeds", fontsize=9)
@@ -261,7 +271,8 @@ def main():
 
     # 4. convergence curves (from the evolution runs) -----------------------------
     fig, ax = plt.subplots(figsize=(5, 3.4))
-    for algo, label, col in (("mapelites", "MAP-Elites", "#2a9d8f"), ("de", "Differential Evolution", "#e9c46a")):
+    for algo, _, label in ALGOS:
+        col = COLOURS[algo]
         curves = []
         for path in sorted(glob.glob(os.path.join(a.runs, f"{algo}_run*.json"))):
             with open(path) as f:
@@ -272,7 +283,7 @@ def main():
         L = min(map(len, curves))
         c = np.array([cv[:L] for cv in curves])
         x = np.arange(1, L + 1)
-        ax.plot(x, np.median(c, axis=0), color=col, label=f"{label} (median of {len(c)} runs)")
+        ax.plot(x, np.median(c, axis=0), color=col, label=f"{label} (median of {len(c)} run{'s' if len(c) > 1 else ''})")
         ax.fill_between(x, np.percentile(c, 25, axis=0), np.percentile(c, 75, axis=0), color=col, alpha=0.25)
     ax.set_xlabel("fitness evaluations")
     ax.set_ylabel("best fitness so far (mean N90, 5 seeds)")
@@ -293,19 +304,22 @@ def main():
             w.writerows(qd)
         n_cells = evolve.GRID[0] * evolve.GRID[1]
         print(f"\n=== Quality-diversity on the {evolve.GRID[0]}x{evolve.GRID[1]} MAP-Elites grid ({n_cells} cells) ===")
-        print("  MAP-Elites: its archive.  DE: its final population placed on the same grid.")
+        print("  MAP-Elites and random search: their archive.  DE: its final population placed on the same grid.")
         print("  median over runs [min-max];  cells learning = elite reached 90% on every evaluation seed;")
         print(f"  QD-score = sum over filled cells of ({evolve.PENALTY} - fitness)")
-        by = {algo: [q for q in qd if q["algo"] == algo] for algo in ("mapelites", "de")}
+        by = {algo: [q for q in qd if q["algo"] == algo] for algo, _, _ in ALGOS}
         labels = (("cells_filled", "cells filled"), ("cells_learning", "cells learning"), ("qd_score", "QD-score"))
         for key, label in labels:
             line = f"  {label:15s}"
-            for algo, name in (("mapelites", "MAP-Elites"), ("de", "DE")):
+            for algo, _, name in ALGOS:
                 v = [q[key] for q in by[algo]]
                 if v:
                     line += f"  {name} {np.median(v):8.0f} [{min(v):.0f}-{max(v):.0f}] (n={len(v)})"
-            if len(by["mapelites"]) > 1 and len(by["de"]) > 1:
-                line += f"   Mann-Whitney p={mw_p([q[key] for q in by['mapelites']], [q[key] for q in by['de']]):.2g}"
+            others = [(algo, name) for algo, _, name in ALGOS[1:] if len(by[algo]) > 1]
+            if len(by["mapelites"]) > 1 and others:
+                ps = [f"vs {name} p={mw_p([q[key] for q in by['mapelites']], [q[key] for q in by[algo]]):.2g}"
+                      for algo, name in others]
+                line += "   MAP-Elites " + ", ".join(ps)
             print(line)
     print(f"\nsaved tables and figures in {a.out}/")
 

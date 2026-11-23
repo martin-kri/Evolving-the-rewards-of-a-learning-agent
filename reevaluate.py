@@ -7,6 +7,7 @@ retrains every candidate from scratch on seeds never used during evolution.
 What is compared, on every maze in --mazes:
     DE best             the best genome of each DE run
     ME best             the best elite of each MAP-Elites run
+    RS best             the best genome of each random-search run (non-evolutionary baseline)
     baselines           the hand-made and published schemes from rewards.baseline_schemes()
 
 The training maze answers question 1 (sample efficiency); the other mazes, never seen
@@ -41,6 +42,7 @@ TEST_MAZES = ["dyna_9x6_3traps",                       # training maze
               "dyna_9x6_2traps", "dyna_9x6",            # same layout, different traps
               "maze_8x8", "maze_10x10", "lava_7x5"]     # unseen layouts
 FRESH_SEEDS_START = 1000                                # never used during evolution
+LABELS = {"mapelites": "ME best", "de": "DE best", "random": "RS best"}
 
 
 def _job(args):
@@ -66,7 +68,7 @@ def main():
     for path in sorted(glob.glob(os.path.join(a.runs, "*.json"))):
         with open(path) as f:
             run = json.load(f)
-        label = "ME best" if run["algo"] == "mapelites" else "DE best"
+        label = LABELS[run["algo"]]
         candidates.append((label, evolve.decode(run["best"]["genome"], name=f"{run['algo']}_run{run['run']}")))
 
     seeds = range(FRESH_SEEDS_START, FRESH_SEEDS_START + a.seeds)

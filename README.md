@@ -44,6 +44,7 @@ Full experiment, in this order:
 python run_evolution.py --algo mapelites --run 0 --budget 200 --quick   # smoke test, ~30 s
 0..9 | ForEach-Object { python run_evolution.py --algo mapelites --run $_ }   # PowerShell
 0..9 | ForEach-Object { python run_evolution.py --algo de --run $_ }
+0..9 | ForEach-Object { python run_evolution.py --algo random --run $_ }   # non-evolutionary baseline
 python plot_archive.py results/evolution/mapelites_run0.json
 python reevaluate.py --runs results/evolution --seeds 30
 python analyze.py
@@ -59,8 +60,8 @@ On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array
 | `rewards.py` | `RewardScheme` (goal, trap, wall, step, progress, delay) and `baseline_schemes()` |
 | `qlearning.py` | Tabular Q-learning (`train`) with fixed settings in `DEFAULTS`, and the metrics |
 | `run_baselines.py` | Runs mazes x schemes x seeds in parallel, saves CSVs and plots to `results/` |
-| `evolve.py` | Reward genome (5 genes, goal fixed at +10), fitness, behaviour descriptors, MAP-Elites and Differential Evolution |
-| `run_evolution.py` | One evolutionary run (algorithm + run seed) from the command line, saved to `results/evolution/<algo>_run<N>.json` |
+| `evolve.py` | Reward genome (5 genes, goal fixed at +10), fitness, behaviour descriptors, MAP-Elites, Differential Evolution and random search |
+| `run_evolution.py` | One search run (`--algo mapelites`, `de` or `random`, plus a run seed) from the command line, saved to `results/evolution/<algo>_run<N>.json` |
 | `run_all.slurm` | SLURM job array: all 10 MAP-Elites + 10 DE runs in parallel on a cluster |
 | `plot_archive.py` | Heatmap of a MAP-Elites archive (fitness or a gene value per cell) |
 | `reevaluate.py` | Retrains the evolved winners and the baselines on 30 fresh seeds, on the training maze and on unseen mazes |
@@ -170,8 +171,15 @@ both measured during training. 100 random genomes, then batches of 50 Gaussian m
 
 **Differential Evolution** (Storn & Price 1997): DE/rand/1/bin, population 20, F = 0.5, CR = 0.9.
 
+**Random search** (the non-evolutionary baseline; Bergstra & Bengio 2012): 5000 genomes drawn
+uniformly at random, no selection and no variation. Every evaluation goes into a map with the same
+cells and the same rule as MAP-Elites (keep the better scheme per cell), so random search is
+"MAP-Elites without evolution". With the same run seed, its first 100 genomes are exactly
+MAP-Elites' initial random genomes; afterwards MAP-Elites mutates its elites while random search
+keeps drawing new genomes.
+
 **Fair comparison.** Same genome, same bounds, same fitness and the same budget of 5000 fitness
-evaluations for both algorithms; 10 independent runs each.
+evaluations for all three algorithms; 10 independent runs each.
 
 **Re-evaluation.** Picking the best of thousands of noisy 5-seed scores also picks lucky ones, so
 the winner of every run and every baseline is retrained from scratch on 30 fresh seeds
@@ -187,15 +195,16 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 `analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
 `russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
 
-**Statistics.** MAP-Elites vs DE is tested with one value per evolutionary run (the winner's mean
-N90 over the fresh seeds). Against the baselines, every evolved winner is tested on its own
+**Statistics.** The algorithms are compared pairwise (MAP-Elites vs DE, and each vs random search)
+with one value per run (the winner's mean N90 over the fresh seeds). Against the baselines, every
+winner is tested on its own
 (30 vs 30 fresh seeds): the winners of different runs are different reward schemes, so pooling
 them would overstate the sample size. `stats_summary.csv` counts how many winners are
 significantly faster or slower than each baseline; `stats.csv` holds every test. All p-values are
 Holm-corrected together.
 
 **Quality-diversity.** `qd.csv` compares what each algorithm returns on the 10x10 grid: the
-MAP-Elites archive against DE's final population. It reports cells filled, cells whose elite
+MAP-Elites archive, the random-search map and DE's final population. It reports cells filled, cells whose elite
 learned on all 5 evaluation seeds, and the QD-score (sum over filled cells of 1000 - fitness).
 
 ## Saved results
@@ -268,6 +277,97 @@ drift 0 / 0.1 / 0.2 / 0.3) but slightly safer final policies (final success abou
 vs 0.94 at 0.2; B1 on the 3x maze 0.92 vs 0.99). Drift only in the first 30% of training
 ("early 0.3") was not faster. Drift interacts with the scheme: on the small maze B1 slows down
 much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 episodes).
+
+### Implementation steps
+
+- [x] 1. Random search as a third algorithm: `evolve.random_search`, `run_evolution.py --algo random`,
+  label "RS best" in `reevaluate.py` and `analyze.py`. Same budget and output format as DE.
+- [ ] 2. Multi-maze evolution (own folder, like `variants/`): the fitness of a scheme is its average
+  over a fixed, seeded set of small random training mazes of different sizes (about 6x6 to 12x8,
+  with traps), 1 seed per maze, so one evaluation costs about the same as now. Each maze's result
+  is divided by that maze's episode budget before averaging. The test mazes (the hand-made ones
+  and the scaled copies) are never used for training. The existing runs become the
+  "single-maze" condition. Question: do schemes evolved on several small mazes learn bigger and
+  unseen mazes faster than single-maze schemes and hand-made ones?
+- [ ] 3. `scaling/transfer.py`: train new agents with the saved reward schemes (the winners of every
+  run, every MAP-Elites elite, and the hand-made baselines; from single-maze, multi-maze and
+  random-search runs) on bigger copies of the training maze, with new seeds. One CSV with
+  episodes to learn, learned or not, final success and trap falls. Adds a 4x (and maybe 5x) copy
+  to `gridmaze.SCALED`.
+- [ ] 4. `scaling/rule.py`: for every scheme and maze size, the total (discounted) reward of walking
+  to the goal vs walking into the nearest trap, and the predicted size limit. Compared with the
+  observed size limit from step 3.
+- [ ] 5. Figures: a transfer map (the MAP-Elites map coloured by each scheme's size limit, with the
+  predicted failures marked) and a size curve (episodes to learn vs maze size, evolved winners vs
+  hand-made baselines).
+- [ ] 6. Drift as a test condition: a drift-style option in `gridmaze.py` ("uniform", ours and the
+  default; "sideways", the lecture's 80% / 10% / 10%), separate training and test drift in
+  `qlearning.train()`, and `--drift` in `transfer.py`.
+
+Optional:
+
+- Intelligent trial and error (Cully et al. 2015) on the big maze: use the MAP-Elites map's
+  small-maze scores as a first guess, train with the most promising scheme, update the guesses
+  for the neighbouring cells, and stop when one is good enough. A few trainings instead of a new
+  evolution. In the pilot, the best elite of the map needed 200 episodes on the 3x maze, the
+  small-maze winner 290 and the hand-made B1 180.
+
+Later:
+
+- Multi-maze evolution with a 2x maze in the training set (about 2.5x the cost; server), to
+  compare with step 2.
+- Evolve the training drift together with the reward scheme (two objectives: speed and safety,
+  e.g. NSGA-II), as a variant.
+- Evolve directly on one big maze as a reference for the transferred schemes. Needs `--episodes` in
+  `run_evolution.py` and a "never learned" penalty of 2 x episodes in `evolve.py`; server.
+- SLURM script for the server (update `run_all.slurm` from `new-branch`) once we have access.
+
+### Open decisions (before steps 2, 3 and 6)
+
+- Multi-maze training set: how many mazes (e.g. 5-8), which sizes (about 6x6 to 12x8), how many
+  traps, and how the per-maze results are combined (divided by each maze's episode budget, or by
+  a hand-made baseline's result on that maze).
+- Training episodes per maze size: a fixed rule such as 500 x scale (500 / 1000 / 1500 / 2000), so
+  every size gets a comparable amount of exploration. The re-evaluation on the `scaled-mazes`
+  branch used 1500 for both the 2x and the 3x maze.
+- Which sizes for the transfer test: 2x, 3x, 4x, maybe 5x.
+- When a scheme "still learns" a size: e.g. it learns on at least 8 of 10 seeds.
+- Seeds per scheme and size (e.g. 10), and how many archives (all 10 runs on the server, 2-3 on
+  the laptop).
+- Drift style for the new experiments: keep ours (a random one of the 4 directions) or switch to
+  the lecture's (80% intended, 10% to each side).
+- Whether evolving the training drift (two objectives) is in scope.
+
+### Related work (for the report)
+
+The PDFs are in the shared `papers-for-project` folder.
+
+- Singh, Lewis, Barto & Sorg (2010), Intrinsically Motivated RL: An Evolutionary Perspective:
+  rewards as designed by evolution; the best reward depends on the environments an agent faces.
+- Niekum (2010), Evolved Intrinsic Reward Functions for RL: rewards evolved with genetic
+  programming beat Singh et al.'s brute-force search; fitness over a set of environments.
+- Kanagawa & Doya (2024), Evolution of Rewards for Food and Motor Action by Simulating Birth and
+  Death: evolved rewards change with environment size; in a small, easy environment the
+  selection pressure is weak and the rewards hardly evolve.
+- Zheng et al. (2020), What Can Learned Intrinsic Rewards Capture?: learned rewards transfer to
+  other agents and to changed dynamics, transferred policies do not. Why we transfer the reward
+  scheme and train a new agent.
+- Chiang, Faust, Fiser & Francis (2019), Learning Navigation Behaviors End-to-End with AutoRL:
+  evolutionary reward search in a small training map, policies used in buildings up to 30x
+  bigger (they transfer the policy, we transfer the reward). Notes agents ending episodes early
+  to exploit the reward.
+- Cully, Clune, Tarapore & Mouret (2015), Robots that can adapt like animals: the MAP-Elites map
+  as a first guess when conditions change (intelligent trial and error).
+- Usaratniwart, Gao, Ong & Akimoto (2026), Evolutionary Bilevel Reward Shaping for Generalization
+  in RL (GERS): CMA-ES tunes reward weights using scores on other environments than the training
+  one; plain PPO overfits its training environment.
+- Taylor & Stone (JMLR 2007 or their 2009 survey): transfer between smaller and bigger versions of
+  a task; time to reach a threshold and total time (source + target) as transfer measures.
+- One line each: Oh et al. (2020), Discovering RL Algorithms (an update rule found on toy grid
+  worlds works on Atari); Goyal et al. (2019), InfoBot (random exploration reaches the goal less
+  and less often as environments grow); Bewley et al. (2022), Reward Learning with Trees
+  (negative rewards on every step push agents to end episodes; next to the Russell & Norvig
+  slide for the trap rule).
 
 ### Ideas for later
 

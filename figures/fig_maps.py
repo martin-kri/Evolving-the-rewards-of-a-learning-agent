@@ -7,7 +7,8 @@ Panels (same grid as the MAP-Elites archive: punishment share x mean feedback de
         the most generous way to place it on one. Needs the trace from trace_run.py; without
         it only the final population is drawn.
     (c) cells covered vs fitness evaluations: MAP-Elites archive size (all runs: median line,
-        band = min to max) and cells visited by DE (every traced DE run).
+        band = min to max), the random-search map if there are random_run*.json files (same),
+        and cells visited by DE (every traced DE run).
 
 Run from the repository folder (seconds):
     python figures/fig_maps.py
@@ -30,7 +31,7 @@ import evolve  # noqa: E402
 
 INK, MUTED, GRIDLINE, SURFACE = "#0b0b0b", "#52514e", "#e4e3df", "#fcfcfb"
 EMPTY = SURFACE                     # empty cells: white with a thin outline
-ME_COLOUR, DE_COLOUR = "#2a78d6", "#eb6834"
+ME_COLOUR, DE_COLOUR, RS_COLOUR = "#2a78d6", "#eb6834", "#1baf7a"
 RAMP = ["#e6e5e0", "#d6d4ce", "#c3c1b9", "#adaba2", "#96948a", "#7e7c72", "#67655c", "#504f48", "#3a3a35"]
 EDGES = [80, 100, 120, 150, 200, 300, 450, 700, 900, 1000.1]   # same colour bins as fig_landscape.py
 
@@ -149,8 +150,17 @@ def main():
     lo = [min(c[k] for c in curves) for k in range(n)]
     hi = [max(c[k] for c in curves) for k in range(n)]
     ax_cov.fill_between(xs, lo, hi, color=ME_COLOUR, alpha=0.15, lw=0)
-    ax_cov.plot(xs, med, color=ME_COLOUR, lw=2, label=f"MAP-Elites archive ({len(curves)} runs)")
+    ax_cov.plot(xs, med, color=ME_COLOUR, lw=2, label=f"MAP-Elites archive ({len(curves)} run{'s' if len(curves) > 1 else ''})")
     ax_cov.text(xs[-1], med[-1] + 2.5, f"{med[-1]:.0f}", color=INK, fontsize=8.5, ha="right", va="bottom")
+    rs_runs = [load(f) for f in sorted(glob.glob(os.path.join(a.results, "evolution", "random_run*.json")))]
+    if rs_runs:                       # random search: same map and insertion rule, no evolution
+        rc = [[h[2] for h in r["history"]] for r in rs_runs]
+        m = min(len(c) for c in rc)
+        rmed = [statistics.median(c[k] for c in rc) for k in range(m)]
+        ax_cov.fill_between(range(1, m + 1), [min(c[k] for c in rc) for k in range(m)],
+                            [max(c[k] for c in rc) for k in range(m)], color=RS_COLOUR, alpha=0.15, lw=0)
+        ax_cov.plot(range(1, m + 1), rmed, color=RS_COLOUR, lw=2, label=f"random-search map ({len(rc)} run{'s' if len(rc) > 1 else ''})")
+        ax_cov.text(m, rmed[-1] - 2.5, f"{rmed[-1]:.0f}", color=INK, fontsize=8.5, ha="right", va="top")
     de_traces = [load(f) for f in sorted(glob.glob(os.path.join(a.trace_dir, "de_run*.json")))]
     for k, d in enumerate(de_traces):
         c = coverage_curve(d["trace"])

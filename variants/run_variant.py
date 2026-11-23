@@ -31,7 +31,7 @@ def _eval_one(x, maze_name, settings):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--variant", required=True, choices=list(variant_defs.VARIANTS))
-    p.add_argument("--algo", choices=["mapelites", "de"], required=True)
+    p.add_argument("--algo", choices=["mapelites", "de", "random"], required=True)
     p.add_argument("--run", type=int, default=0, help="run seed (0, 1, 2, ...)")
     p.add_argument("--budget", type=int, default=5000, help="fitness evaluations (same for both algorithms)")
     p.add_argument("--maze", default=TRAIN_MAZE)
@@ -62,6 +62,9 @@ def main():
             archive, history = evolve.map_elites(evaluate_batch, a.budget, seed=a.run, log=log)
             result = dict(archive=[dict(cell=list(c), **ev) for c, ev in archive.items()])
             best = min(archive.values(), key=lambda e: e["fitness"])
+        elif a.algo == "random":
+            best, archive, history = evolve.random_search(evaluate_batch, a.budget, seed=a.run, log=log)
+            result = dict(archive=[dict(cell=list(c), **ev) for c, ev in archive.items()])
         else:
             best, pop, history = evolve.differential_evolution(evaluate_batch, a.budget, seed=a.run, log=log)
             result = dict(population=pop)

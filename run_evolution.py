@@ -1,4 +1,4 @@
-"""Run ONE evolutionary run (MAP-Elites or DE) and save it to one JSON file.
+"""Run ONE search run (MAP-Elites, DE or random search) and save it to one JSON file.
 
 One run = one algorithm + one run seed, so many runs can go in parallel
 (several terminals, or a SLURM job array on the HPC).
@@ -7,6 +7,7 @@ Examples:
     python run_evolution.py --algo mapelites --run 0 --budget 200 --quick   # smoke test, ~1 min
     python run_evolution.py --algo mapelites --run 0                        # full run
     python run_evolution.py --algo de --run 0
+    python run_evolution.py --algo random --run 0                           # non-evolutionary baseline
     for r in 0 1 2 3 4 5 6 7 8 9; do python run_evolution.py --algo de --run $r; done
 
 SLURM (one job per run seed):
@@ -33,9 +34,9 @@ def _eval_one(x, maze_name, settings):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--algo", choices=["mapelites", "de"], required=True)
+    p.add_argument("--algo", choices=["mapelites", "de", "random"], required=True)
     p.add_argument("--run", type=int, default=0, help="run seed (0, 1, 2, ...)")
-    p.add_argument("--budget", type=int, default=5000, help="fitness evaluations (same for both algorithms)")
+    p.add_argument("--budget", type=int, default=5000, help="fitness evaluations (same for all algorithms)")
     p.add_argument("--maze", default=TRAIN_MAZE)
     p.add_argument("--workers", type=int, default=os.cpu_count())
     p.add_argument("--out", default="results/evolution")
@@ -60,6 +61,9 @@ def main():
             archive, history = evolve.map_elites(evaluate_batch, a.budget, seed=a.run, log=log)
             result = dict(archive=[dict(cell=list(c), **ev) for c, ev in archive.items()])
             best = min(archive.values(), key=lambda e: e["fitness"])
+        elif a.algo == "random":
+            best, archive, history = evolve.random_search(evaluate_batch, a.budget, seed=a.run, log=log)
+            result = dict(archive=[dict(cell=list(c), **ev) for c, ev in archive.items()])
         else:
             best, pop, history = evolve.differential_evolution(evaluate_batch, a.budget, seed=a.run, log=log)
             result = dict(population=pop)

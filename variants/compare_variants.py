@@ -29,7 +29,7 @@ import variant_defs
 import evolve
 
 TRAIN_MAZE = "dyna_9x6_3traps"
-ALGOS = [("mapelites", "ME best"), ("de", "DE best")]
+ALGOS = [("mapelites", "ME best"), ("de", "DE best"), ("random", "RS best")]
 EDGE = 0.05          # "at the edge" = within 5% of the range from its outer end
 OUTER_IS_HIGH = {"progress"}     # progress grows upwards; trap, wall and step grow downwards
 
@@ -77,7 +77,7 @@ def describe(folder):
         w = fresh.get((TRAIN_MAZE, cand), {})
         row["pct_learned_train"] = round(100 * statistics.mean(v[1] for v in w.values()), 1) if w else ""
         row["_train"] = [v[0] for v in w.values()]
-        if algo == "mapelites":
+        if "archive" in rs[0]:                     # MAP-Elites and random search keep a map
             row["cells_filled"] = statistics.median(len(r["archive"]) for r in rs)
             row["cells_learning"] = statistics.median(
                 sum(e["converged"] == len(e["n90"]) for e in r["archive"]) for r in rs)
