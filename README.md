@@ -307,9 +307,11 @@ much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 epis
   five separate validation mazes (`valid_*`), so the test mazes stay untouched. Full runs only for
   the one or two best. Needed for it: `--combine mean|relative|worst` and `--variant` in
   `multimaze/run_multimaze.py`.
-- [ ] 4. `scaling/rule.py`: for every scheme and maze size, the total (discounted) reward of walking
-  to the goal vs walking into the nearest trap, and the predicted size limit. Compared with the
-  observed size limit from step 3.
+- [x] 4. `scaling/rule.py` (see `scaling/README.md`): for every scheme and maze size, the best
+  ending (goal, trap or time limit) of the best path in the maze without slip, computed exactly
+  with the same rewards, delays, discount and time limit as the agent; the margin of the goal, and
+  the predicted size limit. Compared with the observed size limit from step 3. Two other ways to
+  compute it (the lecture's simple comparison, and the same with slip) are described there.
 - [ ] 5. Figures: a transfer map (the MAP-Elites map coloured by each scheme's size limit, with the
   predicted failures marked) and a size curve (episodes to learn vs maze size, evolved winners vs
   hand-made baselines).
@@ -348,6 +350,9 @@ Later:
   switch): sizes 1x to 4x (5x available), 500 x size training episodes, "learns a size" = at
   least 80% of 10 seeds, size limit = biggest size learned with every smaller size learned too,
   all runs' winners plus the learning elites. To review after the first full run.
+- Trap-vs-goal rule (step 4): chosen for now: the exact best path in the maze without slip
+  (method 2 in `scaling/README.md`). To review with the full transfer run: if many failures with
+  "goal best" remain, add method 3 (with slip).
 - Drift style for the new experiments: keep ours (a random one of the 4 directions) or switch to
   the lecture's (80% intended, 10% to each side).
 - Whether evolving the training drift (two objectives) is in scope.
