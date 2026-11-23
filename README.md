@@ -83,6 +83,8 @@ in a random direction.
 | `maze_10x10` | 10x10 | 18 | ours |
 | `dyna_18x12_3traps` | 18x12 | 31 | `dyna_9x6_3traps` scaled x2 (every cell a 2x2 block) |
 | `dyna_27x18_3traps` | 27x18 | 45 | `dyna_9x6_3traps` scaled x3 (every cell a 3x3 block) |
+| `train_6x6` ... `train_12x8` | 6x6 to 12x8 | 12 to 20 | random mazes, training set of `multimaze/` |
+| `unseen_7x7`, `unseen_9x7`, `unseen_11x8` | 7x7 to 11x8 | 14 to 23 | random mazes, never used for training (test) |
 
 The scaled copies keep the layout of the training maze and change only its size, so they separate
 "the maze is bigger" from "the maze is different". `scale_layout(rows, k)` makes them (walls and traps
@@ -191,6 +193,7 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 | `dyna_18x12_3traps`, `dyna_27x18_3traps` | same layout, 2x and 3x bigger: effect of size only |
 | `dyna_9x6_2traps` | same layout, different traps |
 | `maze_8x8`, `maze_10x10`, `lava_7x5` | unseen layouts: generalisation |
+| `unseen_7x7`, `unseen_9x7`, `unseen_11x8` | unseen random layouts (never used for training, also not by `multimaze/`) |
 
 `analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
 `russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
@@ -282,7 +285,7 @@ much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 epis
 
 - [x] 1. Random search as a third algorithm: `evolve.random_search`, `run_evolution.py --algo random`,
   label "RS best" in `reevaluate.py` and `analyze.py`. Same budget and output format as DE.
-- [ ] 2. Multi-maze evolution (own folder, like `variants/`): the fitness of a scheme is its average
+- [x] 2. Multi-maze evolution (`multimaze/`, see its README): the fitness of a scheme is its average
   over a fixed, seeded set of small random training mazes of different sizes (about 6x6 to 12x8,
   with traps), 1 seed per maze, so one evaluation costs about the same as now. Each maze's result
   is divided by that maze's episode budget before averaging. The test mazes (the hand-made ones
@@ -324,9 +327,9 @@ Later:
 
 ### Open decisions (before steps 2, 3 and 6)
 
-- Multi-maze training set: how many mazes (e.g. 5-8), which sizes (about 6x6 to 12x8), how many
-  traps, and how the per-maze results are combined (divided by each maze's episode budget, or by
-  a hand-made baseline's result on that maze).
+- Multi-maze training set: chosen for now (see `multimaze/README.md`): the training maze plus five
+  random mazes from 6x6 to 12x8 with 2 to 6 traps, one run each, plain mean of N90. To review:
+  more mazes or seeds, and whether to weight mazes (e.g. relative to a hand-made baseline).
 - Training episodes per maze size: a fixed rule such as 500 x scale (500 / 1000 / 1500 / 2000), so
   every size gets a comparable amount of exploration. The re-evaluation on the `scaled-mazes`
   branch used 1500 for both the 2x and the 3x maze.

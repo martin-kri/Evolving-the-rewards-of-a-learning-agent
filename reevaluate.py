@@ -40,7 +40,8 @@ from rewards import baseline_schemes
 TEST_MAZES = ["dyna_9x6_3traps",                       # training maze
               "dyna_18x12_3traps", "dyna_27x18_3traps", # same layout, 2x and 3x bigger (size only)
               "dyna_9x6_2traps", "dyna_9x6",            # same layout, different traps
-              "maze_8x8", "maze_10x10", "lava_7x5"]     # unseen layouts
+              "maze_8x8", "maze_10x10", "lava_7x5",     # unseen layouts
+              "unseen_7x7", "unseen_9x7", "unseen_11x8"]  # unseen random layouts (never used for training)
 FRESH_SEEDS_START = 1000                                # never used during evolution
 LABELS = {"mapelites": "ME best", "de": "DE best", "random": "RS best"}
 

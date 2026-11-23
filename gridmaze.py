@@ -279,6 +279,90 @@ for _name, (_base, _k) in SCALED.items():
     LAYOUTS[_name] = scale_layout(LAYOUTS[_base], _k)
 
 
+# ---------------------------------------------------------------- random mazes for multi-maze evolution
+# Made with random_maze(rows, cols, wall_density=0.22, n_traps, seed, min_path=rows+cols-2), keeping
+# the first seed where a trap lies on a shortest route (path through traps shorter than the safe
+# path), so the traps matter as in the Dyna maze. Stored as text so they never change.
+# train_*:  the training set of multimaze/ (together with dyna_9x6_3traps).
+# unseen_*: never used for training; test mazes for generalisation to new random layouts.
+LAYOUTS.update({
+    "train_6x6": [            # seed 18, 2 traps, shortest path 12
+        "....#G",
+        ".T#...",
+        ".#....",
+        ".####.",
+        ".....T",
+        "S#....",
+    ],
+    "train_8x6": [            # seed 1, 3 traps, shortest path 14
+        "..#..#.G",
+        "..#.##..",
+        "#....T..",
+        "...#....",
+        "..#.T..T",
+        "S#...##.",
+    ],
+    "train_8x8": [            # seed 11, 4 traps, shortest path 16
+        "#..#...G",
+        "#.#...##",
+        "..T#.#..",
+        "...#....",
+        "..T...T#",
+        "...#....",
+        "...##...",
+        "S.....#T",
+    ],
+    "train_10x8": [           # seed 11, 5 traps, shortest path 18
+        ".....##T.G",
+        "#......T..",
+        "#..#...##.",
+        ".#.#..#T..",
+        "......#..#",
+        "T#....T..#",
+        "....#....#",
+        "S...#..#..",
+    ],
+    "train_12x8": [           # seed 9, 6 traps, shortest path 20
+        "....T....#.G",
+        "#.......#..#",
+        "......T...#.",
+        ".T#####.....",
+        "....#.T..#..",
+        "..T#....T.#.",
+        ".##..#..##..",
+        "S#....#.....",
+    ],
+    "unseen_7x7": [           # seed 113, 3 traps, shortest path 14
+        "#.##.TG",
+        "..T#...",
+        "...#...",
+        ".#.##.#",
+        "....T..",
+        "..#....",
+        "S#.....",
+    ],
+    "unseen_9x7": [           # seed 105, 4 traps, shortest path 16
+        "..#.#..#G",
+        "#....#.T.",
+        "...T.....",
+        "..#.#...#",
+        "...#.##.#",
+        "T...T....",
+        "S.#..#...",
+    ],
+    "unseen_11x8": [          # seed 110, 5 traps, shortest path 23
+        "..##...#..G",
+        "...#....#.#",
+        ".T.#..T....",
+        ".#...#TT..#",
+        "..#..#.T...",
+        ".#.......#.",
+        "..##.....#.",
+        "S..#.....#.",
+    ],
+})
+
+
 def get_maze(name, slip=0.1):
     return Maze(name, LAYOUTS[name], slip=slip)
 
