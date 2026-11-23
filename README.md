@@ -214,6 +214,62 @@ To save a new experiment, move `results/evolution`, `results/reevaluation.csv` a
 - The first test above 90% is a noisy measure of learning: the greedy policy oscillates, so we
   use the moving average of the last 3 tests (see Agent and metrics).
 
+## Next steps (plan, 23 Nov 2026)
+
+Direction agreed after the TA's feedback ("something extra is missing"; bigger mazes are much
+harder). Not implemented yet; the numbers below come from quick pilot checks.
+
+### 1. How far does a reward scheme from the small maze scale?
+
+- Train the evolved schemes (the winners and the whole MAP-Elites archive) on bigger copies of
+  the training maze (`dyna_18x12_3traps`, `dyna_27x18_3traps` from the `scaled-mazes` branch,
+  maybe a 5x copy) and find the size at which each scheme stops working.
+- Which genes decide it, and which kinds of schemes (map cells) stay useful: a "transfer map",
+  i.e. the MAP-Elites map coloured by performance on the bigger maze.
+- A rule from the RL lecture (Russell & Norvig 4x3 world, optimal policy vs step reward): if
+  walking to the goal pays less than walking into the nearest trap, the agent learns to end the
+  episode in a trap. Step costs add up over a longer path, so this can flip when the maze grows;
+  a progress reward can make up for it. The rule gives a predicted size limit for every scheme,
+  to compare with the observed one.
+- Optional reference: evolve directly on one big maze (server) and compare small-maze winners
+  with big-maze winners on the big maze.
+- Random search with the same budget as the non-evolutionary baseline.
+
+Pilot (MAP-Elites run 7 archive and all 20 winners, 3 seeds, 1500 episodes on the 3x maze): all 20
+winners still learn the 3x maze, but only 29 of the 54 learning elites do. The failures are mostly
+long-delay and almost-only-punishment schemes. For 12 elites the trap pays more than the goal on
+the 3x maze, and all 12 fail. On the 3x maze the hand-made B1 is as fast as the transferred
+winners (180 vs 205-215 episodes), while most other hand-made schemes fail or slow down a lot.
+
+### 2. Drift (slip) as a second condition
+
+Our agent: with probability 0.1 the move is replaced by a random one of the 4 directions
+(92.5% intended, 2.5% each side, 2.5% back). The RL lecture's 4x3 world uses 80% intended and
+10% to each side.
+
+- Test condition: re-test the schemes at higher drift; together with size this gives a
+  "size x drift" limit for every scheme.
+- Training drift as a gene (always tested at the normal drift). With learning speed as the only
+  fitness, evolution would simply pick no drift, so this needs a second objective: safety (final
+  success, trap falls). Multi-objective evolution (NSGA-II, lab 2) or a map axis.
+
+Pilot (20 seeds on the small maze, 6 on the 3x maze, always tested at drift 0.1): more drift in
+training means slower learning (DE winner on the small maze: 100 / 120 / 150 / 195 episodes at
+drift 0 / 0.1 / 0.2 / 0.3) but slightly safer final policies (final success about 0.90 at drift 0
+vs 0.94 at 0.2; B1 on the 3x maze 0.92 vs 0.99). Drift only in the first 30% of training
+("early 0.3") was not faster. Drift interacts with the scheme: on the small maze B1 slows down
+much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 episodes).
+
+### Ideas for later
+
+- Co-evolution of worlds and reward schemes (Lecture 11, POET): mazes (traps, drift, size) evolve
+  to be hard for the current reward schemes, and the schemes evolve to cope with them.
+- Compression of big mazes (fixed blocks or a quadtree, with a danger margin around traps):
+  evolve or plan on the small version and use it on the big one. Prototype: guiding the progress
+  reward with the distance on a compressed map works on 30x30 and 50x50 mazes (slower than with
+  the true distance, while without any guidance the agent never learns).
+
+
 ## References
 
 - Mouret & Clune (2015), Illuminating search spaces by mapping elites (MAP-Elites)
