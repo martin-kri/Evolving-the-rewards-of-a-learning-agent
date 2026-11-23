@@ -65,6 +65,7 @@ On a SLURM cluster, `sbatch run_all.slurm` launches all 20 runs as one job array
 | `run_all.slurm` | SLURM job array: all 10 MAP-Elites + 10 DE runs in parallel on a cluster |
 | `plot_archive.py` | Heatmap of a MAP-Elites archive (fitness or a gene value per cell) |
 | `reevaluate.py` | Retrains the evolved winners and the baselines on 30 fresh seeds, on the training maze and on unseen mazes |
+| `variants/`, `figures/`, `multimaze/`, `scaling/` | Side experiments and figures, each with its own README |
 | `analyze.py` | Summary tables, Mann-Whitney U tests with Holm correction (one test per evolved scheme), Vargha-Delaney A12, quality-diversity metrics (cells filled, QD-score), boxplots, convergence curves |
 
 ## Mazes
@@ -84,7 +85,7 @@ in a random direction.
 | `dyna_18x12_3traps` | 18x12 | 31 | `dyna_9x6_3traps` scaled x2 (every cell a 2x2 block) |
 | `dyna_27x18_3traps` | 27x18 | 45 | `dyna_9x6_3traps` scaled x3 (every cell a 3x3 block) |
 | `train_6x6` ... `train_12x8` | 6x6 to 12x8 | 12 to 20 | random mazes, training set of `multimaze/` |
-| `unseen_7x7`, `unseen_9x7`, `unseen_11x8` | 7x7 to 11x8 | 14 to 23 | random mazes, never used for training (test) |
+| `unseen_6x8` ... `unseen_12x10` (5 mazes) | 6x8 to 12x10 | 14 to 23 | random mazes, never used for training (test) |
 
 The scaled copies keep the layout of the training maze and change only its size, so they separate
 "the maze is bigger" from "the maze is different". `scale_layout(rows, k)` makes them (walls and traps
@@ -193,7 +194,7 @@ the winner of every run and every baseline is retrained from scratch on 30 fresh
 | `dyna_18x12_3traps`, `dyna_27x18_3traps` | same layout, 2x and 3x bigger: effect of size only |
 | `dyna_9x6_2traps` | same layout, different traps |
 | `maze_8x8`, `maze_10x10`, `lava_7x5` | unseen layouts: generalisation |
-| `unseen_7x7`, `unseen_9x7`, `unseen_11x8` | unseen random layouts (never used for training, also not by `multimaze/`) |
+| `unseen_6x8`, `unseen_7x7`, `unseen_9x7`, `unseen_11x8`, `unseen_12x10` | unseen random layouts (never used for training, also not by `multimaze/`) |
 
 `analyze.py` reports the six main baselines (A1, A2, B1, B2, `sparse_dyna`,
 `russell_norvig_matched`); `python analyze.py --all` includes every baseline and maze.
@@ -292,11 +293,11 @@ much more with drift than the evolved winners (100 -> 205 vs 100 -> 100-120 epis
   and the scaled copies) are never used for training. The existing runs become the
   "single-maze" condition. Question: do schemes evolved on several small mazes learn bigger and
   unseen mazes faster than single-maze schemes and hand-made ones?
-- [ ] 3. `scaling/transfer.py`: train new agents with the saved reward schemes (the winners of every
+- [x] 3. `scaling/transfer.py` (see `scaling/README.md`): train new agents with the saved reward schemes (the winners of every
   run, every MAP-Elites elite, and the hand-made baselines; from single-maze, multi-maze and
   random-search runs) on bigger copies of the training maze, with new seeds. One CSV with
   episodes to learn, learned or not, final success and trap falls. Adds a 4x (and maybe 5x) copy
-  to `gridmaze.SCALED`.
+  to `gridmaze.SCALED` (added: 4x and 5x).
 - [ ] 4. `scaling/rule.py`: for every scheme and maze size, the total (discounted) reward of walking
   to the goal vs walking into the nearest trap, and the predicted size limit. Compared with the
   observed size limit from step 3.
@@ -325,18 +326,15 @@ Later:
   `run_evolution.py` and a "never learned" penalty of 2 x episodes in `evolve.py`; server.
 - SLURM script for the server (update `run_all.slurm` from `new-branch`) once we have access.
 
-### Open decisions (before steps 2, 3 and 6)
+### Open decisions
 
 - Multi-maze training set: chosen for now (see `multimaze/README.md`): the training maze plus five
   random mazes from 6x6 to 12x8 with 2 to 6 traps, one run each, plain mean of N90. To review:
   more mazes or seeds, and whether to weight mazes (e.g. relative to a hand-made baseline).
-- Training episodes per maze size: a fixed rule such as 500 x scale (500 / 1000 / 1500 / 2000), so
-  every size gets a comparable amount of exploration. The re-evaluation on the `scaled-mazes`
-  branch used 1500 for both the 2x and the 3x maze.
-- Which sizes for the transfer test: 2x, 3x, 4x, maybe 5x.
-- When a scheme "still learns" a size: e.g. it learns on at least 8 of 10 seeds.
-- Seeds per scheme and size (e.g. 10), and how many archives (all 10 runs on the server, 2-3 on
-  the laptop).
+- Transfer test (step 3): chosen for now (see `scaling/README.md`, with alternatives and how to
+  switch): sizes 1x to 4x (5x available), 500 x size training episodes, "learns a size" = at
+  least 80% of 10 seeds, size limit = biggest size learned with every smaller size learned too,
+  all runs' winners plus the learning elites. To review after the first full run.
 - Drift style for the new experiments: keep ours (a random one of the 4 directions) or switch to
   the lecture's (80% intended, 10% to each side).
 - Whether evolving the training drift (two objectives) is in scope.

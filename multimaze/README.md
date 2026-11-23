@@ -39,8 +39,9 @@ The original training maze plus five random mazes of different sizes, one traini
   episodes, 2 learn `train_8x8`, 1 learns `train_10x8` and none learns `train_12x8`. The evolved
   winners of the single-maze runs learn all of them (about 100 to 270 episodes).
 
-Three more random mazes are **never used for training** and are test mazes in `reevaluate.py`
-(shortest paths 14, 16 and 23): `unseen_7x7`, `unseen_9x7`, `unseen_11x8`.
+Five more random mazes are **never used for training** and are test mazes in `reevaluate.py`
+(6x8 to 12x10, shortest paths 14 to 23): `unseen_6x8`, `unseen_7x7`, `unseen_9x7`, `unseen_11x8`,
+`unseen_12x10`.
 
 ## Fitness over a set
 
@@ -50,6 +51,11 @@ Three more random mazes are **never used for training** and are test mazes in `r
   compared and `analyze.py` (QD-score = 1000 - fitness) works unchanged.
 - A maze trained for more episodes (only in set B) has its N90 scaled to the 500-episode scale
   (x 500 / episodes), so every run counts the same.
+- This plain average is what the papers do: Singh et al. (2010) use the expected fitness over the
+  distribution of environments, Niekum (2010) the fitness across a distribution of environments,
+  Zheng et al. (2020) and Oh et al. (2020) average over lifetimes and tasks, and GERS the average
+  return over its validation environments. Alternatives (each maze relative to a reference such as
+  B1, or the worst maze) are possible later as a `--combine` option.
 - Behaviour descriptors (punishment share, feedback delay) are averaged over all runs: the
   MAP-Elites map has the same axes as before.
 - The run file also stores the N90 per maze of every evaluated scheme (`per_maze`).
@@ -61,6 +67,9 @@ fitness (a MAP-Elites run: about 21 instead of 17 minutes on the laptop).
 
 - `single`: the original experiment (one maze, seeds 0-4). Gives exactly the same results as
   `run_evolution.py` (checked, also with the Windows way of starting worker processes).
+- `A2`: set A with 2 training runs per maze (12 per evaluation, seeds 0-11). Less noise in the
+  fitness (the random part shrinks by about 30%), which should reduce the winner's curse; about
+  2x the cost of A (a MAP-Elites run: about 42 minutes on the laptop). For screening: A vs A2.
 - `B`: set A plus the 2x copy of the training maze (`dyna_18x12_3traps`, 1000 episodes, 2 seeds).
   About 2.5x the cost. For later, on the server.
 

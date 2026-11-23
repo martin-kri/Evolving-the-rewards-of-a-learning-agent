@@ -274,6 +274,8 @@ def check_scaled(original, scaled):
 SCALED = {
     "dyna_18x12_3traps": ("dyna_9x6_3traps", 2),
     "dyna_27x18_3traps": ("dyna_9x6_3traps", 3),
+    "dyna_36x24_3traps": ("dyna_9x6_3traps", 4),     # for the transfer test (scaling/)
+    "dyna_45x30_3traps": ("dyna_9x6_3traps", 5),
 }
 for _name, (_base, _k) in SCALED.items():
     LAYOUTS[_name] = scale_layout(LAYOUTS[_base], _k)
@@ -359,6 +361,28 @@ LAYOUTS.update({
         ".#.......#.",
         "..##.....#.",
         "S..#.....#.",
+    ],
+    "unseen_6x8": [           # seed 211, 3 traps, shortest path 16
+        "#..T.G",
+        "....#.",
+        ".##...",
+        ".##...",
+        "..T..#",
+        "#..#..",
+        "..#.T.",
+        "S.#...",
+    ],
+    "unseen_12x10": [         # seed 204, 6 traps, shortest path 22
+        "#..#.#T....G",
+        "..#..T...T..",
+        ".##..#..#...",
+        "....#.#.#...",
+        ".#.#.##..T..",
+        ".......#....",
+        "...#.#.T...#",
+        "......#...##",
+        "..T.#.....#.",
+        "S....#.#....",
     ],
 })
 

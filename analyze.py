@@ -55,7 +55,7 @@ COLOURS = {"mapelites": "#2a9d8f", "de": "#e9c46a", "random": "#8e7cc3"}
 MAIN_BASELINES = ["A1", "A2", "B1_immediate", "B2", "sparse_dyna", "russell_norvig_matched"]
 MAIN_MAZES = ["dyna_9x6_3traps", "dyna_18x12_3traps", "dyna_27x18_3traps",   # training maze + scaled copies
               "dyna_9x6_2traps", "maze_8x8", "maze_10x10", "lava_7x5",       # dyna_9x6: too easy
-              "unseen_7x7", "unseen_9x7", "unseen_11x8"]                     # unseen random layouts
+              "unseen_6x8", "unseen_7x7", "unseen_9x7", "unseen_11x8", "unseen_12x10"]  # unseen random layouts
 
 
 def a12(x, y):

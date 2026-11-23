@@ -21,6 +21,8 @@ Sets:
     A       dyna_9x6_3traps plus five random mazes of different sizes (6x6 to 12x8, shortest
             paths 12 to 20), one training run each: 6 runs per evaluation, about 1.2x the
             cost of the single-maze fitness.
+    A2      A with 2 training runs per maze (12 per evaluation): less noise in the fitness,
+            about 2x the cost of A.
     B       A plus the 2x copy of the training maze (1000 episodes, 2 seeds): about 2.5x the
             cost. For later, on the server.
 
@@ -51,6 +53,7 @@ _A = [("dyna_9x6_3traps", 500, (0,)),
 SETS = {
     "single": [("dyna_9x6_3traps", 500, (0, 1, 2, 3, 4))],
     "A": _A,
+    "A2": [(m, e, (s[0], s[0] + 6)) for m, e, s in _A],      # A with 2 runs per maze (seeds 0-11)
     "B": _A + [("dyna_18x12_3traps", 1000, (6, 7))],
 }
 
