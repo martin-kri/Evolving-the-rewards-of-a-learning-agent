@@ -1,0 +1,11 @@
+algo,run,cells_filled,cells_learning,qd_score,best_fitness
+de,0,4,4,3324.0,166.0
+de,1,2,2,1686.0,154.0
+de,2,1,1,832.0,168.0
+de,3,4,4,3300.0,172.0
+de,4,3,3,2486.0,170.0
+mapelites,0,47,45,33174.0,180.0
+mapelites,1,46,44,32654.0,186.0
+mapelites,2,48,45,33716.0,182.0
+mapelites,3,48,45,33540.0,190.0
+mapelites,4,48,43,33520.0,178.0

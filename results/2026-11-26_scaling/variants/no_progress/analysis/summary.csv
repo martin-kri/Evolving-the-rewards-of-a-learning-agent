@@ -1,0 +1,97 @@
+maze,candidate,n,median_n90,q1,q3,learned
+dyna_9x6_3traps,B1_immediate_reward_punish,30,190.0,152.5,227.5,1.0
+dyna_9x6_3traps,DE best,150,200.0,180.0,220.0,1.0
+dyna_9x6_3traps,ME best,150,220.0,200.0,230.0,1.0
+dyna_9x6_3traps,russell_norvig_matched,30,230.0,200.0,240.0,1.0
+dyna_9x6_3traps,A1_immediate_reward_only,30,270.0,220.0,1000.0,0.6333333333333333
+dyna_9x6_3traps,sparse_dyna,30,1000.0,1000.0,1000.0,0.1
+dyna_9x6_3traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.06666666666666667
+dyna_9x6_3traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_18x12_3traps,B1_immediate_reward_punish,30,170.0,122.5,215.0,1.0
+dyna_18x12_3traps,A1_immediate_reward_only,30,300.0,232.5,1000.0,0.7
+dyna_18x12_3traps,russell_norvig_matched,30,480.0,470.0,1000.0,0.7
+dyna_18x12_3traps,ME best,150,490.0,460.0,1000.0,0.6266666666666667
+dyna_18x12_3traps,DE best,150,1000.0,490.0,1000.0,0.36
+dyna_18x12_3traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_18x12_3traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+dyna_18x12_3traps,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,B1_immediate_reward_punish,30,170.0,140.0,200.0,1.0
+dyna_27x18_3traps,A1_immediate_reward_only,30,355.0,217.5,1000.0,0.6333333333333333
+dyna_27x18_3traps,DE best,150,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,ME best,150,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+dyna_27x18_3traps,russell_norvig_matched,30,1000.0,1000.0,1000.0,0.0
+dyna_9x6_2traps,B1_immediate_reward_punish,30,120.0,72.5,160.0,1.0
+dyna_9x6_2traps,DE best,150,160.0,140.0,180.0,1.0
+dyna_9x6_2traps,ME best,150,170.0,150.0,190.0,1.0
+dyna_9x6_2traps,A1_immediate_reward_only,30,170.0,112.5,197.5,0.9666666666666667
+dyna_9x6_2traps,russell_norvig_matched,30,200.0,172.5,217.5,1.0
+dyna_9x6_2traps,sparse_dyna,30,355.0,272.5,870.0,0.7333333333333333
+dyna_9x6_2traps,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+dyna_9x6_2traps,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+maze_8x8,A1_immediate_reward_only,30,135.0,110.0,170.0,0.9333333333333333
+maze_8x8,B1_immediate_reward_punish,30,160.0,82.5,207.5,1.0
+maze_8x8,DE best,150,240.0,220.0,260.0,1.0
+maze_8x8,ME best,150,250.0,230.0,270.0,1.0
+maze_8x8,russell_norvig_matched,30,275.0,250.0,290.0,1.0
+maze_8x8,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.06666666666666667
+maze_8x8,sparse_dyna,30,1000.0,1000.0,1000.0,0.03333333333333333
+maze_8x8,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,A1_immediate_reward_only,30,155.0,120.0,195.0,1.0
+maze_10x10,B1_immediate_reward_punish,30,250.0,195.0,280.0,1.0
+maze_10x10,DE best,150,390.0,370.0,430.0,0.9
+maze_10x10,ME best,150,400.0,370.0,460.0,0.8333333333333334
+maze_10x10,russell_norvig_matched,30,445.0,420.0,1000.0,0.6666666666666666
+maze_10x10,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+maze_10x10,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+lava_7x5,B1_immediate_reward_punish,30,120.0,82.5,140.0,1.0
+lava_7x5,DE best,150,130.0,110.0,140.0,1.0
+lava_7x5,ME best,150,130.0,120.0,150.0,1.0
+lava_7x5,russell_norvig_matched,30,140.0,130.0,157.5,1.0
+lava_7x5,A1_immediate_reward_only,30,150.0,122.5,180.0,0.9666666666666667
+lava_7x5,B2_delayed_reward_punish,30,175.0,142.5,210.0,1.0
+lava_7x5,sparse_dyna,30,200.0,150.0,277.5,0.9333333333333333
+lava_7x5,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.03333333333333333
+unseen_6x8,DE best,150,150.0,130.0,160.0,0.9933333333333333
+unseen_6x8,ME best,150,180.0,160.0,210.0,1.0
+unseen_6x8,B1_immediate_reward_punish,30,220.0,192.5,260.0,1.0
+unseen_6x8,russell_norvig_matched,30,225.0,182.5,250.0,1.0
+unseen_6x8,A1_immediate_reward_only,30,1000.0,1000.0,1000.0,0.13333333333333333
+unseen_6x8,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_6x8,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+unseen_6x8,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+unseen_7x7,DE best,150,180.0,160.0,200.0,1.0
+unseen_7x7,A1_immediate_reward_only,30,185.0,152.5,232.5,0.8333333333333334
+unseen_7x7,B1_immediate_reward_punish,30,215.0,180.0,257.5,1.0
+unseen_7x7,ME best,150,220.0,190.0,250.0,0.9933333333333333
+unseen_7x7,russell_norvig_matched,30,260.0,232.5,290.0,1.0
+unseen_7x7,sparse_dyna,30,1000.0,1000.0,1000.0,0.2
+unseen_7x7,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_7x7,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+unseen_9x7,ME best,150,450.0,400.0,1000.0,0.62
+unseen_9x7,B1_immediate_reward_punish,30,460.0,402.5,1000.0,0.6333333333333333
+unseen_9x7,DE best,150,1000.0,370.0,1000.0,0.46
+unseen_9x7,russell_norvig_matched,30,1000.0,455.0,1000.0,0.3
+unseen_9x7,A1_immediate_reward_only,30,1000.0,1000.0,1000.0,0.03333333333333333
+unseen_9x7,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_9x7,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+unseen_9x7,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+unseen_11x8,B1_immediate_reward_punish,30,430.0,402.5,875.0,0.7333333333333333
+unseen_11x8,ME best,150,500.0,400.0,1000.0,0.5066666666666667
+unseen_11x8,DE best,150,1000.0,390.0,1000.0,0.49333333333333335
+unseen_11x8,A1_immediate_reward_only,30,1000.0,1000.0,1000.0,0.13333333333333333
+unseen_11x8,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_11x8,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+unseen_11x8,sparse_dyna,30,1000.0,1000.0,1000.0,0.0
+unseen_11x8,russell_norvig_matched,30,1000.0,1000.0,1000.0,0.0
+unseen_12x10,B1_immediate_reward_punish,30,370.0,350.0,400.0,1.0
+unseen_12x10,russell_norvig_matched,30,380.0,370.0,390.0,1.0
+unseen_12x10,ME best,150,380.0,350.0,390.0,0.9933333333333333
+unseen_12x10,DE best,150,410.0,370.0,1000.0,0.5733333333333334
+unseen_12x10,A1_immediate_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_12x10,A2_delayed_reward_only,30,1000.0,1000.0,1000.0,0.0
+unseen_12x10,B2_delayed_reward_punish,30,1000.0,1000.0,1000.0,0.0
+unseen_12x10,sparse_dyna,30,1000.0,1000.0,1000.0,0.0

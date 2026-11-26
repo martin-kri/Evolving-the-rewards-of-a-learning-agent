@@ -1,0 +1,641 @@
+candidate,source,condition,kind,algo,run,cell,scheme,train_fitness,trap,wall,step,progress,delay,scale,maze,episodes,seed,drift,slip,train_slip,learned,n90,final_success,trap_falls
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,250,0.93,247
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,170,0.97,220
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,250,0.92,256
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,220,0.9,253
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,190,0.93,226
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,240,0.92,231
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,190,0.93,236
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,190,0.94,214
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,190,0.45,249
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,230,0.88,242
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,170,0.86,247
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,180,0.93,232
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,200,0.97,227
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,280,0.89,232
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,150,0.93,242
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,230,0.93,263
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,220,0.94,239
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,190,0.94,240
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,150,0.94,225
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,190,0.94,221
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,160,0.99,208
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,190,0.96,200
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,160,0.91,233
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,190,0.91,230
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,150,0.93,206
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,220,0.93,241
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,180,0.97,201
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,230,0.95,238
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,130,0.93,207
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,150,0.97,212
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,180,0.92,231
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,270,0.96,241
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,180,0.9,242
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,250,0.88,239
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,210,0.84,239
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,220,0.95,226
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,210,0.96,224
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,270,0.94,252
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,210,0.96,250
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,230,0.95,230
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,290,0.9,244
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,220,0.91,249
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,220,0.95,232
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,190,0.95,214
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,190,0.96,241
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,240,0.91,239
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,250,0.92,244
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,190,0.95,228
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,210,0.97,228
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,170,0.95,216
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,250,0.71,237
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,300,0.96,256
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,220,0.94,207
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,230,0.96,245
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,180,0.9,229
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,220,0.99,212
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,310,0.98,228
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,210,0.99,219
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,210,0.96,229
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,230,0.92,242
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,290,0.86,230
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,230,0.98,221
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,230,0.96,239
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,210,0.93,207
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,230,0.71,236
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,290,0.95,235
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,190,0.92,224
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,230,0.93,225
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,200,0.94,223
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,220,0.98,213
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,250,0.94,228
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,260,0.91,233
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,200,0.88,236
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,200,0.91,247
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,220,0.97,199
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,250,0.99,235
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,220,0.94,228
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,190,0.97,214
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,260,0.92,255
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,190,0.88,246
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,180,0.94,257
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,230,0.9,251
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,220,0.9,238
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,220,0.87,235
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,210,1.0,209
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,210,0.95,222
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,230,0.92,254
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,220,0.92,221
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,230,0.95,243
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,200,0.93,240
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,200,0.95,228
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,280,0.95,244
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,200,0.92,231
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,250,0.93,242
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,260,0.95,239
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,200,0.98,222
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,260,0.96,215
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,200,0.49,227
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,220,0.92,276
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,270,0.95,232
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,260,0.98,225
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,160,0.93,242
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,260,0.91,268
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,240,0.91,277
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,False,1000,0.0,495
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,False,1000,0.88,465
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,False,1000,0.0,493
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6000,uniform,0.1,,False,1000,0.0,499
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,False,1000,0.0,493
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6001,uniform,0.1,,False,1000,0.0,498
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6002,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,100,0.97,219
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,260,0.91,262
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6003,uniform,0.1,,False,1000,0.0,499
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6004,uniform,0.1,,False,1000,0.0,497
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6006,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6005,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6007,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6008,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,1,dyna_9x6_3traps,500,6009,uniform,0.1,,False,1000,0.0,500
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,160,0.95,215
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,190,0.95,247
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,320,0.48,244
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,120,0.9,224
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,280,0.94,252
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,230,0.95,216
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,260,0.96,261
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,190,0.95,215
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,220,0.9,252
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,210,0.93,237
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6002,uniform,0.1,,False,1000,0.0,314
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6000,uniform,0.1,,False,1000,0.0,304
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6005,uniform,0.1,,False,1000,0.0,281
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6001,uniform,0.1,,False,1000,0.0,293
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6006,uniform,0.1,,False,1000,0.0,275
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6003,uniform,0.1,,False,1000,0.0,287
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6007,uniform,0.1,,False,1000,0.0,306
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6004,uniform,0.1,,False,1000,0.0,283
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,490,0.89,383
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,False,1000,0.02,467
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,False,1000,0.01,475
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,False,1000,0.0,478
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,False,1000,0.01,476
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,440,0.93,397
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,False,1000,0.0,483
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6008,uniform,0.1,,False,1000,0.0,270
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6000,uniform,0.1,,True,260,0.97,242
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6001,uniform,0.1,,True,310,0.97,250
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,False,1000,0.01,481
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,False,1000,0.02,481
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,1,dyna_9x6_3traps,500,6009,uniform,0.1,,False,1000,0.0,288
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,False,1000,0.01,485
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6002,uniform,0.1,,True,270,0.99,212
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6004,uniform,0.1,,True,260,0.9,248
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6003,uniform,0.1,,True,210,0.97,226
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6005,uniform,0.1,,True,260,0.98,228
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6006,uniform,0.1,,True,250,0.95,216
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6007,uniform,0.1,,True,250,0.96,232
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6009,uniform,0.1,,True,200,0.01,243
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,1,dyna_9x6_3traps,500,6008,uniform,0.1,,True,240,0.98,227
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,700,0.92,755
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,800,0.9,660
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,810,0.98,613
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,540,0.95,532
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,760,0.94,615
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,770,0.96,599
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,820,0.96,640
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,770,0.89,630
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,False,2000,0.04,835
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,720,0.89,599
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,640,0.99,496
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,700,0.99,485
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,610,1.0,446
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,690,0.95,515
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,620,1.0,487
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,680,0.89,517
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,590,0.98,479
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,620,0.89,539
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,700,1.0,505
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,410,0.89,508
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,520,0.99,463
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,640,1.0,494
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,660,0.95,573
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,620,0.99,561
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,590,0.97,530
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,False,2000,0.0,898
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,510,1.0,444
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,700,0.99,576
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,890,0.91,773
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,700,0.93,595
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,690,0.99,479
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,670,0.99,489
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,670,0.97,487
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,660,1.0,493
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,660,0.92,529
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,770,0.98,482
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,750,0.93,519
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,680,0.92,507
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,670,1.0,503
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,700,1.0,500
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,630,0.94,508
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,710,0.92,532
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,670,0.99,494
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,640,0.99,499
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,680,0.98,510
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,670,0.91,540
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,620,1.0,482
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,680,0.93,530
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,630,0.95,538
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,620,0.98,460
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,660,1.0,455
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,730,0.92,496
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,660,0.99,478
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,610,1.0,470
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,660,1.0,473
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,690,1.0,476
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,710,1.0,488
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,680,0.99,475
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,650,1.0,478
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,710,1.0,476
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,590,1.0,449
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,630,1.0,469
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,580,1.0,440
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,570,0.99,441
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,610,0.93,514
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,610,1.0,429
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,550,1.0,439
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,580,0.99,437
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,590,0.99,488
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,640,0.94,499
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,620,1.0,448
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,660,1.0,481
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,610,1.0,463
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,680,1.0,480
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,600,0.97,509
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,720,1.0,499
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,640,0.97,514
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,630,0.71,510
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,680,0.98,498
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,690,0.91,494
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,820,0.85,581
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,670,0.99,506
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,700,0.91,494
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,670,0.96,518
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,720,1.0,487
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,780,0.93,544
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,640,0.99,527
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,710,0.91,528
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,590,0.98,508
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,680,0.97,507
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,650,0.98,459
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,670,0.95,462
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,670,0.96,501
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,580,1.0,456
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,680,0.98,470
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,600,0.99,463
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,580,1.0,419
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,290,0.97,473
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,230,0.94,417
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,390,0.96,481
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,260,0.94,496
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,690,1.0,482
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,290,0.95,463
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,260,0.92,468
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,220,0.99,456
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,650,0.99,471
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,250,0.98,464
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,False,2000,0.0,991
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,310,0.46,505
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,610,0.99,471
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,230,0.95,476
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,False,2000,0.0,993
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,False,2000,0.0,991
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,False,2000,0.0,985
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,False,2000,0.0,991
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,False,2000,0.0,991
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,False,2000,0.0,993
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,False,2000,0.0,993
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,False,2000,0.0,996
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,False,2000,0.0,980
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,140,1.0,375
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,130,1.0,395
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,230,1.0,376
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,270,0.99,413
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,110,1.0,376
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,190,0.98,375
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,180,1.0,398
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,170,1.0,379
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,340,1.0,444
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,220,0.97,372
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,False,2000,0.0,479
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,False,2000,0.0,442
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,False,2000,0.0,407
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,False,2000,0.0,398
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,False,2000,0.0,374
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,False,2000,0.0,410
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,False,2000,0.0,463
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,False,2000,0.0,437
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,False,2000,0.0,826
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,False,2000,0.0,815
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,False,2000,0.0,829
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,False,2000,0.0,830
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,False,2000,0.01,821
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,False,2000,0.0,835
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,False,2000,0.0,353
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,False,2000,0.0,413
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6000,uniform,0.1,,True,670,0.99,467
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6001,uniform,0.1,,True,680,1.0,453
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,False,2000,0.0,823
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,False,2000,0.0,829
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6002,uniform,0.1,,True,590,0.99,445
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6003,uniform,0.1,,True,630,0.99,420
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,False,2000,0.0,833
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6004,uniform,0.1,,True,640,0.99,469
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,False,2000,0.0,832
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6005,uniform,0.1,,True,670,0.99,469
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6006,uniform,0.1,,True,560,0.99,445
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6007,uniform,0.1,,True,650,0.98,470
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6008,uniform,0.1,,True,660,1.0,446
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,2,dyna_18x12_3traps,1000,6009,uniform,0.1,,True,610,0.99,441
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,False,3000,0.01,1388
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,False,3000,0.0,1383
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,False,3000,0.01,1375
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,False,3000,0.0,1377
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,False,3000,0.0,1362
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,False,3000,0.0,1399
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,False,3000,0.0,1382
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,False,3000,0.0,1393
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,False,3000,0.0,1394
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,False,3000,0.0,1398
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1290,0.94,846
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1250,0.93,883
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1350,0.99,821
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1270,0.99,827
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1270,1.0,833
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1190,1.0,829
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1260,0.94,857
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1120,1.0,834
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,False,3000,0.0,1398
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,False,3000,0.0,1420
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1230,1.0,805
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,False,3000,0.0,1417
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,False,3000,0.0,1418
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1230,1.0,841
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,False,3000,0.01,1392
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,False,3000,0.0,1424
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,False,3000,0.0,1415
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,False,3000,0.0,1419
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,False,3000,0.0,1417
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,False,3000,0.0,1405
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1340,1.0,823
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1360,0.98,836
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1450,0.98,812
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1430,0.94,836
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1310,0.99,816
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1220,0.97,807
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1250,0.93,853
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1410,1.0,871
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1350,0.98,815
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1320,0.99,828
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1230,0.95,845
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1380,0.99,861
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1310,0.95,914
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1300,0.91,895
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1380,0.94,864
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1250,0.94,870
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1390,0.86,912
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1270,1.0,801
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1280,0.88,906
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1330,0.99,913
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1330,1.0,765
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1120,1.0,770
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1290,1.0,801
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1260,1.0,751
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1220,1.0,760
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1280,1.0,793
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1200,1.0,776
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1290,0.99,787
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1240,0.99,773
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1210,1.0,798
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1100,0.98,724
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1130,0.91,776
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1100,1.0,720
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1080,1.0,739
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1090,0.99,745
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1100,1.0,728
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1030,0.98,697
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1170,0.99,712
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1110,0.97,756
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1060,1.0,733
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1220,1.0,803
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1240,1.0,831
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1220,1.0,824
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1280,0.91,849
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1300,0.99,836
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1230,0.93,856
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1260,1.0,837
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1270,0.94,862
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1310,0.97,833
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1260,1.0,833
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1250,0.99,843
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1350,0.95,877
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1380,0.82,918
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1230,0.98,852
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1320,1.0,845
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1350,0.95,858
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1300,0.92,875
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1370,0.97,861
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1380,0.99,872
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1290,0.99,844
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1120,1.0,727
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1170,0.99,748
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1240,1.0,778
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1230,1.0,755
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1080,0.99,753
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,390,0.96,698
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,290,1.0,573
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1180,1.0,766
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,420,0.99,652
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1150,1.0,765
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1180,1.0,763
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,490,0.94,668
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,420,0.85,788
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,300,0.92,702
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,470,0.9,749
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1230,0.93,803
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1220,1.0,790
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,420,0.97,656
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,430,0.98,638
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,False,3000,0.0,1475
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,330,0.98,680
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,False,3000,0.0,1466
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,False,3000,0.0,1475
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,False,3000,0.0,1469
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,False,3000,0.0,1475
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,False,3000,0.0,1477
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,False,3000,0.0,1475
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,False,3000,0.0,1478
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,False,3000,0.0,1480
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,False,3000,0.0,1473
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,390,1.0,494
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,280,1.0,556
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,180,1.0,569
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,230,0.99,481
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,300,1.0,524
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,270,0.99,624
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,240,0.99,528
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,260,1.0,525
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,130,1.0,529
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,190,0.98,489
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,False,3000,0.0,540
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,False,3000,0.0,478
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,False,3000,0.0,453
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,False,3000,0.0,486
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,False,3000,0.0,529
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,False,3000,0.01,447
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,False,3000,0.0,397
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,False,3000,0.0,422
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,False,3000,0.0,1035
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,False,3000,0.0,1003
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,False,3000,0.0,1047
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,False,3000,0.0,1032
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,False,3000,0.0,1011
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,False,3000,0.0,1060
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,False,3000,0.0,549
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,False,3000,0.0,425
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6000,uniform,0.1,,True,1070,1.0,692
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6001,uniform,0.1,,True,1180,1.0,743
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6002,uniform,0.1,,True,1200,1.0,768
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6003,uniform,0.1,,True,1160,1.0,733
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,False,3000,0.0,1053
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,False,3000,0.0,1011
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,False,3000,0.0,1035
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,False,3000,0.0,1027
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6004,uniform,0.1,,True,1210,0.99,733
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6005,uniform,0.1,,True,1130,1.0,730
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6006,uniform,0.1,,True,1090,1.0,719
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6007,uniform,0.1,,True,1100,1.0,696
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6008,uniform,0.1,,True,1130,1.0,712
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,3,dyna_27x18_3traps,1500,6009,uniform,0.1,,True,1210,1.0,771
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.0,1857
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,1867
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.02,1876
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.0,1877
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.0,1866
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.0,1864
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,1874
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.0,1879
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.0,1873
+no_progress|winner|DE0_winner,no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.0,1873
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.86,1281
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.29,1238
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.69,1237
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,1940,0.89,1239
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,1830,1.0,1179
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,1910,0.85,1176
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.9,1268
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.95,1210
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,1900,1.0,1210
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,1891
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.0,1895
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.0,1898
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.0,1902
+no_progress|winner|DE1_winner,no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.87,1222
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.0,1902
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.0,1893
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,1898
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.0,1898
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.0,1896
+no_progress|winner|DE2_winner,no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.01,1897
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.44,1201
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.92,1209
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.28,1218
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.84,1224
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.94,1222
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.38,1203
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.63,1196
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.95,1242
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.74,1226
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.01,1435
+no_progress|winner|DE3_winner,no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.6,1205
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,1487
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.0,1502
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.08,1443
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.02,1535
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.8,1464
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,1543
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.02,1467
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.0,1492
+no_progress|winner|DE4_winner,no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.95,1350
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.83,1126
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.66,1111
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,1990,0.42,1125
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.46,1085
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.85,1116
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,1.0,1122
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.4,1112
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.85,1104
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.96,1108
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,1640,1.0,1020
+no_progress|winner|ME0_winner,no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,1880,0.89,1114
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,1690,0.99,1032
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,1670,1.0,1019
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,1590,1.0,1004
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,1660,1.0,1005
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,1740,0.99,1033
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,1740,1.0,1072
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,1680,1.0,1026
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,1710,1.0,1033
+no_progress|winner|ME1_winner,no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,1730,0.98,1060
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,1900,0.98,1180
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,1970,0.76,1201
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,2000,0.98,1222
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.68,1208
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.06,1192
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,1940,0.92,1161
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,1970,0.86,1207
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,1970,0.36,1194
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,1950,0.97,1202
+no_progress|winner|ME2_winner,no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,1980,0.63,1201
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.19,1291
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.87,1267
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.29,1268
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.43,1304
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.16,1320
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.22,1273
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.6,1297
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.66,1278
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,1.0,1298
+no_progress|winner|ME3_winner,no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.08,1354
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,1810,0.85,1147
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,1690,1.0,1096
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,1840,0.99,1080
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,1750,0.99,1050
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,320,0.98,903
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,1780,0.99,1091
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,360,0.9,949
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,1740,1.0,1078
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,460,0.99,981
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,1850,1.0,1052
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,510,1.0,692
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,440,0.97,853
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,1890,1.0,1091
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,430,0.79,1047
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,430,0.99,737
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,1850,1.0,1092
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.0,1949
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,270,1.0,837
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,600,0.99,973
+hand-made|baseline|A1_immediate_reward_only,hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,400,1.0,708
+no_progress|winner|ME4_winner,no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,1840,1.0,1067
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,1925
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.0,1949
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.0,1950
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,1944
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.0,1934
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.0,1934
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.0,1932
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.0,1920
+hand-made|baseline|A2_delayed_reward_only,hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.0,1936
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,320,0.99,591
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,310,1.0,674
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,330,1.0,620
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,150,1.0,652
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,210,0.98,688
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,290,0.99,645
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,400,1.0,685
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,330,1.0,633
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,290,0.99,636
+hand-made|baseline|B1_immediate_reward_punish,hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,320,1.0,697
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.0,580
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.0,553
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,511
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.0,603
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.0,494
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.0,463
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,534
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.0,514
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,False,4000,0.0,1097
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,False,4000,0.0,1139
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,False,4000,0.0,1144
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,False,4000,0.0,1137
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.0,574
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,False,4000,0.0,1142
+hand-made|baseline|B2_delayed_reward_punish,hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.0,588
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,False,4000,0.0,1159
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6000,uniform,0.1,,True,1780,1.0,990
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6002,uniform,0.1,,True,1690,0.99,1010
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6001,uniform,0.1,,True,1720,0.99,1015
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6003,uniform,0.1,,True,1820,1.0,1050
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,False,4000,0.0,1156
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,False,4000,0.0,1104
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,False,4000,0.0,1127
+hand-made|baseline|sparse_dyna,hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,False,4000,0.0,1126
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6005,uniform,0.1,,True,1680,1.0,980
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6004,uniform,0.1,,True,1730,0.98,990
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6007,uniform,0.1,,True,1710,1.0,1029
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6006,uniform,0.1,,True,1670,1.0,982
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6008,uniform,0.1,,True,1770,1.0,1031
+hand-made|baseline|russell_norvig_matched,hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,4,dyna_36x24_3traps,2000,6009,uniform,0.1,,True,1680,0.99,1007

@@ -1,0 +1,193 @@
+size,A,B,unit,n_A,n_B,median_A,median_B,A12,p,p_holm,significant,verdict
+3,ME pick,ME winner,run (paired),10,10,220.75,235.0,0.755,0.03125,1.0,False,no difference
+3,ME pick,DE winner,run,10,10,220.75,252.75,0.97,0.0004374549211627663,0.03543384861418407,True,faster
+3,ME pick,DE pick,run,10,10,220.75,249.0,0.97,0.0004374549211627663,0.03543384861418407,True,faster
+3,ME pick,RS pick,run,10,10,220.75,219.5,0.47,0.8499952484876381,1.0,False,no difference
+3,RS pick,RS winner,run,10,10,219.5,244.75,0.925,0.0014682523573532008,0.10982130217430859,False,no difference
+3,DE pick,DE winner,run,10,10,249.0,252.75,0.615,0.40514864937120365,1.0,False,no difference
+3,DE pick|0,A1_immediate_reward_only,seed,20,20,245.0,335.0,0.81375,0.0007103541339950016,0.05540762245161012,False,no difference
+3,DE pick|0,B1_immediate_reward_punish,seed,20,20,245.0,260.0,0.4625,0.6943322182077181,1.0,False,no difference
+3,DE pick|0,russell_norvig_matched,seed,20,20,245.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,DE pick|1,A1_immediate_reward_only,seed,20,20,250.0,335.0,0.94375,1.6079800218098257e-06,0.00018330972248632014,True,faster
+3,DE pick|1,B1_immediate_reward_punish,seed,20,20,250.0,260.0,0.55125,0.5874529249571633,1.0,False,no difference
+3,DE pick|1,russell_norvig_matched,seed,20,20,250.0,1145.0,1.0,6.52261436867194e-08,1.2265227257241258e-05,True,faster
+3,DE pick|2,A1_immediate_reward_only,seed,20,20,235.0,335.0,0.85375,0.0001343399789932289,0.011553238193417687,True,faster
+3,DE pick|2,B1_immediate_reward_punish,seed,20,20,235.0,260.0,0.5,1.0,1.0,False,no difference
+3,DE pick|2,russell_norvig_matched,seed,20,20,235.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,DE pick|3,A1_immediate_reward_only,seed,20,20,250.0,335.0,0.865,7.978305443691387e-05,0.007340041008196076,True,faster
+3,DE pick|3,B1_immediate_reward_punish,seed,20,20,250.0,260.0,0.5125,0.9028622750262782,1.0,False,no difference
+3,DE pick|3,russell_norvig_matched,seed,20,20,250.0,1145.0,1.0,6.578301479947072e-08,1.2265227257241258e-05,True,faster
+3,DE pick|4,A1_immediate_reward_only,seed,20,20,225.0,335.0,0.91,9.488656826989816e-06,0.0009583543395259714,True,faster
+3,DE pick|4,B1_immediate_reward_punish,seed,20,20,225.0,260.0,0.58625,0.3568015455272979,1.0,False,no difference
+3,DE pick|4,russell_norvig_matched,seed,20,20,225.0,1145.0,1.0,6.634401368214472e-08,1.2265227257241258e-05,True,faster
+3,DE pick|5,A1_immediate_reward_only,seed,20,20,280.0,335.0,0.80625,0.0009421531933035881,0.07254579588437629,False,no difference
+3,DE pick|5,B1_immediate_reward_punish,seed,20,20,280.0,260.0,0.4425,0.5419366756012509,1.0,False,no difference
+3,DE pick|5,russell_norvig_matched,seed,20,20,280.0,1145.0,1.0,6.596955452316671e-08,1.2265227257241258e-05,True,faster
+3,DE pick|6,A1_immediate_reward_only,seed,20,20,255.0,335.0,0.94125,1.8505129909426513e-06,0.0002091079679765196,True,faster
+3,DE pick|6,B1_immediate_reward_punish,seed,20,20,255.0,260.0,0.54625,0.6247645651954272,1.0,False,no difference
+3,DE pick|6,russell_norvig_matched,seed,20,20,255.0,1145.0,1.0,6.504143285397756e-08,1.2265227257241258e-05,True,faster
+3,DE pick|7,A1_immediate_reward_only,seed,20,20,260.0,335.0,0.91875,6.0941401967582736e-06,0.0006398847206596187,True,faster
+3,DE pick|7,B1_immediate_reward_punish,seed,20,20,260.0,260.0,0.545,0.6348787547730258,1.0,False,no difference
+3,DE pick|7,russell_norvig_matched,seed,20,20,260.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,DE pick|8,A1_immediate_reward_only,seed,20,20,235.0,335.0,0.91125,8.910490312715013e-06,0.0009088700118969313,True,faster
+3,DE pick|8,B1_immediate_reward_punish,seed,20,20,235.0,260.0,0.58125,0.3853449772494135,1.0,False,no difference
+3,DE pick|8,russell_norvig_matched,seed,20,20,235.0,1145.0,1.0,6.596955452316671e-08,1.2265227257241258e-05,True,faster
+3,DE pick|9,A1_immediate_reward_only,seed,20,20,230.0,335.0,0.9825,1.8579711377795497e-07,2.3471779196472853e-05,True,faster
+3,DE pick|9,B1_immediate_reward_punish,seed,20,20,230.0,260.0,0.68,0.05249035838772482,1.0,False,no difference
+3,DE pick|9,russell_norvig_matched,seed,20,20,230.0,1145.0,1.0,6.541131032639516e-08,1.2265227257241258e-05,True,faster
+3,ME pick|0,A1_immediate_reward_only,seed,20,20,200.0,335.0,0.97,3.831717177268369e-07,4.7130121280400935e-05,True,faster
+3,ME pick|0,B1_immediate_reward_punish,seed,20,20,200.0,260.0,0.73,0.013100512101232144,0.825332262377625,False,no difference
+3,ME pick|0,russell_norvig_matched,seed,20,20,200.0,1145.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+3,ME pick|1,A1_immediate_reward_only,seed,20,20,200.0,335.0,0.9125,8.366079125594127e-06,0.0008658312566281473,True,faster
+3,ME pick|1,B1_immediate_reward_punish,seed,20,20,200.0,260.0,0.64875,0.10957897414756218,1.0,False,no difference
+3,ME pick|1,russell_norvig_matched,seed,20,20,200.0,1145.0,1.0,6.504143285397756e-08,1.2265227257241258e-05,True,faster
+3,ME pick|2,A1_immediate_reward_only,seed,20,20,225.0,335.0,0.9925,1.028662950400981e-07,1.3475484650252851e-05,True,faster
+3,ME pick|2,B1_immediate_reward_punish,seed,20,20,225.0,260.0,0.695,0.035084442166280067,1.0,False,no difference
+3,ME pick|2,russell_norvig_matched,seed,20,20,225.0,1145.0,1.0,6.53186699717988e-08,1.2265227257241258e-05,True,faster
+3,ME pick|3,A1_immediate_reward_only,seed,20,20,180.0,335.0,0.9675,4.378543740868073e-07,5.302073027975954e-05,True,faster
+3,ME pick|3,B1_immediate_reward_punish,seed,20,20,180.0,260.0,0.74375,0.008534523459986494,0.5969810308061306,False,no difference
+3,ME pick|3,russell_norvig_matched,seed,20,20,180.0,1145.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+3,ME pick|4,A1_immediate_reward_only,seed,20,20,240.0,335.0,0.9475,1.3297873187447464e-06,0.00015292554165564584,True,faster
+3,ME pick|4,B1_immediate_reward_punish,seed,20,20,240.0,260.0,0.57875,0.40048012833804025,1.0,False,no difference
+3,ME pick|4,russell_norvig_matched,seed,20,20,240.0,1145.0,1.0,6.559693371585224e-08,1.2265227257241258e-05,True,faster
+3,ME pick|5,A1_immediate_reward_only,seed,20,20,210.0,335.0,0.9825,1.848171590273453e-07,2.3471779196472853e-05,True,faster
+3,ME pick|5,B1_immediate_reward_punish,seed,20,20,210.0,260.0,0.7225,0.016343559908886435,0.9642700346242997,False,no difference
+3,ME pick|5,russell_norvig_matched,seed,20,20,210.0,1145.0,1.0,6.504143285397756e-08,1.2265227257241258e-05,True,faster
+3,ME pick|6,A1_immediate_reward_only,seed,20,20,220.0,335.0,0.8925,2.2560689164080245e-05,0.0021883868489157837,True,faster
+3,ME pick|6,B1_immediate_reward_punish,seed,20,20,220.0,260.0,0.61,0.23839667032246237,1.0,False,no difference
+3,ME pick|6,russell_norvig_matched,seed,20,20,220.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,ME pick|7,A1_immediate_reward_only,seed,20,20,225.0,335.0,0.955,8.696081041461138e-07,0.0001008745400809492,True,faster
+3,ME pick|7,B1_immediate_reward_punish,seed,20,20,225.0,260.0,0.675,0.05910220300400488,1.0,False,no difference
+3,ME pick|7,russell_norvig_matched,seed,20,20,225.0,1145.0,1.0,6.430712878901696e-08,1.2265227257241258e-05,True,faster
+3,ME pick|8,A1_immediate_reward_only,seed,20,20,210.0,335.0,0.965,5.03161084389788e-07,5.987616904238477e-05,True,faster
+3,ME pick|8,B1_immediate_reward_punish,seed,20,20,210.0,260.0,0.67625,0.057736360356064394,1.0,False,no difference
+3,ME pick|8,russell_norvig_matched,seed,20,20,210.0,1145.0,1.0,6.578301479947072e-08,1.2265227257241258e-05,True,faster
+3,ME pick|9,A1_immediate_reward_only,seed,20,20,215.0,335.0,0.985,1.590008169976263e-07,2.0352104575696167e-05,True,faster
+3,ME pick|9,B1_immediate_reward_punish,seed,20,20,215.0,260.0,0.69875,0.03208091729766427,1.0,False,no difference
+3,ME pick|9,russell_norvig_matched,seed,20,20,215.0,1145.0,1.0,6.52261436867194e-08,1.2265227257241258e-05,True,faster
+3,RS pick|0,A1_immediate_reward_only,seed,20,20,195.0,335.0,0.9975,7.669354315800114e-08,1.2265227257241258e-05,True,faster
+3,RS pick|0,B1_immediate_reward_punish,seed,20,20,195.0,260.0,0.78125,0.002389245217274469,0.17441490086103625,False,no difference
+3,RS pick|0,russell_norvig_matched,seed,20,20,195.0,1145.0,1.0,6.568991698680745e-08,1.2265227257241258e-05,True,faster
+3,RS pick|1,A1_immediate_reward_only,seed,20,20,230.0,335.0,0.96,6.687589614645159e-07,7.824479849134836e-05,True,faster
+3,RS pick|1,B1_immediate_reward_punish,seed,20,20,230.0,260.0,0.64,0.13249975286749668,1.0,False,no difference
+3,RS pick|1,russell_norvig_matched,seed,20,20,230.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,RS pick|2,A1_immediate_reward_only,seed,20,20,205.0,335.0,0.9275,3.9050524274079535e-06,0.00041784060973265103,True,faster
+3,RS pick|2,B1_immediate_reward_punish,seed,20,20,205.0,260.0,0.675,0.0594261046924656,1.0,False,no difference
+3,RS pick|2,russell_norvig_matched,seed,20,20,205.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,RS pick|3,A1_immediate_reward_only,seed,20,20,225.0,335.0,0.9625,5.799442380574245e-07,6.843342009077609e-05,True,faster
+3,RS pick|3,B1_immediate_reward_punish,seed,20,20,225.0,260.0,0.625,0.17969712327259701,1.0,False,no difference
+3,RS pick|3,russell_norvig_matched,seed,20,20,225.0,1145.0,1.0,6.541131032639516e-08,1.2265227257241258e-05,True,faster
+3,RS pick|4,A1_immediate_reward_only,seed,20,20,220.0,335.0,0.9775,2.481462389069085e-07,3.077013362445665e-05,True,faster
+3,RS pick|4,B1_immediate_reward_punish,seed,20,20,220.0,260.0,0.6875,0.04342553702159243,1.0,False,no difference
+3,RS pick|4,russell_norvig_matched,seed,20,20,220.0,1145.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+3,RS pick|5,A1_immediate_reward_only,seed,20,20,210.0,335.0,0.9825,1.8604279946712184e-07,2.3471779196472853e-05,True,faster
+3,RS pick|5,B1_immediate_reward_punish,seed,20,20,210.0,260.0,0.72875,0.01357191300911578,0.8414586065651785,False,no difference
+3,RS pick|5,russell_norvig_matched,seed,20,20,210.0,1145.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+3,RS pick|6,A1_immediate_reward_only,seed,20,20,220.0,335.0,0.94125,1.87747810595802e-06,0.00021027754786729825,True,faster
+3,RS pick|6,B1_immediate_reward_punish,seed,20,20,220.0,260.0,0.64,0.13237210876309377,1.0,False,no difference
+3,RS pick|6,russell_norvig_matched,seed,20,20,220.0,1145.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+3,RS pick|7,A1_immediate_reward_only,seed,20,20,220.0,335.0,0.9675,4.383994280528449e-07,5.302073027975954e-05,True,faster
+3,RS pick|7,B1_immediate_reward_punish,seed,20,20,220.0,260.0,0.65125,0.1037253905110055,1.0,False,no difference
+3,RS pick|7,russell_norvig_matched,seed,20,20,220.0,1145.0,1.0,6.578301479947072e-08,1.2265227257241258e-05,True,faster
+3,RS pick|8,A1_immediate_reward_only,seed,20,20,205.0,335.0,0.99,1.201547192636258e-07,1.5620113504271353e-05,True,faster
+3,RS pick|8,B1_immediate_reward_punish,seed,20,20,205.0,260.0,0.765,0.004220739764940031,0.2996725233107422,False,no difference
+3,RS pick|8,russell_norvig_matched,seed,20,20,205.0,1145.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+3,RS pick|9,A1_immediate_reward_only,seed,20,20,210.0,335.0,0.9875,1.379797677357436e-07,1.779939003791092e-05,True,faster
+3,RS pick|9,B1_immediate_reward_punish,seed,20,20,210.0,260.0,0.71,0.023475865815232783,1.0,False,no difference
+3,RS pick|9,russell_norvig_matched,seed,20,20,210.0,1145.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+4,ME pick,ME winner,run (paired),10,10,281.75,309.5,0.765,0.015625,0.953125,False,no difference
+4,ME pick,DE winner,run,10,10,281.75,320.75,1.0,0.00018267179110955002,0.015527102244311752,True,faster
+4,ME pick,DE pick,run,10,10,281.75,331.75,0.99,0.00024480482452445495,0.02031880043552976,True,faster
+4,ME pick,RS pick,run,10,10,281.75,287.25,0.605,0.44917991372729094,1.0,False,no difference
+4,RS pick,RS winner,run,10,10,287.25,333.5,0.835,0.012411919141794504,0.7943628250748482,False,no difference
+4,DE pick,DE winner,run,10,10,331.75,320.75,0.485,0.9396523458730727,1.0,False,no difference
+4,DE pick|0,A1_immediate_reward_only,seed,20,20,330.0,415.0,0.73375,0.011698737278429353,0.760417923097908,False,no difference
+4,DE pick|0,B1_immediate_reward_punish,seed,20,20,330.0,265.0,0.2625,0.010410508201686866,0.6870935413113332,False,no difference
+4,DE pick|0,russell_norvig_matched,seed,20,20,330.0,1740.0,1.0,6.559693371585224e-08,1.2265227257241258e-05,True,faster
+4,DE pick|1,A1_immediate_reward_only,seed,20,20,290.0,415.0,0.83125,0.000347793391939347,0.028519058139026457,True,faster
+4,DE pick|1,B1_immediate_reward_punish,seed,20,20,290.0,265.0,0.35875,0.12810926898851877,1.0,False,no difference
+4,DE pick|1,russell_norvig_matched,seed,20,20,290.0,1740.0,1.0,6.494924807098672e-08,1.2265227257241258e-05,True,faster
+4,DE pick|2,A1_immediate_reward_only,seed,20,20,330.0,415.0,0.73875,0.009990133777455787,0.6693389630895378,False,no difference
+4,DE pick|2,B1_immediate_reward_punish,seed,20,20,330.0,265.0,0.25625,0.00852830044008758,0.5969810308061306,False,no difference
+4,DE pick|2,russell_norvig_matched,seed,20,20,330.0,1740.0,1.0,6.494924807098672e-08,1.2265227257241258e-05,True,faster
+4,DE pick|3,A1_immediate_reward_only,seed,20,20,295.0,415.0,0.795,0.0014642840289907813,0.10982130217430859,False,no difference
+4,DE pick|3,B1_immediate_reward_punish,seed,20,20,295.0,265.0,0.4125,0.3495014787501898,1.0,False,no difference
+4,DE pick|3,russell_norvig_matched,seed,20,20,295.0,1740.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+4,DE pick|4,A1_immediate_reward_only,seed,20,20,330.0,415.0,0.71125,0.022804328423404907,1.0,False,no difference
+4,DE pick|4,B1_immediate_reward_punish,seed,20,20,330.0,265.0,0.25875,0.009226820509740379,0.6274237946623458,False,no difference
+4,DE pick|4,russell_norvig_matched,seed,20,20,330.0,1740.0,1.0,6.568991698680745e-08,1.2265227257241258e-05,True,faster
+4,DE pick|5,A1_immediate_reward_only,seed,20,20,335.0,415.0,0.70125,0.0303081297142617,1.0,False,no difference
+4,DE pick|5,B1_immediate_reward_punish,seed,20,20,335.0,265.0,0.29,0.023554539742482224,1.0,False,no difference
+4,DE pick|5,russell_norvig_matched,seed,20,20,335.0,1740.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+4,DE pick|6,A1_immediate_reward_only,seed,20,20,300.0,415.0,0.815,0.0006749111555543848,0.053317981288796404,False,no difference
+4,DE pick|6,B1_immediate_reward_punish,seed,20,20,300.0,265.0,0.3375,0.07996296866432481,1.0,False,no difference
+4,DE pick|6,russell_norvig_matched,seed,20,20,300.0,1740.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+4,DE pick|7,A1_immediate_reward_only,seed,20,20,320.0,415.0,0.72375,0.01589054236551604,0.9534325419309625,False,no difference
+4,DE pick|7,B1_immediate_reward_punish,seed,20,20,320.0,265.0,0.38,0.19784304841139622,1.0,False,no difference
+4,DE pick|7,russell_norvig_matched,seed,20,20,320.0,1740.0,1.0,6.615655383439356e-08,1.2265227257241258e-05,True,faster
+4,DE pick|8,A1_immediate_reward_only,seed,20,20,295.0,415.0,0.865,7.984497299392473e-05,0.007340041008196076,True,faster
+4,DE pick|8,B1_immediate_reward_punish,seed,20,20,295.0,265.0,0.47125,0.7652750559776388,1.0,False,no difference
+4,DE pick|8,russell_norvig_matched,seed,20,20,295.0,1740.0,1.0,6.421584951435213e-08,1.2265227257241258e-05,True,faster
+4,DE pick|9,A1_immediate_reward_only,seed,20,20,310.0,415.0,0.77375,0.0031523404626742474,0.2269685133125458,False,no difference
+4,DE pick|9,B1_immediate_reward_punish,seed,20,20,310.0,265.0,0.3225,0.0557297486624141,1.0,False,no difference
+4,DE pick|9,russell_norvig_matched,seed,20,20,310.0,1740.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+4,ME pick|0,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.9375,2.279773035079809e-06,0.0002511221690487003,True,faster
+4,ME pick|0,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.51875,0.8492791846372565,1.0,False,no difference
+4,ME pick|0,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.467337484557014e-08,1.2265227257241258e-05,True,faster
+4,ME pick|1,A1_immediate_reward_only,seed,20,20,250.0,415.0,0.9125,8.325300544501416e-06,0.0008658312566281473,True,faster
+4,ME pick|1,B1_immediate_reward_punish,seed,20,20,250.0,265.0,0.51875,0.8489757407298102,1.0,False,no difference
+4,ME pick|1,russell_norvig_matched,seed,20,20,250.0,1740.0,1.0,6.430712878901696e-08,1.2265227257241258e-05,True,faster
+4,ME pick|2,A1_immediate_reward_only,seed,20,20,275.0,415.0,0.87875,4.329209269381039e-05,0.004069456713218176,True,faster
+4,ME pick|2,B1_immediate_reward_punish,seed,20,20,275.0,265.0,0.505,0.9675186779361883,1.0,False,no difference
+4,ME pick|2,russell_norvig_matched,seed,20,20,275.0,1740.0,1.0,6.52261436867194e-08,1.2265227257241258e-05,True,faster
+4,ME pick|3,A1_immediate_reward_only,seed,20,20,260.0,415.0,0.9675,4.345961498340946e-07,5.302073027975954e-05,True,faster
+4,ME pick|3,B1_immediate_reward_punish,seed,20,20,260.0,265.0,0.57125,0.4461084834307999,1.0,False,no difference
+4,ME pick|3,russell_norvig_matched,seed,20,20,260.0,1740.0,1.0,6.385185787086477e-08,1.2259556711206035e-05,True,faster
+4,ME pick|4,A1_immediate_reward_only,seed,20,20,300.0,415.0,0.865,8.059085933777714e-05,0.007340041008196076,True,faster
+4,ME pick|4,B1_immediate_reward_punish,seed,20,20,300.0,265.0,0.485,0.8813601190178451,1.0,False,no difference
+4,ME pick|4,russell_norvig_matched,seed,20,20,300.0,1740.0,1.0,6.494924807098672e-08,1.2265227257241258e-05,True,faster
+4,ME pick|5,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.88125,3.8250851472928584e-05,0.0036338308899282155,True,faster
+4,ME pick|5,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.525,0.7962699244744964,1.0,False,no difference
+4,ME pick|5,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.559693371585224e-08,1.2265227257241258e-05,True,faster
+4,ME pick|6,A1_immediate_reward_only,seed,20,20,295.0,415.0,0.85875,0.00010827831703635032,0.009528491899198828,True,faster
+4,ME pick|6,B1_immediate_reward_punish,seed,20,20,295.0,265.0,0.47625,0.8071946013839083,1.0,False,no difference
+4,ME pick|6,russell_norvig_matched,seed,20,20,295.0,1740.0,1.0,6.60629966710624e-08,1.2265227257241258e-05,True,faster
+4,ME pick|7,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.8975,1.7798097951254236e-05,0.001744213599222915,True,faster
+4,ME pick|7,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.48875,0.9135576399969073,1.0,False,no difference
+4,ME pick|7,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.550406486841375e-08,1.2265227257241258e-05,True,faster
+4,ME pick|8,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.90125,1.4702545262212728e-05,0.0014702545262212728,True,faster
+4,ME pick|8,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.4775,0.8175938240644407,1.0,False,no difference
+4,ME pick|8,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.485717688685576e-08,1.2265227257241258e-05,True,faster
+4,ME pick|9,A1_immediate_reward_only,seed,20,20,280.0,415.0,0.855,0.00012631949780180405,0.010989796308756952,True,faster
+4,ME pick|9,B1_immediate_reward_punish,seed,20,20,280.0,265.0,0.43625,0.49736359021757537,1.0,False,no difference
+4,ME pick|9,russell_norvig_matched,seed,20,20,280.0,1740.0,1.0,6.52261436867194e-08,1.2265227257241258e-05,True,faster
+4,RS pick|0,A1_immediate_reward_only,seed,20,20,260.0,415.0,0.9325,2.9596618884640644e-06,0.000322603145842583,True,faster
+4,RS pick|0,B1_immediate_reward_punish,seed,20,20,260.0,265.0,0.5875,0.34836284291758424,1.0,False,no difference
+4,RS pick|0,russell_norvig_matched,seed,20,20,260.0,1740.0,1.0,6.494924807098672e-08,1.2265227257241258e-05,True,faster
+4,RS pick|1,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.92,5.6410609668979694e-06,0.0005979524624911848,True,faster
+4,RS pick|1,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.53125,0.7446957147779691,1.0,False,no difference
+4,RS pick|1,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.504143285397756e-08,1.2265227257241258e-05,True,faster
+4,RS pick|2,A1_immediate_reward_only,seed,20,20,250.0,415.0,0.92875,3.5481598592605833e-06,0.000383201264800143,True,faster
+4,RS pick|2,B1_immediate_reward_punish,seed,20,20,250.0,265.0,0.5925,0.32021412657198567,1.0,False,no difference
+4,RS pick|2,russell_norvig_matched,seed,20,20,250.0,1740.0,1.0,6.485717688685576e-08,1.2265227257241258e-05,True,faster
+4,RS pick|3,A1_immediate_reward_only,seed,20,20,285.0,415.0,0.84625,0.0001860089786062964,0.015624754202928899,True,faster
+4,RS pick|3,B1_immediate_reward_punish,seed,20,20,285.0,265.0,0.45375,0.6253531677704944,1.0,False,no difference
+4,RS pick|3,russell_norvig_matched,seed,20,20,285.0,1740.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+4,RS pick|4,A1_immediate_reward_only,seed,20,20,295.0,415.0,0.8625,9.089353696451141e-05,0.008089524789841516,True,faster
+4,RS pick|4,B1_immediate_reward_punish,seed,20,20,295.0,265.0,0.39375,0.2544150723590719,1.0,False,no difference
+4,RS pick|4,russell_norvig_matched,seed,20,20,295.0,1740.0,1.0,6.53186699717988e-08,1.2265227257241258e-05,True,faster
+4,RS pick|5,A1_immediate_reward_only,seed,20,20,290.0,415.0,0.8825,3.6095328484659896e-05,0.00346515153452735,True,faster
+4,RS pick|5,B1_immediate_reward_punish,seed,20,20,290.0,265.0,0.44375,0.5501056180543069,1.0,False,no difference
+4,RS pick|5,russell_norvig_matched,seed,20,20,290.0,1740.0,1.0,6.578301479947072e-08,1.2265227257241258e-05,True,faster
+4,RS pick|6,A1_immediate_reward_only,seed,20,20,290.0,415.0,0.87625,4.871524223097719e-05,0.004530517527480879,True,faster
+4,RS pick|6,B1_immediate_reward_punish,seed,20,20,290.0,265.0,0.42875,0.44748491448264793,1.0,False,no difference
+4,RS pick|6,russell_norvig_matched,seed,20,20,290.0,1740.0,1.0,6.587622727212894e-08,1.2265227257241258e-05,True,faster
+4,RS pick|7,A1_immediate_reward_only,seed,20,20,300.0,415.0,0.89875,1.6546194317476132e-05,0.001638073237430137,True,faster
+4,RS pick|7,B1_immediate_reward_punish,seed,20,20,300.0,265.0,0.465,0.713537097926568,1.0,False,no difference
+4,RS pick|7,russell_norvig_matched,seed,20,20,300.0,1740.0,1.0,6.513373135334972e-08,1.2265227257241258e-05,True,faster
+4,RS pick|8,A1_immediate_reward_only,seed,20,20,270.0,415.0,0.9375,2.262361883321624e-06,0.0002511221690487003,True,faster
+4,RS pick|8,B1_immediate_reward_punish,seed,20,20,270.0,265.0,0.535,0.7141452126205567,1.0,False,no difference
+4,RS pick|8,russell_norvig_matched,seed,20,20,270.0,1740.0,1.0,6.53186699717988e-08,1.2265227257241258e-05,True,faster
+4,RS pick|9,A1_immediate_reward_only,seed,20,20,310.0,415.0,0.8025,0.0010944335819790426,0.08317695223040723,False,no difference
+4,RS pick|9,B1_immediate_reward_punish,seed,20,20,310.0,265.0,0.31875,0.05067553601089102,1.0,False,no difference
+4,RS pick|9,russell_norvig_matched,seed,20,20,310.0,1740.0,1.0,6.449002579186645e-08,1.2265227257241258e-05,True,faster

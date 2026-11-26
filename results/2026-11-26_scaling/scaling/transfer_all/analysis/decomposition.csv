@@ -1,0 +1,29 @@
+size,group,schemes,failed,incentive,learnability
+1,DE winners,10,0,0,0
+1,ME elites,533,31,0,31
+1,ME winners,10,0,0,0
+1,RS elites,352,13,0,13
+1,RS winners,10,0,0,0
+1,hand-made,6,4,0,4
+1,all evolved,915,44,0,44
+2,DE winners,10,0,0,0
+2,ME elites,533,97,4,93
+2,ME winners,10,0,0,0
+2,RS elites,352,34,1,33
+2,RS winners,10,0,0,0
+2,hand-made,6,3,0,3
+2,all evolved,915,131,5,126
+3,DE winners,10,0,0,0
+3,ME elites,533,238,24,214
+3,ME winners,10,0,0,0
+3,RS elites,352,100,7,93
+3,RS winners,10,0,0,0
+3,hand-made,6,3,0,3
+3,all evolved,915,338,31,307
+4,DE winners,10,0,0,0
+4,ME elites,533,368,62,306
+4,ME winners,10,0,0,0
+4,RS elites,352,187,16,171
+4,RS winners,10,0,0,0
+4,hand-made,6,3,0,3
+4,all evolved,915,555,78,477

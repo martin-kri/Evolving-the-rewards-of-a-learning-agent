@@ -1,0 +1,6 @@
+size,schemes,ok_learned,ok_failed,fail_failed,fail_learned,fail_prediction_correct,failures_explained_by_rule
+1,921,873,48,0,0,,0.0
+2,921,787,129,5,0,1.0,0.037
+3,921,577,310,31,3,0.912,0.091
+4,921,361,480,78,2,0.975,0.14
+all,3684,2598,967,114,5,0.958,0.105

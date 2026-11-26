@@ -1,0 +1,733 @@
+maze,group,A,B,unit,n_A,n_B,median_A,median_B,p,p_holm,A12,significant,verdict
+dyna_9x6_3traps,ME vs DE,ME best,DE best,per run,5,5,218.0,201.33333333333334,0.15079365079365079,1.0,0.2,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,220.0,270.0,0.004634751781183839,1.0,0.7122222222222222,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,220.0,1000.0,1.1680040748357487e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,220.0,190.0,0.0026038814344342687,0.5936849670510133,0.2738888888888889,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,220.0,1000.0,3.1826379370752026e-12,1.7727293309508878e-09,0.9966666666666667,True,faster
+dyna_9x6_3traps,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,220.0,1000.0,3.0541906086242233e-12,1.7042383596123166e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,220.0,230.0,0.9231338446837982,1.0,0.5077777777777778,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,210.0,270.0,0.0004613002361850717,0.12316716306141415,0.7622222222222222,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,210.0,1000.0,1.1146497067832043e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,210.0,190.0,0.034736222222204675,1.0,0.3416666666666667,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,210.0,1000.0,2.1853373497291425e-12,1.2784223495915483e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,210.0,1000.0,2.9245927707732227e-12,1.6523949154868709e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,210.0,230.0,0.11813086006674449,1.0,0.6172222222222222,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,220.0,270.0,0.0022306166834265635,0.5185568125653217,0.7288888888888889,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,220.0,1000.0,1.155632106887552e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,220.0,190.0,0.006312462423083716,1.0,0.295,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,220.0,1000.0,2.2615168199825187e-12,1.3033212625338735e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,220.0,1000.0,3.024176545613568e-12,1.693538865543598e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,220.0,230.0,0.4756919763152091,1.0,0.5538888888888889,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,220.0,270.0,0.0024178632911599747,0.5561085569667942,0.7272222222222222,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,220.0,1000.0,1.1565794846805171e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,220.0,190.0,0.003975656886072167,0.8984984562523097,0.2838888888888889,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,220.0,1000.0,2.6732785377443677e-12,1.518422209438801e-09,0.9983333333333333,True,faster
+dyna_9x6_3traps,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,220.0,1000.0,3.026475647769895e-12,1.693538865543598e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,220.0,230.0,0.634288587911357,1.0,0.5361111111111111,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,220.0,270.0,0.0010487398812346104,0.2621849703086526,0.745,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,220.0,1000.0,1.090170110987379e-12,7.798163236683112e-10,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,220.0,190.0,0.008301082915678088,1.0,0.3022222222222222,False,no difference
+dyna_9x6_3traps,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,220.0,1000.0,2.1397686299985865e-12,1.2539044171791717e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,220.0,1000.0,2.8649879592380035e-12,1.62158318492871e-09,1.0,True,faster
+dyna_9x6_3traps,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,220.0,230.0,0.3256709873889816,1.0,0.5738888888888889,False,no difference
+dyna_9x6_3traps,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,185.0,270.0,1.560369146595389e-06,0.0005274047715492415,0.8594444444444445,True,faster
+dyna_9x6_3traps,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,185.0,1000.0,1.1312502852491085e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,185.0,190.0,0.8820140733584302,1.0,0.5116666666666667,False,no difference
+dyna_9x6_3traps,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,185.0,1000.0,2.2162113210494523e-12,1.29124614315877e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run0,sparse_dyna,per scheme,30,30,185.0,1000.0,2.964961040316078e-12,1.669273065697952e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run0,russell_norvig_matched,per scheme,30,30,185.0,230.0,8.816343026698014e-05,0.02556739477742424,0.7938888888888889,True,faster
+dyna_9x6_3traps,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,200.0,270.0,3.435173901197141e-05,0.010339873442603396,0.81,True,faster
+dyna_9x6_3traps,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,200.0,1000.0,1.141507126806476e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,200.0,190.0,0.3019159822833508,1.0,0.4222222222222222,False,no difference
+dyna_9x6_3traps,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,200.0,1000.0,2.2352760151853803e-12,1.2964600888075206e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run1,sparse_dyna,per scheme,30,30,200.0,1000.0,2.9898823069258386e-12,1.6773239741853954e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run1,russell_norvig_matched,per scheme,30,30,200.0,230.0,0.005450529767582844,1.0,0.7083333333333334,False,no difference
+dyna_9x6_3traps,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,180.0,270.0,1.2901135728751397e-06,0.00044379906906904805,0.8622222222222222,True,faster
+dyna_9x6_3traps,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,180.0,1000.0,1.128467767694889e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,180.0,190.0,0.8703187758550229,1.0,0.5127777777777778,False,no difference
+dyna_9x6_3traps,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,180.0,1000.0,2.2110379163677566e-12,1.29124614315877e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run2,sparse_dyna,per scheme,30,30,180.0,1000.0,2.9581975850597743e-12,1.6684234379737127e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run2,russell_norvig_matched,per scheme,30,30,180.0,230.0,6.096551775640076e-05,0.017984827738138223,0.8005555555555556,True,faster
+dyna_9x6_3traps,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,230.0,270.0,0.011561297477803718,1.0,0.6888888888888889,False,no difference
+dyna_9x6_3traps,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,230.0,1000.0,1.059175918643386e-12,7.700208928537416e-10,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,230.0,190.0,0.000253714924166159,0.07078646384235836,0.22611111111111112,False,no difference
+dyna_9x6_3traps,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,230.0,1000.0,2.0820007745152866e-12,1.2221344546404733e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run3,sparse_dyna,per scheme,30,30,230.0,1000.0,2.789386317342934e-12,1.5815820419334437e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run3,russell_norvig_matched,per scheme,30,30,230.0,230.0,0.6496025785879322,1.0,0.46555555555555556,False,no difference
+dyna_9x6_3traps,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,200.0,270.0,0.0005618302649008851,0.14888502019873456,0.7583333333333333,False,no difference
+dyna_9x6_3traps,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,200.0,1000.0,1.1359018929615508e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,200.0,190.0,0.050609977687454434,1.0,0.35333333333333333,False,no difference
+dyna_9x6_3traps,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,200.0,1000.0,2.4876479357271143e-12,1.4154716754287281e-09,0.9988888888888889,True,faster
+dyna_9x6_3traps,DE best,de_run4,sparse_dyna,per scheme,30,30,200.0,1000.0,2.9762650956834717e-12,1.6726609837741111e-09,1.0,True,faster
+dyna_9x6_3traps,DE best,de_run4,russell_norvig_matched,per scheme,30,30,200.0,230.0,0.14490921167673865,1.0,0.6094444444444445,False,no difference
+dyna_18x12_3traps,ME vs DE,ME best,DE best,per run,5,5,697.0,810.3333333333334,0.30952380952380953,1.0,0.72,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,300.0,2.7600775457846465e-05,0.008473438065558865,0.20277777777777778,True,slower
+dyna_18x12_3traps,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.0006578732495586334,0.17290059404806485,0.6666666666666666,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.2195969396665478e-11,6.341904086266049e-09,0.0,True,slower
+dyna_18x12_3traps,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.0006578732495586334,0.17290059404806485,0.6666666666666666,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.0006578732495586334,0.17290059404806485,0.6666666666666666,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,1000.0,480.0,0.0005826705075545053,0.15382501399438941,0.25666666666666665,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,450.0,300.0,0.03235105226669667,1.0,0.33944444444444444,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,450.0,1000.0,1.0137876776359931e-12,7.40065004674275e-10,1.0,True,faster
+dyna_18x12_3traps,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,450.0,170.0,2.5561505209015535e-11,1.3010806151388907e-08,0.0,True,slower
+dyna_18x12_3traps,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,450.0,1000.0,1.0137876776359931e-12,7.40065004674275e-10,1.0,True,faster
+dyna_18x12_3traps,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,450.0,1000.0,1.0137876776359931e-12,7.40065004674275e-10,1.0,True,faster
+dyna_18x12_3traps,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,450.0,480.0,6.544074148049008e-05,0.019239577995264084,0.7977777777777778,True,faster
+dyna_18x12_3traps,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,500.0,300.0,0.0006574167074070907,0.17290059404806485,0.25,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,500.0,1000.0,2.1657180228225e-06,0.00071901838357707,0.7833333333333333,True,faster
+dyna_18x12_3traps,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,500.0,170.0,2.2651680558268174e-11,1.1575008765275036e-08,0.0,True,slower
+dyna_18x12_3traps,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,500.0,1000.0,2.1657180228225e-06,0.00071901838357707,0.7833333333333333,True,faster
+dyna_18x12_3traps,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,500.0,1000.0,2.1657180228225e-06,0.00071901838357707,0.7833333333333333,True,faster
+dyna_18x12_3traps,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,500.0,480.0,0.4743891382541725,1.0,0.44722222222222224,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,1000.0,300.0,1.831315407559979e-05,0.005658764609360336,0.19833333333333333,True,slower
+dyna_18x12_3traps,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.0013636215322729633,0.334087275406876,0.65,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.058339042693092e-11,5.513946412431009e-09,0.0,True,slower
+dyna_18x12_3traps,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.0013636215322729633,0.334087275406876,0.65,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.0013636215322729633,0.334087275406876,0.65,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,1000.0,480.0,0.00035941648074813937,0.09776128276349391,0.24944444444444444,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,470.0,300.0,0.012008341806603495,1.0,0.31166666666666665,False,no difference
+dyna_18x12_3traps,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,470.0,1000.0,1.4999253304550642e-11,7.754613958452682e-09,0.9666666666666667,True,faster
+dyna_18x12_3traps,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,470.0,170.0,2.6978168021971144e-11,1.3625048128612363e-08,0.0,True,slower
+dyna_18x12_3traps,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,470.0,1000.0,1.4999253304550642e-11,7.754613958452682e-09,0.9666666666666667,True,faster
+dyna_18x12_3traps,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,470.0,1000.0,1.4999253304550642e-11,7.754613958452682e-09,0.9666666666666667,True,faster
+dyna_18x12_3traps,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,470.0,480.0,0.1026127582214351,1.0,0.6216666666666667,False,no difference
+dyna_18x12_3traps,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,300.0,3.187531841886536e-07,0.00011967333805032094,0.16333333333333333,True,slower
+dyna_18x12_3traps,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,2.2809400827277166e-12,1.3069786674029815e-09,0.0,True,slower
+dyna_18x12_3traps,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run0,russell_norvig_matched,per scheme,30,30,1000.0,480.0,1.4688151707088382e-06,0.0005008659732117139,0.18333333333333332,True,slower
+dyna_18x12_3traps,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,500.0,300.0,0.00039356802701382646,0.10586979926671931,0.24,False,no difference
+dyna_18x12_3traps,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,500.0,1000.0,2.142417723446194e-06,0.000717709937354475,0.7833333333333333,True,faster
+dyna_18x12_3traps,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,500.0,170.0,2.2347786742801182e-11,1.1442066812314205e-08,0.0,True,slower
+dyna_18x12_3traps,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,500.0,1000.0,2.142417723446194e-06,0.000717709937354475,0.7833333333333333,True,faster
+dyna_18x12_3traps,DE best,de_run1,sparse_dyna,per scheme,30,30,500.0,1000.0,2.142417723446194e-06,0.000717709937354475,0.7833333333333333,True,faster
+dyna_18x12_3traps,DE best,de_run1,russell_norvig_matched,per scheme,30,30,500.0,480.0,0.02600486339956424,1.0,0.3372222222222222,False,no difference
+dyna_18x12_3traps,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,485.0,300.0,0.0019911124682699646,0.46990254251171165,0.2722222222222222,False,no difference
+dyna_18x12_3traps,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,485.0,1000.0,8.809540775562283e-07,0.0003118577434549048,0.8,True,faster
+dyna_18x12_3traps,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,485.0,170.0,2.4275036411401295e-11,1.2380268569814661e-08,0.0,True,slower
+dyna_18x12_3traps,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,485.0,1000.0,8.809540775562283e-07,0.0003118577434549048,0.8,True,faster
+dyna_18x12_3traps,DE best,de_run2,sparse_dyna,per scheme,30,30,485.0,1000.0,8.809540775562283e-07,0.0003118577434549048,0.8,True,faster
+dyna_18x12_3traps,DE best,de_run2,russell_norvig_matched,per scheme,30,30,485.0,480.0,0.6767566630689278,1.0,0.5311111111111111,False,no difference
+dyna_18x12_3traps,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,1000.0,300.0,3.3502224626014193e-06,0.0010888223003454613,0.18055555555555555,True,slower
+dyna_18x12_3traps,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.011014533679584054,1.0,0.6,False,no difference
+dyna_18x12_3traps,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,6.242302488621431e-12,3.2772088065262513e-09,0.0,True,slower
+dyna_18x12_3traps,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.011014533679584054,1.0,0.6,False,no difference
+dyna_18x12_3traps,DE best,de_run3,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.011014533679584054,1.0,0.6,False,no difference
+dyna_18x12_3traps,DE best,de_run3,russell_norvig_matched,per scheme,30,30,1000.0,480.0,1.128031742397676e-05,0.0035307393537047263,0.1988888888888889,True,slower
+dyna_18x12_3traps,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,1000.0,300.0,4.6524560499141577e-05,0.013817794468245048,0.20944444444444443,True,slower
+dyna_18x12_3traps,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.00031176569186652954,0.08604733095516215,0.6833333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.387176177706829e-11,7.1855726005213745e-09,0.0,True,slower
+dyna_18x12_3traps,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.00031176569186652954,0.08604733095516215,0.6833333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run4,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.00031176569186652954,0.08604733095516215,0.6833333333333333,False,no difference
+dyna_18x12_3traps,DE best,de_run4,russell_norvig_matched,per scheme,30,30,1000.0,480.0,0.0025228168634925633,0.577725061739797,0.285,False,no difference
+dyna_27x18_3traps,ME vs DE,ME best,DE best,per run,5,5,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run0,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run1,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run1,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run2,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run2,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run3,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run3,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,1000.0,355.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+dyna_27x18_3traps,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,1000.0,170.0,1.1727949912368722e-12,7.806004888723519e-10,0.0,True,slower
+dyna_27x18_3traps,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run4,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_27x18_3traps,DE best,de_run4,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+dyna_9x6_2traps,ME vs DE,ME best,DE best,per run,5,5,172.66666666666666,165.66666666666666,0.14245669739409875,1.0,0.2,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,170.0,170.0,0.25020910291998477,1.0,0.41333333333333333,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.1312502852491085e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,170.0,120.0,0.00013010792150343654,0.03734097347148629,0.2127777777777778,True,slower
+dyna_9x6_2traps,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.1312502852491085e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,170.0,355.0,4.700233651235109e-09,2.082203507497153e-06,0.9394444444444444,True,faster
+dyna_9x6_2traps,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,170.0,200.0,0.008005569501854526,1.0,0.6988888888888889,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,150.0,170.0,0.9940778485491076,1.0,0.5011111111111111,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,150.0,1000.0,1.1303220764489316e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,150.0,120.0,0.004626629260508488,1.0,0.2872222222222222,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,150.0,1000.0,1.1303220764489316e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,150.0,355.0,7.570176001225209e-10,3.4747107845623706e-07,0.9616666666666667,True,faster
+dyna_9x6_2traps,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,150.0,200.0,1.0715186047104926e-05,0.0033752836048380514,0.83,True,faster
+dyna_9x6_2traps,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,170.0,170.0,0.5138766379202501,1.0,0.45055555555555554,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.1727949912368722e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,170.0,120.0,0.0008112748918162777,0.204441272737702,0.24833333333333332,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.1727949912368722e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,170.0,355.0,2.3653439256393478e-09,1.0667701104633458e-06,0.9483333333333334,True,faster
+dyna_9x6_2traps,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,170.0,200.0,0.0014528748317673243,0.34868995962415783,0.7388888888888889,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,180.0,170.0,0.2459068862128736,1.0,0.4127777777777778,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,180.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,180.0,120.0,0.00029663228621887186,0.0821671432826275,0.22833333333333333,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,180.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,180.0,355.0,3.873720352307814e-09,1.7199318364246694e-06,0.9416666666666667,True,faster
+dyna_9x6_2traps,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,180.0,200.0,0.006363981147368215,1.0,0.7044444444444444,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,175.0,170.0,0.34104914319215285,1.0,0.42833333333333334,False,no difference
+dyna_9x6_2traps,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,175.0,1000.0,1.0812302611834092e-12,7.798163236683112e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,175.0,120.0,0.00013952028845188333,0.03990280249723863,0.21444444444444444,True,slower
+dyna_9x6_2traps,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,175.0,1000.0,1.0812302611834092e-12,7.798163236683112e-10,1.0,True,faster
+dyna_9x6_2traps,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,175.0,355.0,3.366272201755139e-09,1.5047236741845472e-06,0.9433333333333334,True,faster
+dyna_9x6_2traps,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,175.0,200.0,0.002119282766579874,0.49803145014627037,0.73,False,no difference
+dyna_9x6_2traps,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,150.0,170.0,0.44836368571701113,1.0,0.5572222222222222,False,no difference
+dyna_9x6_2traps,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,150.0,1000.0,1.007094791401567e-12,7.371933873059471e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,150.0,120.0,0.02136562696040081,1.0,0.3277777777777778,False,no difference
+dyna_9x6_2traps,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,150.0,1000.0,1.007094791401567e-12,7.371933873059471e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run0,sparse_dyna,per scheme,30,30,150.0,355.0,2.2535970455890523e-10,1.0682049996092108e-07,0.975,True,faster
+dyna_9x6_2traps,DE best,de_run0,russell_norvig_matched,per scheme,30,30,150.0,200.0,6.374002345001262e-08,2.4986089192404948e-05,0.9044444444444445,True,faster
+dyna_9x6_2traps,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,160.0,170.0,0.6561304330732156,1.0,0.4661111111111111,False,no difference
+dyna_9x6_2traps,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,160.0,1000.0,1.1174007589625414e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,160.0,120.0,0.0007924035840380042,0.20047810676161507,0.24833333333333332,False,no difference
+dyna_9x6_2traps,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,160.0,1000.0,1.1174007589625414e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run1,sparse_dyna,per scheme,30,30,160.0,355.0,1.9105136007215316e-09,8.699697718423046e-07,0.9505555555555556,True,faster
+dyna_9x6_2traps,DE best,de_run1,russell_norvig_matched,per scheme,30,30,160.0,200.0,0.00022242675754710606,0.0622794921131897,0.7766666666666666,False,no difference
+dyna_9x6_2traps,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,150.0,170.0,0.5042198135824476,1.0,0.5505555555555556,False,no difference
+dyna_9x6_2traps,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,150.0,1000.0,1.1164830458844645e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,150.0,120.0,0.020966461716033752,1.0,0.32666666666666666,False,no difference
+dyna_9x6_2traps,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,150.0,1000.0,1.1164830458844645e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run2,sparse_dyna,per scheme,30,30,150.0,355.0,3.7369699493876296e-10,1.7638498161109611e-07,0.97,True,faster
+dyna_9x6_2traps,DE best,de_run2,russell_norvig_matched,per scheme,30,30,150.0,200.0,1.294820519351772e-06,0.0004441234381376578,0.8627777777777778,True,faster
+dyna_9x6_2traps,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,175.0,170.0,0.4015156354724966,1.0,0.43666666666666665,False,no difference
+dyna_9x6_2traps,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,175.0,1000.0,1.1575275793293145e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,175.0,120.0,0.0004693112919940656,0.12483680367042145,0.23722222222222222,False,no difference
+dyna_9x6_2traps,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,175.0,1000.0,1.1575275793293145e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run3,sparse_dyna,per scheme,30,30,175.0,355.0,3.2217410713444655e-09,1.446561741033665e-06,0.9444444444444444,True,faster
+dyna_9x6_2traps,DE best,de_run3,russell_norvig_matched,per scheme,30,30,175.0,200.0,0.00584399769592658,1.0,0.7066666666666667,False,no difference
+dyna_9x6_2traps,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,170.0,170.0,0.4991757127633948,1.0,0.4488888888888889,False,no difference
+dyna_9x6_2traps,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.1359018929615508e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,170.0,120.0,0.000352998136734203,0.09636849132843742,0.23166666666666666,False,no difference
+dyna_9x6_2traps,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.1359018929615508e-12,7.806004888723519e-10,1.0,True,faster
+dyna_9x6_2traps,DE best,de_run4,sparse_dyna,per scheme,30,30,170.0,355.0,2.6312427123590496e-09,1.1840592205615724e-06,0.9466666666666667,True,faster
+dyna_9x6_2traps,DE best,de_run4,russell_norvig_matched,per scheme,30,30,170.0,200.0,0.0021495198345744247,0.5029876412904154,0.73,False,no difference
+maze_8x8,ME vs DE,ME best,DE best,per run,5,5,252.66666666666666,248.66666666666666,0.20869044313696405,1.0,0.24,False,no difference
+maze_8x8,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,3.30134723953784e-08,1.3403469792523631e-05,0.085,True,slower
+maze_8x8,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.1527942696948406e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,8.286129509496677e-07,0.00029415759758713204,0.13,True,slower
+maze_8x8,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.256246069905792e-12,1.3033212625338735e-09,1.0,True,faster
+maze_8x8,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,250.0,1000.0,1.638707629977434e-12,9.710657278163963e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.045176644875469844,1.0,0.6505555555555556,False,no difference
+maze_8x8,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,230.0,135.0,1.150735854255861e-07,4.476362473055299e-05,0.10166666666666667,True,slower
+maze_8x8,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,230.0,1000.0,1.1833989236278848e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,230.0,160.0,1.5283052197851733e-05,0.004737746181334037,0.175,True,slower
+maze_8x8,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,230.0,1000.0,2.3130553035034524e-12,1.3230676336039747e-09,1.0,True,faster
+maze_8x8,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,230.0,1000.0,1.681029088088102e-12,9.88445103795804e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,230.0,275.0,0.008841513669641745,1.0,0.6966666666666667,False,no difference
+maze_8x8,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,3.693902026713638e-08,1.4960303208190234e-05,0.08666666666666667,True,slower
+maze_8x8,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.1359018929615508e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,1.6385410237741237e-07,6.193685069866188e-05,0.10666666666666667,True,slower
+maze_8x8,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.22485844627443e-12,1.2926427572854437e-09,1.0,True,faster
+maze_8x8,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,250.0,1000.0,1.6153357364789265e-12,9.61971627334234e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.10685582722043097,1.0,0.6211111111111111,False,no difference
+maze_8x8,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,2.1788891955816352e-08,8.95523459384052e-06,0.08,True,slower
+maze_8x8,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.1028005818449527e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,3.245280255473782e-08,1.3208290639778293e-05,0.085,True,slower
+maze_8x8,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.419099467474548e-12,1.381305795927967e-09,0.9988888888888889,True,faster
+maze_8x8,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,250.0,1000.0,1.569511375292319e-12,9.465191572260001e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.3965670556268055,1.0,0.5638888888888889,False,no difference
+maze_8x8,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,245.0,135.0,3.7457638733254394e-08,1.5132886048234774e-05,0.08666666666666667,True,slower
+maze_8x8,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,245.0,1000.0,1.1499628664021188e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,245.0,160.0,3.1828015438915144e-07,0.00011967333805032094,0.11611111111111111,True,slower
+maze_8x8,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,245.0,1000.0,2.250986636500645e-12,1.3033212625338735e-09,1.0,True,faster
+maze_8x8,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,245.0,1000.0,1.6347907875696908e-12,9.710657278163963e-10,1.0,True,faster
+maze_8x8,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,245.0,275.0,0.07740693300797297,1.0,0.6327777777777778,False,no difference
+maze_8x8,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,230.0,135.0,1.265133900192413e-06,0.0004364711955663825,0.1361111111111111,True,slower
+maze_8x8,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,230.0,1000.0,1.1603761693654946e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,230.0,160.0,8.144469587427365e-05,0.023700406499413632,0.2038888888888889,True,slower
+maze_8x8,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,230.0,1000.0,2.2703266118386297e-12,1.3033212625338735e-09,1.0,True,faster
+maze_8x8,DE best,de_run0,sparse_dyna,per scheme,30,30,230.0,1000.0,1.6491948853222963e-12,9.713757874548325e-10,1.0,True,faster
+maze_8x8,DE best,de_run0,russell_norvig_matched,per scheme,30,30,230.0,275.0,0.0002207365901820452,0.0620269818411547,0.7772222222222223,False,no difference
+maze_8x8,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,4.0931611286149306e-08,1.6413576125745872e-05,0.08777777777777777,True,slower
+maze_8x8,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.155632106887552e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,4.3232583699209464e-07,0.00015650195299113826,0.12055555555555555,True,slower
+maze_8x8,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.2615168199825187e-12,1.3033212625338735e-09,1.0,True,faster
+maze_8x8,DE best,de_run1,sparse_dyna,per scheme,30,30,250.0,1000.0,1.6426331236196937e-12,9.710657278163963e-10,1.0,True,faster
+maze_8x8,DE best,de_run1,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.05739157069446623,1.0,0.6427777777777778,False,no difference
+maze_8x8,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,220.0,135.0,1.323878742320452e-07,5.0307392208177175e-05,0.10388888888888889,True,slower
+maze_8x8,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,220.0,1000.0,1.128467767694889e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,220.0,160.0,3.20934294333042e-05,0.009692215688857869,0.18777777777777777,True,slower
+maze_8x8,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,220.0,1000.0,2.2110379163677566e-12,1.29124614315877e-09,1.0,True,faster
+maze_8x8,DE best,de_run2,sparse_dyna,per scheme,30,30,220.0,1000.0,1.6050472196295603e-12,9.59818237338477e-10,1.0,True,faster
+maze_8x8,DE best,de_run2,russell_norvig_matched,per scheme,30,30,220.0,275.0,7.387676123677003e-05,0.02164589104237362,0.7972222222222223,True,faster
+maze_8x8,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,1.2323543059780616e-07,4.7692111641350986e-05,0.10277777777777777,True,slower
+maze_8x8,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.15184975437799e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,9.880194035658604e-07,0.00034383075244091946,0.1322222222222222,True,slower
+maze_8x8,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.254491669123206e-12,1.3033212625338735e-09,1.0,True,faster
+maze_8x8,DE best,de_run3,sparse_dyna,per scheme,30,30,250.0,1000.0,1.6374010554526785e-12,9.710657278163963e-10,1.0,True,faster
+maze_8x8,DE best,de_run3,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.048991025762418546,1.0,0.6477777777777778,False,no difference
+maze_8x8,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,250.0,135.0,5.564955490598237e-08,2.1870275078051072e-05,0.09222222222222222,True,slower
+maze_8x8,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,250.0,1000.0,1.1256915693870558e-12,7.806004888723519e-10,1.0,True,faster
+maze_8x8,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,250.0,160.0,1.513938604585078e-06,0.0005132251869543414,0.1388888888888889,True,slower
+maze_8x8,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,250.0,1000.0,2.466515164478524e-12,1.4059136437527586e-09,0.9988888888888889,True,faster
+maze_8x8,DE best,de_run4,sparse_dyna,per scheme,30,30,250.0,1000.0,1.6012046294721315e-12,9.591215730538067e-10,1.0,True,faster
+maze_8x8,DE best,de_run4,russell_norvig_matched,per scheme,30,30,250.0,275.0,0.021705699026285673,1.0,0.6722222222222223,False,no difference
+maze_10x10,ME vs DE,ME best,DE best,per run,5,5,534.6666666666666,417.6666666666667,0.8412698412698413,1.0,0.44,False,no difference
+maze_10x10,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,440.0,155.0,3.038844223831022e-11,1.5133444234678488e-08,0.0011111111111111111,True,slower
+maze_10x10,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,440.0,1000.0,1.6819791537554823e-08,7.013853071160361e-06,0.8666666666666667,True,faster
+maze_10x10,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,440.0,250.0,7.909485663149073e-10,3.6225444337222754e-07,0.03833333333333333,True,slower
+maze_10x10,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,440.0,1000.0,1.6819791537554823e-08,7.013853071160361e-06,0.8666666666666667,True,faster
+maze_10x10,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,440.0,1000.0,1.6819791537554823e-08,7.013853071160361e-06,0.8666666666666667,True,faster
+maze_10x10,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,440.0,445.0,0.4947255302703061,1.0,0.5511111111111111,False,no difference
+maze_10x10,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,450.0,155.0,2.6773917829974038e-11,1.3574376339796838e-08,0.0,True,slower
+maze_10x10,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,450.0,1000.0,4.7128215040220317e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,450.0,250.0,3.4495557106595956e-10,1.6316398511419888e-07,0.028888888888888888,True,slower
+maze_10x10,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,450.0,1000.0,4.7128215040220317e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,450.0,1000.0,4.7128215040220317e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,450.0,445.0,0.763510140788213,1.0,0.5227777777777778,False,no difference
+maze_10x10,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,370.0,155.0,2.8287284557776384e-11,1.4200216848003745e-08,0.0,True,slower
+maze_10x10,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,370.0,1000.0,4.362322030828844e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,370.0,250.0,1.005151046317169e-08,4.231685904995282e-06,0.06944444444444445,True,slower
+maze_10x10,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,370.0,1000.0,4.362322030828844e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,370.0,1000.0,4.362322030828844e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,370.0,445.0,5.820695612130184e-06,0.001839339813433138,0.8394444444444444,True,faster
+maze_10x10,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,380.0,155.0,2.8358705608852014e-11,1.4207711510034858e-08,0.0,True,slower
+maze_10x10,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,1.1575275793293145e-12,7.806004888723519e-10,1.0,True,faster
+maze_10x10,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,380.0,250.0,5.002704281495955e-09,2.211195292421212e-06,0.06055555555555556,True,slower
+maze_10x10,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,1.1575275793293145e-12,7.806004888723519e-10,1.0,True,faster
+maze_10x10,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,380.0,1000.0,1.1575275793293145e-12,7.806004888723519e-10,1.0,True,faster
+maze_10x10,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,380.0,445.0,4.05556560104736e-05,0.012126141147131606,0.8077777777777778,True,faster
+maze_10x10,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,410.0,155.0,2.944871738000356e-11,1.4694909972621776e-08,0.0005555555555555556,True,slower
+maze_10x10,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,410.0,1000.0,5.782250216534656e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+maze_10x10,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,410.0,250.0,1.8352602276946356e-09,8.387139240564484e-07,0.04833333333333333,True,slower
+maze_10x10,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,410.0,1000.0,5.782250216534656e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+maze_10x10,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,410.0,1000.0,5.782250216534656e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+maze_10x10,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,410.0,445.0,0.056271621525086114,1.0,0.6422222222222222,False,no difference
+maze_10x10,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,390.0,155.0,2.8718285362091784e-11,1.4359142681045891e-08,0.0,True,slower
+maze_10x10,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,390.0,1000.0,5.6384646969100213e-11,2.7849144799977176e-08,0.95,True,faster
+maze_10x10,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,390.0,250.0,3.3804900556846645e-09,1.5076985648353605e-06,0.05555555555555555,True,slower
+maze_10x10,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,390.0,1000.0,5.6384646969100213e-11,2.7849144799977176e-08,0.95,True,faster
+maze_10x10,DE best,de_run0,sparse_dyna,per scheme,30,30,390.0,1000.0,5.6384646969100213e-11,2.7849144799977176e-08,0.95,True,faster
+maze_10x10,DE best,de_run0,russell_norvig_matched,per scheme,30,30,390.0,445.0,0.0011182282807523278,0.27843884190732965,0.7438888888888889,False,no difference
+maze_10x10,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,380.0,155.0,2.7029452280204595e-11,1.3625048128612363e-08,0.0,True,slower
+maze_10x10,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,4.120654062553953e-12,2.266359734404674e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,380.0,250.0,5.068942586928208e-09,2.2354036808353397e-06,0.06111111111111111,True,slower
+maze_10x10,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,4.120654062553953e-12,2.266359734404674e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run1,sparse_dyna,per scheme,30,30,380.0,1000.0,4.120654062553953e-12,2.266359734404674e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run1,russell_norvig_matched,per scheme,30,30,380.0,445.0,4.51470446824987e-05,0.013453819315384613,0.805,True,faster
+maze_10x10,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,405.0,155.0,2.692697258619044e-11,1.3625048128612363e-08,0.0,True,slower
+maze_10x10,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,405.0,1000.0,4.737900978855173e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,405.0,250.0,2.344893556230449e-09,1.0598918874161629e-06,0.051666666666666666,True,slower
+maze_10x10,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,405.0,1000.0,4.737900978855173e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,DE best,de_run2,sparse_dyna,per scheme,30,30,405.0,1000.0,4.737900978855173e-08,1.8851286016088126e-05,0.85,True,faster
+maze_10x10,DE best,de_run2,russell_norvig_matched,per scheme,30,30,405.0,445.0,0.09074227494572985,1.0,0.6255555555555555,False,no difference
+maze_10x10,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,400.0,155.0,3.798653191123072e-11,1.884131982797044e-08,0.0033333333333333335,True,slower
+maze_10x10,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,400.0,1000.0,4.327995734358794e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,400.0,250.0,7.0535167832913045e-09,2.9906911161155132e-06,0.065,True,slower
+maze_10x10,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,400.0,1000.0,4.327995734358794e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run3,sparse_dyna,per scheme,30,30,400.0,1000.0,4.327995734358794e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run3,russell_norvig_matched,per scheme,30,30,400.0,445.0,0.00038892025354382256,0.1050084684568321,0.7655555555555555,False,no difference
+maze_10x10,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,375.0,155.0,2.7774370579432342e-11,1.3970508401454468e-08,0.0,True,slower
+maze_10x10,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,375.0,1000.0,4.263458748187897e-12,2.3321119352587795e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,375.0,250.0,9.96198443475374e-09,4.203957431466078e-06,0.06944444444444445,True,slower
+maze_10x10,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,375.0,1000.0,4.263458748187897e-12,2.3321119352587795e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run4,sparse_dyna,per scheme,30,30,375.0,1000.0,4.263458748187897e-12,2.3321119352587795e-09,0.9833333333333333,True,faster
+maze_10x10,DE best,de_run4,russell_norvig_matched,per scheme,30,30,375.0,445.0,3.770319885350366e-06,0.0012215836428535185,0.8461111111111111,True,faster
+lava_7x5,ME vs DE,ME best,DE best,per run,5,5,134.0,131.0,0.24915263858192682,1.0,0.26,False,no difference
+lava_7x5,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.03294401267233014,1.0,0.66,False,no difference
+lava_7x5,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.5935448853787017e-12,9.56126931227221e-10,1.0,True,faster
+lava_7x5,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.04990869804732972,1.0,0.3527777777777778,False,no difference
+lava_7x5,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,0.0001682122093652383,0.04777226745972768,0.7822222222222223,True,faster
+lava_7x5,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,130.0,200.0,2.1760846317185512e-06,0.00071901838357707,0.855,True,faster
+lava_7x5,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.16260543766268742,1.0,0.6044444444444445,False,no difference
+lava_7x5,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.010345425985488856,1.0,0.6922222222222222,False,no difference
+lava_7x5,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.6063299714038705e-12,9.59818237338477e-10,1.0,True,faster
+lava_7x5,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.1333871058476866,1.0,0.38722222222222225,False,no difference
+lava_7x5,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,5.0905483870085846e-05,0.01506802322554541,0.8038888888888889,True,faster
+lava_7x5,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,130.0,200.0,6.695115235104647e-07,0.0002390156138932359,0.8727777777777778,True,faster
+lava_7x5,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.044774613775565186,1.0,0.65,False,no difference
+lava_7x5,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.04809022981392762,1.0,0.6483333333333333,False,no difference
+lava_7x5,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.614046354587641e-12,9.61971627334234e-10,1.0,True,faster
+lava_7x5,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.03625803950311465,1.0,0.3427777777777778,False,no difference
+lava_7x5,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,0.0002918507449903357,0.08113450710731333,0.7716666666666666,False,no difference
+lava_7x5,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,130.0,200.0,5.655462361031454e-06,0.001792781568446971,0.8405555555555555,True,faster
+lava_7x5,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.283124071035347,1.0,0.5805555555555556,False,no difference
+lava_7x5,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.025341113439346225,1.0,0.6672222222222223,False,no difference
+lava_7x5,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.4897963382331905e-12,9.043063773075466e-10,1.0,True,faster
+lava_7x5,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.05736092642897881,1.0,0.35777777777777775,False,no difference
+lava_7x5,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,0.00014962687740557607,0.04264366006058918,0.7838888888888889,True,faster
+lava_7x5,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,130.0,200.0,1.5965079766106496e-06,0.0005380231881177889,0.8594444444444445,True,faster
+lava_7x5,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.11443334421719462,1.0,0.6177777777777778,False,no difference
+lava_7x5,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.10647182808313736,1.0,0.6211111111111111,False,no difference
+lava_7x5,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.5644944747537192e-12,9.465191572260001e-10,1.0,True,faster
+lava_7x5,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.02112063481678397,1.0,0.32722222222222225,False,no difference
+lava_7x5,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,0.0011186971384843066,0.27843884190732965,0.7444444444444445,False,no difference
+lava_7x5,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,130.0,200.0,1.2333896384518031e-05,0.003848175671969626,0.8277777777777777,True,faster
+lava_7x5,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.47339196389629357,1.0,0.5538888888888889,False,no difference
+lava_7x5,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,125.0,150.0,0.0008561529192265312,0.2148943827258593,0.7494444444444445,False,no difference
+lava_7x5,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,125.0,1000.0,1.547051549487164e-12,9.375132389892214e-10,1.0,True,faster
+lava_7x5,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,125.0,120.0,0.4214509720890197,1.0,0.43944444444444447,False,no difference
+lava_7x5,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,125.0,175.0,3.840545622369088e-06,0.0012404962360252154,0.8461111111111111,True,faster
+lava_7x5,DE best,de_run0,sparse_dyna,per scheme,30,30,125.0,200.0,3.990831006337118e-08,1.6043140645475215e-05,0.9116666666666666,True,faster
+lava_7x5,DE best,de_run0,russell_norvig_matched,per scheme,30,30,125.0,140.0,0.002312726927854201,0.5342399203343204,0.7272222222222222,False,no difference
+lava_7x5,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,120.0,150.0,0.0003778680660270251,0.1024022458933238,0.7661111111111111,False,no difference
+lava_7x5,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,120.0,1000.0,1.5644944747537192e-12,9.465191572260001e-10,1.0,True,faster
+lava_7x5,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,120.0,120.0,0.48015903431398943,1.0,0.44666666666666666,False,no difference
+lava_7x5,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,120.0,175.0,1.494799682984319e-06,0.0005082318922146684,0.8605555555555555,True,faster
+lava_7x5,DE best,de_run1,sparse_dyna,per scheme,30,30,120.0,200.0,2.2223448162697705e-08,9.089390298543361e-06,0.9194444444444444,True,faster
+lava_7x5,DE best,de_run1,russell_norvig_matched,per scheme,30,30,120.0,140.0,0.0006726155941600648,0.17290059404806485,0.7538888888888889,False,no difference
+lava_7x5,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,130.0,150.0,0.016679450356132223,1.0,0.6794444444444444,False,no difference
+lava_7x5,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,130.0,1000.0,1.5758033630820623e-12,9.486336245754016e-10,1.0,True,faster
+lava_7x5,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,130.0,120.0,0.10339615617165612,1.0,0.37777777777777777,False,no difference
+lava_7x5,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,130.0,175.0,0.0001288501307514518,0.03710883765641812,0.7866666666666666,True,faster
+lava_7x5,DE best,de_run2,sparse_dyna,per scheme,30,30,130.0,200.0,1.3541715384899437e-06,0.00046312666616356074,0.8622222222222222,True,faster
+lava_7x5,DE best,de_run2,russell_norvig_matched,per scheme,30,30,130.0,140.0,0.07953416095203865,1.0,0.6311111111111111,False,no difference
+lava_7x5,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,135.0,150.0,0.09041644298722713,1.0,0.6272222222222222,False,no difference
+lava_7x5,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,135.0,1000.0,1.6413236634158895e-12,9.710657278163963e-10,1.0,True,faster
+lava_7x5,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,135.0,120.0,0.030209227229320852,1.0,0.3372222222222222,False,no difference
+lava_7x5,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,135.0,175.0,0.0013175095810201438,0.3241073569309554,0.7411111111111112,False,no difference
+lava_7x5,DE best,de_run3,sparse_dyna,per scheme,30,30,135.0,200.0,2.819071681095025e-05,0.008626359344150776,0.8144444444444444,True,faster
+lava_7x5,DE best,de_run3,russell_norvig_matched,per scheme,30,30,135.0,140.0,0.48437530914443105,1.0,0.5527777777777778,False,no difference
+lava_7x5,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,125.0,150.0,0.013870368179569397,1.0,0.6844444444444444,False,no difference
+lava_7x5,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,125.0,1000.0,1.5846512286555036e-12,9.523753884219577e-10,1.0,True,faster
+lava_7x5,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,125.0,120.0,0.131426937553124,1.0,0.38666666666666666,False,no difference
+lava_7x5,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,125.0,175.0,0.00010239461300433305,0.029592043158252253,0.7911111111111111,True,faster
+lava_7x5,DE best,de_run4,sparse_dyna,per scheme,30,30,125.0,200.0,1.1870621851195369e-06,0.00041072351605135973,0.8644444444444445,True,faster
+lava_7x5,DE best,de_run4,russell_norvig_matched,per scheme,30,30,125.0,140.0,0.057389076943854596,1.0,0.6422222222222222,False,no difference
+unseen_6x8,ME vs DE,ME best,DE best,per run,5,5,196.0,146.33333333333334,0.09523809523809523,1.0,0.16,False,no difference
+unseen_6x8,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,200.0,1000.0,2.0938266757656875e-10,9.966614976644672e-08,0.9577777777777777,True,faster
+unseen_6x8,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,200.0,1000.0,1.1622788227580201e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,200.0,220.0,0.0411927489469152,1.0,0.6533333333333333,False,no difference
+unseen_6x8,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,200.0,1000.0,1.1622788227580201e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,200.0,1000.0,1.1622788227580201e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,200.0,225.0,0.1419904104175188,1.0,0.6105555555555555,False,no difference
+unseen_6x8,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,190.0,1000.0,1.2578015902750993e-10,6.112915728736983e-08,0.9633333333333334,True,faster
+unseen_6x8,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,190.0,1000.0,1.154685445455358e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,190.0,220.0,0.007908555792792465,1.0,0.6994444444444444,False,no difference
+unseen_6x8,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,190.0,1000.0,1.154685445455358e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,190.0,1000.0,1.154685445455358e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,190.0,225.0,0.02870675013111815,1.0,0.6644444444444444,False,no difference
+unseen_6x8,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,170.0,1000.0,7.284216914112752e-12,3.80964544608097e-09,0.9933333333333333,True,faster
+unseen_6x8,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.110991363316336e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,170.0,220.0,1.559248202699135e-07,5.909550688229722e-05,0.8927777777777778,True,faster
+unseen_6x8,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.110991363316336e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,170.0,1000.0,1.110991363316336e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,170.0,225.0,1.942440835730004e-05,0.005982717774048412,0.8205555555555556,True,faster
+unseen_6x8,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,160.0,1000.0,5.99203753704693e-12,3.151811744486685e-09,0.9955555555555555,True,faster
+unseen_6x8,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,160.0,1000.0,1.1377674748834431e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,160.0,220.0,6.3906808343235484e-09,2.716039354587508e-06,0.9355555555555556,True,faster
+unseen_6x8,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,160.0,1000.0,1.1377674748834431e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,160.0,1000.0,1.1377674748834431e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,160.0,225.0,1.794671424486851e-06,0.0006030095986275819,0.8583333333333333,True,faster
+unseen_6x8,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,195.0,1000.0,1.4692263663622443e-10,7.125747876856885e-08,0.9616666666666667,True,faster
+unseen_6x8,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,195.0,1000.0,1.1565794846805171e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,195.0,220.0,0.016480275612475965,1.0,0.68,False,no difference
+unseen_6x8,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,195.0,1000.0,1.1565794846805171e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,195.0,1000.0,1.1565794846805171e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,195.0,225.0,0.055673595710151486,1.0,0.6438888888888888,False,no difference
+unseen_6x8,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,140.0,1000.0,3.715108803630159e-12,2.0656004948183683e-09,1.0,True,faster
+unseen_6x8,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,140.0,1000.0,1.0839050833355483e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,140.0,220.0,3.309850921574261e-11,1.6449959080224077e-08,0.9977777777777778,True,faster
+unseen_6x8,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,140.0,1000.0,1.0839050833355483e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run0,sparse_dyna,per scheme,30,30,140.0,1000.0,1.0839050833355483e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run0,russell_norvig_matched,per scheme,30,30,140.0,225.0,3.3527652945569063e-09,1.502038851961494e-06,0.9433333333333334,True,faster
+unseen_6x8,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,140.0,1000.0,4.465886501593525e-12,2.389249278352536e-09,0.9983333333333333,True,faster
+unseen_6x8,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,140.0,1000.0,1.109166351256473e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,140.0,220.0,3.9608771445961855e-10,1.8616122579602072e-07,0.9694444444444444,True,faster
+unseen_6x8,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,140.0,1000.0,1.109166351256473e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run1,sparse_dyna,per scheme,30,30,140.0,1000.0,1.109166351256473e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run1,russell_norvig_matched,per scheme,30,30,140.0,225.0,5.473337370998933e-08,2.1564949241735795e-05,0.9077777777777778,True,faster
+unseen_6x8,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,160.0,1000.0,6.665703548370009e-11,3.252863331604564e-08,0.9677777777777777,True,faster
+unseen_6x8,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,160.0,1000.0,4.341696353795859e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+unseen_6x8,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,160.0,220.0,1.5100040813599178e-05,0.0046961126930293445,0.825,True,faster
+unseen_6x8,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,160.0,1000.0,4.341696353795859e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+unseen_6x8,DE best,de_run2,sparse_dyna,per scheme,30,30,160.0,1000.0,4.341696353795859e-12,2.354429679491184e-09,0.9833333333333333,True,faster
+unseen_6x8,DE best,de_run2,russell_norvig_matched,per scheme,30,30,160.0,225.0,0.000687751026181709,0.1746887606501541,0.755,False,no difference
+unseen_6x8,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,150.0,1000.0,5.7175176377638265e-12,3.0188493127393002e-09,0.9961111111111111,True,faster
+unseen_6x8,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,150.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,150.0,220.0,9.392947443534373e-09,3.97321676861504e-06,0.9311111111111111,True,faster
+unseen_6x8,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,150.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run3,sparse_dyna,per scheme,30,30,150.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_6x8,DE best,de_run3,russell_norvig_matched,per scheme,30,30,150.0,225.0,7.157432044055421e-07,0.000254804580768373,0.8722222222222222,True,faster
+unseen_6x8,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,140.0,1000.0,4.1047164927392246e-12,2.2616987874993126e-09,0.9988888888888889,True,faster
+unseen_6x8,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,140.0,1000.0,1.0750126920571729e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,140.0,220.0,1.576152691779323e-10,7.628579028211924e-08,0.98,True,faster
+unseen_6x8,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,140.0,1000.0,1.0750126920571729e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run4,sparse_dyna,per scheme,30,30,140.0,1000.0,1.0750126920571729e-12,7.798163236683112e-10,1.0,True,faster
+unseen_6x8,DE best,de_run4,russell_norvig_matched,per scheme,30,30,140.0,225.0,1.69753054020664e-08,7.013853071160361e-06,0.9227777777777778,True,faster
+unseen_7x7,ME vs DE,ME best,DE best,per run,5,5,233.33333333333334,182.0,0.031746031746031744,1.0,0.08,False,no difference
+unseen_7x7,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,240.0,185.0,0.010376708878798704,1.0,0.30722222222222223,False,no difference
+unseen_7x7,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,240.0,1000.0,1.167048062013135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,240.0,215.0,0.1384150250809534,1.0,0.3883333333333333,False,no difference
+unseen_7x7,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,240.0,1000.0,1.167048062013135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,240.0,1000.0,4.139247212171577e-10,1.937167695296298e-07,0.9544444444444444,True,faster
+unseen_7x7,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,240.0,260.0,0.014339971249948607,1.0,0.6838888888888889,False,no difference
+unseen_7x7,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,255.0,185.0,0.0030467277190846876,0.6916071922322241,0.2772222222222222,False,no difference
+unseen_7x7,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,255.0,1000.0,4.4879788978545175e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_7x7,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,255.0,215.0,0.008175825899851644,1.0,0.3011111111111111,False,no difference
+unseen_7x7,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,255.0,1000.0,4.4879788978545175e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_7x7,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,255.0,1000.0,5.8762252820134454e-09,2.50514954184399e-06,0.9216666666666666,True,faster
+unseen_7x7,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,255.0,260.0,0.6512916695531418,1.0,0.5344444444444445,False,no difference
+unseen_7x7,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,190.0,185.0,0.9467352924052352,1.0,0.5055555555555555,False,no difference
+unseen_7x7,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,190.0,1000.0,1.1480788320149947e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,190.0,215.0,0.09978845418661841,1.0,0.6238888888888889,False,no difference
+unseen_7x7,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,190.0,1000.0,1.1480788320149947e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,190.0,1000.0,1.60164785880797e-11,8.232469994272965e-09,0.99,True,faster
+unseen_7x7,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,190.0,260.0,3.84743440966343e-08,1.5505160670943623e-05,0.9127777777777778,True,faster
+unseen_7x7,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,200.0,185.0,0.34929644399061155,1.0,0.42944444444444446,False,no difference
+unseen_7x7,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,200.0,1000.0,1.12199977892607e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,200.0,215.0,0.389644694146427,1.0,0.565,False,no difference
+unseen_7x7,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,200.0,1000.0,1.12199977892607e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,200.0,1000.0,1.7453181798686738e-11,8.953482262726296e-09,0.9888888888888889,True,faster
+unseen_7x7,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,200.0,260.0,4.4317009712236386e-07,0.00015998440506117336,0.8788888888888889,True,faster
+unseen_7x7,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,240.0,185.0,0.02202923822151653,1.0,0.3277777777777778,False,no difference
+unseen_7x7,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,240.0,1000.0,1.167048062013135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,240.0,215.0,0.2128791307364103,1.0,0.4061111111111111,False,no difference
+unseen_7x7,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,240.0,1000.0,1.167048062013135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,240.0,1000.0,3.7572030177285476e-10,1.7696426213501458e-07,0.9555555555555556,True,faster
+unseen_7x7,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,240.0,260.0,0.013546788452321809,1.0,0.6855555555555556,False,no difference
+unseen_7x7,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,170.0,185.0,0.05653891665018917,1.0,0.6433333333333333,False,no difference
+unseen_7x7,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.1480788320149947e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,170.0,215.0,0.001949711550382776,0.46208163744071795,0.7327777777777778,False,no difference
+unseen_7x7,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.1480788320149947e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run0,sparse_dyna,per scheme,30,30,170.0,1000.0,6.5157317517464694e-12,3.41424343791515e-09,0.9994444444444445,True,faster
+unseen_7x7,DE best,de_run0,russell_norvig_matched,per scheme,30,30,170.0,260.0,2.1002248152741826e-10,9.976067872552367e-08,0.9772222222222222,True,faster
+unseen_7x7,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,190.0,185.0,0.6451915863045871,1.0,0.465,False,no difference
+unseen_7x7,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,190.0,1000.0,1.1461976472748565e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,190.0,215.0,0.15222446722830965,1.0,0.6077777777777778,False,no difference
+unseen_7x7,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,190.0,1000.0,1.1461976472748565e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run1,sparse_dyna,per scheme,30,30,190.0,1000.0,1.224203562746429e-11,6.353616490653966e-09,0.9927777777777778,True,faster
+unseen_7x7,DE best,de_run1,russell_norvig_matched,per scheme,30,30,190.0,260.0,2.7155449733598376e-08,1.1079423491308138e-05,0.9172222222222223,True,faster
+unseen_7x7,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,170.0,185.0,0.10275568428409222,1.0,0.6222222222222222,False,no difference
+unseen_7x7,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,170.0,1000.0,1.0741271675872056e-12,7.798163236683112e-10,1.0,True,faster
+unseen_7x7,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,170.0,215.0,0.0016868250445720085,0.401464360608138,0.7355555555555555,False,no difference
+unseen_7x7,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,170.0,1000.0,1.0741271675872056e-12,7.798163236683112e-10,1.0,True,faster
+unseen_7x7,DE best,de_run2,sparse_dyna,per scheme,30,30,170.0,1000.0,5.830344616979453e-12,3.0725916131481716e-09,1.0,True,faster
+unseen_7x7,DE best,de_run2,russell_norvig_matched,per scheme,30,30,170.0,260.0,1.1213102505664432e-10,5.460780920258578e-08,0.9838888888888889,True,faster
+unseen_7x7,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,195.0,185.0,0.518319862813883,1.0,0.45111111111111113,False,no difference
+unseen_7x7,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,195.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,195.0,215.0,0.32773510381823445,1.0,0.5738888888888889,False,no difference
+unseen_7x7,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,195.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run3,sparse_dyna,per scheme,30,30,195.0,1000.0,2.5747370345511996e-11,1.3079664135520094e-08,0.985,True,faster
+unseen_7x7,DE best,de_run3,russell_norvig_matched,per scheme,30,30,195.0,260.0,1.0121366757306739e-06,0.0003512114264785438,0.8672222222222222,True,faster
+unseen_7x7,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,180.0,185.0,0.5135878228702129,1.0,0.5494444444444444,False,no difference
+unseen_7x7,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,180.0,1000.0,1.139635884860135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,180.0,215.0,0.022023676798364127,1.0,0.6722222222222223,False,no difference
+unseen_7x7,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,180.0,1000.0,1.139635884860135e-12,7.806004888723519e-10,1.0,True,faster
+unseen_7x7,DE best,de_run4,sparse_dyna,per scheme,30,30,180.0,1000.0,1.0420047343244018e-11,5.439264713173377e-09,0.9944444444444445,True,faster
+unseen_7x7,DE best,de_run4,russell_norvig_matched,per scheme,30,30,180.0,260.0,3.666886211943493e-09,1.6317643643148543e-06,0.9427777777777778,True,faster
+unseen_9x7,ME vs DE,ME best,DE best,per run,5,5,649.0,604.3333333333334,1.0,1.0,0.52,False,no difference
+unseen_9x7,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,460.0,1000.0,4.300550680438878e-06,0.0013847773191013187,0.7855555555555556,True,faster
+unseen_9x7,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,460.0,1000.0,8.814219736017106e-07,0.0003118577434549048,0.8,True,faster
+unseen_9x7,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,460.0,460.0,0.7898260383721639,1.0,0.48,False,no difference
+unseen_9x7,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,460.0,1000.0,8.814219736017106e-07,0.0003118577434549048,0.8,True,faster
+unseen_9x7,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,460.0,1000.0,8.814219736017106e-07,0.0003118577434549048,0.8,True,faster
+unseen_9x7,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,460.0,1000.0,0.015381109363701425,1.0,0.6666666666666666,False,no difference
+unseen_9x7,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.00019600848664213356,0.0554704017197238,0.7133333333333334,False,no difference
+unseen_9x7,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,2.9261190308296587e-05,0.00892466304403046,0.7333333333333333,True,faster
+unseen_9x7,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,1000.0,460.0,0.13838021628170694,1.0,0.3933333333333333,False,no difference
+unseen_9x7,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,2.9261190308296587e-05,0.00892466304403046,0.7333333333333333,True,faster
+unseen_9x7,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,1000.0,1000.0,2.9261190308296587e-05,0.00892466304403046,0.7333333333333333,True,faster
+unseen_9x7,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,0.3186159203888327,1.0,0.5661111111111111,False,no difference
+unseen_9x7,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,445.0,1000.0,6.573787948696335e-07,0.0002353416085633288,0.8188888888888889,True,faster
+unseen_9x7,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,445.0,1000.0,1.3011165485709595e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,445.0,460.0,0.5553178622020085,1.0,0.5438888888888889,False,no difference
+unseen_9x7,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,445.0,1000.0,1.3011165485709595e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,445.0,1000.0,1.3011165485709595e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,445.0,1000.0,0.0022255657191644707,0.5185568125653217,0.7138888888888889,False,no difference
+unseen_9x7,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,420.0,1000.0,1.0302095550161026e-08,4.3268801310676306e-06,0.8855555555555555,True,faster
+unseen_9x7,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,420.0,1000.0,1.9078284470225977e-09,8.699697718423046e-07,0.9,True,faster
+unseen_9x7,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,420.0,460.0,0.04243859229065092,1.0,0.6511111111111111,False,no difference
+unseen_9x7,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,420.0,1000.0,1.9078284470225977e-09,8.699697718423046e-07,0.9,True,faster
+unseen_9x7,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,420.0,1000.0,1.9078284470225977e-09,8.699697718423046e-07,0.9,True,faster
+unseen_9x7,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,420.0,1000.0,7.55850882626941e-05,0.022070845772706675,0.7838888888888889,True,faster
+unseen_9x7,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,480.0,1000.0,1.094932519879293e-05,0.00343808811242098,0.7683333333333333,True,faster
+unseen_9x7,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,480.0,1000.0,2.1881044173375237e-06,0.00071901838357707,0.7833333333333333,True,faster
+unseen_9x7,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,480.0,460.0,0.5355713418126831,1.0,0.45444444444444443,False,no difference
+unseen_9x7,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,480.0,1000.0,2.1881044173375237e-06,0.00071901838357707,0.7833333333333333,True,faster
+unseen_9x7,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,480.0,1000.0,2.1881044173375237e-06,0.00071901838357707,0.7833333333333333,True,faster
+unseen_9x7,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,480.0,1000.0,0.029504281292357874,1.0,0.6483333333333333,False,no difference
+unseen_9x7,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.33371069574356604,1.0,0.48333333333333334,False,no difference
+unseen_9x7,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,460.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+unseen_9x7,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run0,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,0.0013674482575323746,0.334087275406876,0.35,False,no difference
+unseen_9x7,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,365.0,1000.0,3.999540980770488e-10,1.875784719981359e-07,0.9294444444444444,True,faster
+unseen_9x7,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,365.0,1000.0,1.8834167635031216e-10,9.096902967720077e-08,0.9333333333333333,True,faster
+unseen_9x7,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,365.0,460.0,0.0002148460971756089,0.060586599403521714,0.7761111111111111,False,no difference
+unseen_9x7,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,365.0,1000.0,1.8834167635031216e-10,9.096902967720077e-08,0.9333333333333333,True,faster
+unseen_9x7,DE best,de_run1,sparse_dyna,per scheme,30,30,365.0,1000.0,1.8834167635031216e-10,9.096902967720077e-08,0.9333333333333333,True,faster
+unseen_9x7,DE best,de_run1,russell_norvig_matched,per scheme,30,30,365.0,1000.0,6.665818713276886e-08,2.5996692981779856e-05,0.8911111111111111,True,faster
+unseen_9x7,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.33371069574356604,1.0,0.48333333333333334,False,no difference
+unseen_9x7,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,1000.0,460.0,3.4374961875262444e-07,0.00012856235741348155,0.18333333333333332,True,slower
+unseen_9x7,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run2,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_9x7,DE best,de_run2,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,0.0013674482575323746,0.334087275406876,0.35,False,no difference
+unseen_9x7,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,460.0,1000.0,6.544754318859311e-07,0.00023495668004704928,0.8188888888888889,True,faster
+unseen_9x7,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,460.0,1000.0,1.294471839578993e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,460.0,460.0,0.7622056984770675,1.0,0.5227777777777778,False,no difference
+unseen_9x7,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,460.0,1000.0,1.294471839578993e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,DE best,de_run3,sparse_dyna,per scheme,30,30,460.0,1000.0,1.294471839578993e-07,4.996661300774913e-05,0.8333333333333334,True,faster
+unseen_9x7,DE best,de_run3,russell_norvig_matched,per scheme,30,30,460.0,1000.0,0.004131448708950165,0.9295759595137872,0.7005555555555556,False,no difference
+unseen_9x7,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,390.0,1000.0,2.1923585221175005e-08,8.988669940681751e-06,0.8727777777777778,True,faster
+unseen_9x7,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,390.0,1000.0,5.745755829917408e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_9x7,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,390.0,460.0,0.03629767771384036,1.0,0.6555555555555556,False,no difference
+unseen_9x7,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,390.0,1000.0,5.745755829917408e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_9x7,DE best,de_run4,sparse_dyna,per scheme,30,30,390.0,1000.0,5.745755829917408e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_9x7,DE best,de_run4,russell_norvig_matched,per scheme,30,30,390.0,1000.0,3.909266195369803e-05,0.011727798586109409,0.7933333333333333,True,faster
+unseen_11x8,ME vs DE,ME best,DE best,per run,5,5,699.3333333333334,522.3333333333334,1.0,1.0,0.48,False,no difference
+unseen_11x8,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,500.0,1000.0,0.001143349581628493,0.28240734666223777,0.7055555555555556,False,no difference
+unseen_11x8,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,500.0,1000.0,5.332445559816111e-06,0.0017117150247009717,0.7666666666666667,True,faster
+unseen_11x8,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,500.0,430.0,0.053827867625309236,1.0,0.35833333333333334,False,no difference
+unseen_11x8,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,500.0,1000.0,5.332445559816111e-06,0.0017117150247009717,0.7666666666666667,True,faster
+unseen_11x8,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,500.0,1000.0,5.332445559816111e-06,0.0017117150247009717,0.7666666666666667,True,faster
+unseen_11x8,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,500.0,1000.0,5.332445559816111e-06,0.0017117150247009717,0.7666666666666667,True,faster
+unseen_11x8,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.41832432761797966,1.0,0.4677777777777778,False,no difference
+unseen_11x8,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+unseen_11x8,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,1000.0,430.0,5.440344338593182e-07,0.00019585239618935454,0.1661111111111111,True,slower
+unseen_11x8,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+unseen_11x8,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+unseen_11x8,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,0.16080212144022055,1.0,0.5333333333333333,False,no difference
+unseen_11x8,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,405.0,1000.0,1.3589757907610616e-08,5.680518805381237e-06,0.8966666666666666,True,faster
+unseen_11x8,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,405.0,1000.0,6.171058780435035e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,405.0,430.0,0.055886102629156074,1.0,0.6433333333333333,False,no difference
+unseen_11x8,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,405.0,1000.0,6.171058780435035e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,405.0,1000.0,6.171058780435035e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,405.0,1000.0,6.171058780435035e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,400.0,1000.0,1.1581934662144549e-07,4.493790648912085e-05,0.8638888888888889,True,faster
+unseen_11x8,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,400.0,1000.0,5.6374950927466965e-09,2.4804978408085463e-06,0.8833333333333333,True,faster
+unseen_11x8,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,400.0,430.0,0.02764726017797086,1.0,0.6644444444444444,False,no difference
+unseen_11x8,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,400.0,1000.0,5.6374950927466965e-09,2.4804978408085463e-06,0.8833333333333333,True,faster
+unseen_11x8,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,400.0,1000.0,5.6374950927466965e-09,2.4804978408085463e-06,0.8833333333333333,True,faster
+unseen_11x8,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,400.0,1000.0,5.6374950927466965e-09,2.4804978408085463e-06,0.8833333333333333,True,faster
+unseen_11x8,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.06794826940362098,1.0,0.6022222222222222,False,no difference
+unseen_11x8,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,0.000660858212449105,0.17290059404806485,0.6666666666666666,False,no difference
+unseen_11x8,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,1000.0,430.0,0.00040744001816867123,0.10919392486920389,0.2477777777777778,False,no difference
+unseen_11x8,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,0.000660858212449105,0.17290059404806485,0.6666666666666666,False,no difference
+unseen_11x8,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,1000.0,1000.0,0.000660858212449105,0.17290059404806485,0.6666666666666666,False,no difference
+unseen_11x8,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,0.000660858212449105,0.17290059404806485,0.6666666666666666,False,no difference
+unseen_11x8,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.041926167596850805,1.0,0.43333333333333335,False,no difference
+unseen_11x8,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,430.0,1.688152867445609e-08,7.013853071160361e-06,0.13333333333333333,True,slower
+unseen_11x8,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run0,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,390.0,1000.0,1.091393934949379e-08,4.572940587437898e-06,0.9022222222222223,True,faster
+unseen_11x8,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,390.0,1000.0,1.9061541336556846e-10,9.149539841547286e-08,0.9333333333333333,True,faster
+unseen_11x8,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,390.0,430.0,0.03418836533553899,1.0,0.6588888888888889,False,no difference
+unseen_11x8,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,390.0,1000.0,1.9061541336556846e-10,9.149539841547286e-08,0.9333333333333333,True,faster
+unseen_11x8,DE best,de_run1,sparse_dyna,per scheme,30,30,390.0,1000.0,1.9061541336556846e-10,9.149539841547286e-08,0.9333333333333333,True,faster
+unseen_11x8,DE best,de_run1,russell_norvig_matched,per scheme,30,30,390.0,1000.0,1.9061541336556846e-10,9.149539841547286e-08,0.9333333333333333,True,faster
+unseen_11x8,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,0.041926167596850805,1.0,0.43333333333333335,False,no difference
+unseen_11x8,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,1000.0,430.0,1.688152867445609e-08,7.013853071160361e-06,0.13333333333333333,True,slower
+unseen_11x8,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run2,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run2,russell_norvig_matched,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_11x8,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,425.0,1000.0,6.38406092716273e-08,2.4986089192404948e-05,0.8777777777777778,True,faster
+unseen_11x8,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,425.0,1000.0,6.18786827357177e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,425.0,430.0,0.36017490077874026,1.0,0.5688888888888889,False,no difference
+unseen_11x8,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,425.0,1000.0,6.18786827357177e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,DE best,de_run3,sparse_dyna,per scheme,30,30,425.0,1000.0,6.18786827357177e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,DE best,de_run3,russell_norvig_matched,per scheme,30,30,425.0,1000.0,6.18786827357177e-10,2.8818844504631614e-07,0.9166666666666666,True,faster
+unseen_11x8,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,385.0,1000.0,1.9137354815172666e-07,7.214782765320095e-05,0.8577777777777778,True,faster
+unseen_11x8,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,385.0,1000.0,5.778591551718967e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_11x8,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,385.0,430.0,0.06653619438304113,1.0,0.6372222222222222,False,no difference
+unseen_11x8,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,385.0,1000.0,5.778591551718967e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_11x8,DE best,de_run4,sparse_dyna,per scheme,30,30,385.0,1000.0,5.778591551718967e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_11x8,DE best,de_run4,russell_norvig_matched,per scheme,30,30,385.0,1000.0,5.778591551718967e-09,2.50514954184399e-06,0.8833333333333333,True,faster
+unseen_12x10,ME vs DE,ME best,DE best,per run,5,5,378.3333333333333,438.3333333333333,0.07402608915793045,1.0,0.86,False,no difference
+unseen_12x10,ME best,mapelites_run0,A1_immediate_reward_only,per scheme,30,30,380.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run0,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run0,B1_immediate_reward_punish,per scheme,30,30,380.0,370.0,0.6286883453362072,1.0,0.4633333333333333,False,no difference
+unseen_12x10,ME best,mapelites_run0,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run0,sparse_dyna,per scheme,30,30,380.0,1000.0,1.1009879955886486e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run0,russell_norvig_matched,per scheme,30,30,380.0,380.0,0.6751243511435823,1.0,0.5316666666666666,False,no difference
+unseen_12x10,ME best,mapelites_run1,A1_immediate_reward_only,per scheme,30,30,355.0,1000.0,1.1037079077063183e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run1,A2_delayed_reward_only,per scheme,30,30,355.0,1000.0,1.1037079077063183e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run1,B1_immediate_reward_punish,per scheme,30,30,355.0,370.0,0.13660642947866003,1.0,0.6116666666666667,False,no difference
+unseen_12x10,ME best,mapelites_run1,B2_delayed_reward_punish,per scheme,30,30,355.0,1000.0,1.1037079077063183e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run1,sparse_dyna,per scheme,30,30,355.0,1000.0,1.1037079077063183e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run1,russell_norvig_matched,per scheme,30,30,355.0,380.0,0.001677019265055754,0.4008076043483252,0.7344444444444445,False,no difference
+unseen_12x10,ME best,mapelites_run2,A1_immediate_reward_only,per scheme,30,30,375.0,1000.0,1.180498200127063e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run2,A2_delayed_reward_only,per scheme,30,30,375.0,1000.0,1.180498200127063e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run2,B1_immediate_reward_punish,per scheme,30,30,375.0,370.0,0.9763318833031067,1.0,0.49722222222222223,False,no difference
+unseen_12x10,ME best,mapelites_run2,B2_delayed_reward_punish,per scheme,30,30,375.0,1000.0,1.180498200127063e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run2,sparse_dyna,per scheme,30,30,375.0,1000.0,1.180498200127063e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run2,russell_norvig_matched,per scheme,30,30,375.0,380.0,0.3958154306293059,1.0,0.5638888888888889,False,no difference
+unseen_12x10,ME best,mapelites_run3,A1_immediate_reward_only,per scheme,30,30,395.0,1000.0,4.4668077668318346e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_12x10,ME best,mapelites_run3,A2_delayed_reward_only,per scheme,30,30,395.0,1000.0,4.4668077668318346e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_12x10,ME best,mapelites_run3,B1_immediate_reward_punish,per scheme,30,30,395.0,370.0,0.09816295749100092,1.0,0.37555555555555553,False,no difference
+unseen_12x10,ME best,mapelites_run3,B2_delayed_reward_punish,per scheme,30,30,395.0,1000.0,4.4668077668318346e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_12x10,ME best,mapelites_run3,sparse_dyna,per scheme,30,30,395.0,1000.0,4.4668077668318346e-12,2.389249278352536e-09,0.9833333333333333,True,faster
+unseen_12x10,ME best,mapelites_run3,russell_norvig_matched,per scheme,30,30,395.0,380.0,0.16186651905224214,1.0,0.395,False,no difference
+unseen_12x10,ME best,mapelites_run4,A1_immediate_reward_only,per scheme,30,30,380.0,1000.0,1.0874810166496387e-12,7.798163236683112e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run4,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,1.0874810166496387e-12,7.798163236683112e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run4,B1_immediate_reward_punish,per scheme,30,30,380.0,370.0,0.7604593228415667,1.0,0.4766666666666667,False,no difference
+unseen_12x10,ME best,mapelites_run4,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,1.0874810166496387e-12,7.798163236683112e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run4,sparse_dyna,per scheme,30,30,380.0,1000.0,1.0874810166496387e-12,7.798163236683112e-10,1.0,True,faster
+unseen_12x10,ME best,mapelites_run4,russell_norvig_matched,per scheme,30,30,380.0,380.0,0.3966559544717638,1.0,0.5633333333333334,False,no difference
+unseen_12x10,DE best,de_run0,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run0,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run0,B1_immediate_reward_punish,per scheme,30,30,1000.0,370.0,1.1747164315268844e-12,7.806004888723519e-10,0.0,True,slower
+unseen_12x10,DE best,de_run0,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run0,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run0,russell_norvig_matched,per scheme,30,30,1000.0,380.0,1.0874810166496387e-12,7.798163236683112e-10,0.0,True,slower
+unseen_12x10,DE best,de_run1,A1_immediate_reward_only,per scheme,30,30,380.0,1000.0,5.626089858581248e-11,2.7849144799977176e-08,0.95,True,faster
+unseen_12x10,DE best,de_run1,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,5.626089858581248e-11,2.7849144799977176e-08,0.95,True,faster
+unseen_12x10,DE best,de_run1,B1_immediate_reward_punish,per scheme,30,30,380.0,370.0,0.5679103382570275,1.0,0.45666666666666667,False,no difference
+unseen_12x10,DE best,de_run1,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,5.626089858581248e-11,2.7849144799977176e-08,0.95,True,faster
+unseen_12x10,DE best,de_run1,sparse_dyna,per scheme,30,30,380.0,1000.0,5.626089858581248e-11,2.7849144799977176e-08,0.95,True,faster
+unseen_12x10,DE best,de_run1,russell_norvig_matched,per scheme,30,30,380.0,380.0,0.6176645893836736,1.0,0.5377777777777778,False,no difference
+unseen_12x10,DE best,de_run2,A1_immediate_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run2,A2_delayed_reward_only,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run2,B1_immediate_reward_punish,per scheme,30,30,1000.0,370.0,1.1747164315268844e-12,7.806004888723519e-10,0.0,True,slower
+unseen_12x10,DE best,de_run2,B2_delayed_reward_punish,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run2,sparse_dyna,per scheme,30,30,1000.0,1000.0,1.0,1.0,0.5,False,no difference
+unseen_12x10,DE best,de_run2,russell_norvig_matched,per scheme,30,30,1000.0,380.0,1.0874810166496387e-12,7.798163236683112e-10,0.0,True,slower
+unseen_12x10,DE best,de_run3,A1_immediate_reward_only,per scheme,30,30,380.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,DE best,de_run3,A2_delayed_reward_only,per scheme,30,30,380.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,DE best,de_run3,B1_immediate_reward_punish,per scheme,30,30,380.0,370.0,0.7664192906192955,1.0,0.4772222222222222,False,no difference
+unseen_12x10,DE best,de_run3,B2_delayed_reward_punish,per scheme,30,30,380.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,DE best,de_run3,sparse_dyna,per scheme,30,30,380.0,1000.0,1.150905953444912e-12,7.806004888723519e-10,1.0,True,faster
+unseen_12x10,DE best,de_run3,russell_norvig_matched,per scheme,30,30,380.0,380.0,0.5112169013473136,1.0,0.5494444444444444,False,no difference
+unseen_12x10,DE best,de_run4,A1_immediate_reward_only,per scheme,30,30,370.0,1000.0,4.026840850231439e-12,2.2348966718784487e-09,0.9833333333333333,True,faster
+unseen_12x10,DE best,de_run4,A2_delayed_reward_only,per scheme,30,30,370.0,1000.0,4.026840850231439e-12,2.2348966718784487e-09,0.9833333333333333,True,faster
+unseen_12x10,DE best,de_run4,B1_immediate_reward_punish,per scheme,30,30,370.0,370.0,0.7092548062769701,1.0,0.5283333333333333,False,no difference
+unseen_12x10,DE best,de_run4,B2_delayed_reward_punish,per scheme,30,30,370.0,1000.0,4.026840850231439e-12,2.2348966718784487e-09,0.9833333333333333,True,faster
+unseen_12x10,DE best,de_run4,sparse_dyna,per scheme,30,30,370.0,1000.0,4.026840850231439e-12,2.2348966718784487e-09,0.9833333333333333,True,faster
+unseen_12x10,DE best,de_run4,russell_norvig_matched,per scheme,30,30,370.0,380.0,0.03220183728511043,1.0,0.66,False,no difference

@@ -1,0 +1,17 @@
+source,condition,kind,algo,run,cell,scheme,train_fitness,trap,wall,step,progress,delay,drift_condition,learned_1x,n90_1x,learned_2x,n90_2x,learned_3x,n90_3x,learned_4x,n90_4x,size_limit
+no_progress,variant no_progress,winner,de,0,,DE0_winner,166.0,-0.3031,-0.0621,-0.0401,0.0,0,uniform 0.1,1.0,190.0,0.9,770.0,0.0,3000.0,0.0,4000.0,2
+no_progress,variant no_progress,winner,de,1,,DE1_winner,154.0,-1.2919,-0.1777,-0.0804,0.0,0,uniform 0.1,1.0,195.0,1.0,640.0,1.0,1255.0,0.4,4000.0,3
+no_progress,variant no_progress,winner,de,2,,DE2_winner,168.0,0.0,0.0,-0.0,0.0,6,uniform 0.1,1.0,170.0,0.9,640.0,0.0,3000.0,0.0,4000.0,2
+no_progress,variant no_progress,winner,de,3,,DE3_winner,172.0,-4.335,-0.4085,-0.2194,0.0,0,uniform 0.1,1.0,215.0,1.0,675.0,1.0,1345.0,0.0,4000.0,3
+no_progress,variant no_progress,winner,de,4,,DE4_winner,170.0,-1.7559,-0.2999,-0.1341,0.0,0,uniform 0.1,1.0,215.0,1.0,655.0,1.0,1305.0,0.0,4000.0,3
+no_progress,variant no_progress,winner,mapelites,0,,ME0_winner,180.0,-10.4474,-0.1632,-0.1856,0.0,0,uniform 0.1,1.0,225.0,1.0,670.0,1.0,1250.0,0.2,4000.0,3
+no_progress,variant no_progress,winner,mapelites,1,,ME1_winner,186.0,-1.1624,0.0,-0.0103,0.0,1,uniform 0.1,1.0,230.0,1.0,590.0,1.0,1100.0,1.0,1685.0,4
+no_progress,variant no_progress,winner,mapelites,2,,ME2_winner,182.0,-2.0301,-0.4881,-0.1047,0.0,0,uniform 0.1,1.0,210.0,1.0,650.0,1.0,1260.0,0.8,1970.0,4
+no_progress,variant no_progress,winner,mapelites,3,,ME3_winner,190.0,-2.4923,-0.7427,-0.1635,0.0,0,uniform 0.1,1.0,220.0,1.0,690.0,1.0,1335.0,0.0,4000.0,3
+no_progress,variant no_progress,winner,mapelites,4,,ME4_winner,178.0,-1.6514,0.0,-0.0314,0.0,3,uniform 0.1,1.0,225.0,1.0,650.0,1.0,1180.0,1.0,1825.0,4
+hand-made,hand-made,baseline,,,,A1_immediate_reward_only,,0.0,0.0,0.0,0.1,0,uniform 0.1,0.6,260.0,1.0,260.0,1.0,420.0,1.0,430.0,0
+hand-made,hand-made,baseline,,,,A2_delayed_reward_only,,0.0,0.0,0.0,0.1,end,uniform 0.1,0.0,1000.0,0.0,2000.0,0.0,3000.0,0.0,4000.0,0
+hand-made,hand-made,baseline,,,,B1_immediate_reward_punish,,-5,-1,0.0,0.1,0,uniform 0.1,1.0,215.0,1.0,185.0,1.0,250.0,1.0,315.0,4
+hand-made,hand-made,baseline,,,,B2_delayed_reward_punish,,-5,-1,0.0,0.1,end,uniform 0.1,0.0,1000.0,0.0,2000.0,0.0,3000.0,0.0,4000.0,0
+hand-made,hand-made,baseline,,,,sparse_dyna,,0.0,0.0,0.0,0.0,0,uniform 0.1,0.2,1000.0,0.0,2000.0,0.0,3000.0,0.0,4000.0,0
+hand-made,hand-made,baseline,,,,russell_norvig_matched,,-10,0.0,-0.0333,0.0,0,uniform 0.1,1.0,255.0,1.0,645.0,1.0,1145.0,1.0,1715.0,4
